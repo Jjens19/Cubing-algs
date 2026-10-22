@@ -21,3 +21,5 @@
 .algorithm-heading{margin:0 0 24px;font-size:25px;font-weight:600;line-height:1.6;white-space:pre-wrap;overflow-wrap:anywhere;user-select:text}
 
 .server-notice{padding:16px 20px;background:#fff3d8;color:#78591c;border:1px solid #dac58d;border-radius:8px;line-height:1.6;margin:0 0 24px}
+
+.practice-result-actions{text-align:center;margin:12px 0}.practice-result-actions button{color:#923e36;border-color:#d5aaa2}.practice-result-actions button:disabled{opacity:.45;cursor:default}

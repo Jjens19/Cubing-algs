@@ -121,6 +121,12 @@ class LibraryTests(unittest.TestCase):
                     with server.connect() as db:
                         promoted = db.execute('SELECT learned, learning FROM cases WHERE id=?', (case['id'],)).fetchone()
                         self.assertEqual(tuple(promoted), (1, 0))
+                    # DNF overrides even a freshly auto-promoted solve.
+                    post('progress', {'id': case['id'], 'state': 'learning'})
+                    server.initialize()
+                    with server.connect() as db:
+                        self.assertEqual(tuple(db.execute('SELECT learned, learning FROM cases WHERE id=?', (case['id'],)).fetchone()), (0, 1))
+                        self.assertEqual(tuple(db.execute('SELECT learned, learning FROM cases WHERE id=?', (other['id'],)).fetchone()), (0, 0))
                     post('progress', {'id': case['id'], 'state': 'not-learned'})
                     self.assertFalse(post('practice-result', {'id': case['id'], 'elapsed_ms': 1000})['promoted'])
                     self.assertIn('PLL', library['sets'])

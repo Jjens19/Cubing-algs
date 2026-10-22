@@ -7,6 +7,7 @@ import webbrowser
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from pathlib import Path
 from urllib.parse import urlparse, unquote
+from src.scrambler import generate as generate_practice_scramble
 
 ROOT = Path(__file__).resolve().parent.parent
 DB = ROOT / 'data' / 'library.sqlite3'
@@ -113,6 +114,10 @@ class Handler(BaseHTTPRequestHandler):
             path = urlparse(self.path).path
             if path == '/api/inverse':
                 return self.send(200, {'setup': inverse(data['algorithm'])})
+            if path == '/api/practice-scramble':
+                # Validate the same notation accepted by the case editor.
+                inverse(data['algorithm'])
+                return self.send(200, {'setup': generate_practice_scramble(data['algorithm'])})
             if path == '/api/progress':
                 state = data.get('state')
                 if state is not None and state not in ('not-learned', 'learning', 'learned'):
