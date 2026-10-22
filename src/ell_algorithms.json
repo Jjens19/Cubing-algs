@@ -1,0 +1,125 @@
+{
+  "source": "https://sarah.cubing.net/3x3x3/ell",
+  "cases": {
+    "ell-epll0.png": {
+      "algorithm": "",
+      "source_algorithm": "Skip!"
+    },
+    "ell-epll1.png": {
+      "algorithm": "R U' R U R U R U' R' U' R2",
+      "source_algorithm": "R U' R U R U R U' R' U' R2"
+    },
+    "ell-epll2.png": {
+      "algorithm": "R2 U R U R' U' R' U' R' U R'",
+      "source_algorithm": "R2 U R U R' U' R' U' R' U R'"
+    },
+    "ell-epll3.png": {
+      "algorithm": "M2 U M2 U M' U2 M2 U2 M'",
+      "source_algorithm": "M2 U M2 U M' U2 M2 U2 M'"
+    },
+    "ell-epll4.png": {
+      "algorithm": "M2 U M2 U2 M2 U M2",
+      "source_algorithm": "M2 U M2 U2 M2 U M2"
+    },
+    "ell-A1.png": {
+      "algorithm": "U' M2 U M U2 M' U M' U M' U2 M U M'",
+      "source_algorithm": "(y') M2 U M U2 M' U M' U M' U2 M U M'"
+    },
+    "ell-A2.png": {
+      "algorithm": "U r' U' R U M' U' R' U R",
+      "source_algorithm": "(y) r' U' R U M' U' R' U R"
+    },
+    "ell-A3.png": {
+      "algorithm": "U M' U' M U2 M' U' M",
+      "source_algorithm": "(y) M' U' M U2 M' U' M"
+    },
+    "ell-A4.png": {
+      "algorithm": "M U M' U' M' U' M' U M' U M U' M2",
+      "source_algorithm": "M U M' U' M' U' M' U M' U M U' M2"
+    },
+    "ell-A5.png": {
+      "algorithm": "U' M' U M2 U M U2 M' U M'",
+      "source_algorithm": "(y') M' U M2 U M U2 M' U M'"
+    },
+    "ell-A6.png": {
+      "algorithm": "M' U M U2 M' U M",
+      "source_algorithm": "M' U M U2 M' U M"
+    },
+    "ell-A7.png": {
+      "algorithm": "U2 r U R' U' M U R U' R'",
+      "source_algorithm": "(y2) r U R' U' M U R U' R'"
+    },
+    "ell-A8.png": {
+      "algorithm": "U2 M' U' M2 U' M U2 M' U' M'",
+      "source_algorithm": "(y2) M' U' M2 U' M U2 M' U' M'"
+    },
+    "ell-A9.png": {
+      "algorithm": "U' M U' M' U M' U M' U' M' U' M U M2",
+      "source_algorithm": "(y') M U' M' U M' U M' U' M' U' M U M2"
+    },
+    "ell-A10.png": {
+      "algorithm": "U2 F R U R' U' F2 L' U' L U F",
+      "source_algorithm": "(y2) F R U R' U' F2 L' U' L U F"
+    },
+    "ell-A11.png": {
+      "algorithm": "M' U M U M' U2 M U' M' U' M",
+      "source_algorithm": "M' U M U M' U2 M U' M' U' M"
+    },
+    "ell-A12.png": {
+      "algorithm": "U' M' U M U M' U M U M' U M",
+      "source_algorithm": "(y') M' U M U M' U M U M' U M"
+    },
+    "ell-H1.png": {
+      "algorithm": "M' U M' U M' U M' U2 M' U M' U M' U M'",
+      "source_algorithm": "M' U M' U M' U M' U2 M' U M' U M' U M'"
+    },
+    "ell-H2.png": {
+      "algorithm": "R U R' U' M' U R U' r'",
+      "source_algorithm": "R U R' U' M' U R U' r'"
+    },
+    "ell-H3.png": {
+      "algorithm": "M2 U' M U M' U M' U' M' U' M' U M",
+      "source_algorithm": "M2 U' M U M' U M' U' M' U' M' U M"
+    },
+    "ell-H4.png": {
+      "algorithm": "R' U' R U M U' R' U r",
+      "source_algorithm": "R' U' R U M U' R' U r"
+    },
+    "ell-H5.png": {
+      "algorithm": "M2 U M U' M' U' M' U M' U M' U' M",
+      "source_algorithm": "M2 U M U' M' U' M' U M' U M' U' M"
+    },
+    "ell-H6.png": {
+      "algorithm": "M' U' M U M' U' M U' M' U2 M",
+      "source_algorithm": "M' U' M U M' U' M U' M' U2 M"
+    },
+    "ell-H7.png": {
+      "algorithm": "M' U M U' M' U M U M' U2 M",
+      "source_algorithm": "M' U M U' M' U M U M' U2 M"
+    },
+    "ell-H8.png": {
+      "algorithm": "M' U M2 U2 M' U M' U2 M' U' M U' M",
+      "source_algorithm": "M' U M2 U2 M' U M' U2 M' U' M U' M"
+    },
+    "ell-X1.png": {
+      "algorithm": "M' U M' U M' U M' U' M' U M' U M' U M'",
+      "source_algorithm": "M' U M' U M' U M' U' M' U M' U M' U M'"
+    },
+    "ell-X2.png": {
+      "algorithm": "M' U' M U' M' U2 M' U' M' U' M U' M' U' M'",
+      "source_algorithm": "M' U' M U' M' U2 M' U' M' U' M U' M' U' M'"
+    },
+    "ell-X3.png": {
+      "algorithm": "M' U M U M' U2 M' U M' U M U M' U M'",
+      "source_algorithm": "M' U M U M' U2 M' U M' U M U M' U M'"
+    },
+    "ell-X4.png": {
+      "algorithm": "M' U M U2 M' U M2 U' M' U2 M U' M'",
+      "source_algorithm": "M' U M U2 M' U M2 U' M' U2 M U' M'"
+    },
+    "ell-X5.png": {
+      "algorithm": "r U R' U' M2 U R U' R' U' M'",
+      "source_algorithm": "r U R' U' M2 U R U' R' U' M'"
+    }
+  }
+}

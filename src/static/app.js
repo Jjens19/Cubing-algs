@@ -1,0 +1,145 @@
+const $=id=>document.getElementById(id);
+let visibleCases=[];
+let library={sets:[],cases:[]},set='ELL',category='',current=null,drawing={},mode='paint',color='#ffff00',dirty=false;
+// Top view: nine U stickers and three last-layer stickers on each side.
+// Keep the original face/index keys so saved colors and highlights still work.
+const lastLayer = [
+  ...Array.from({length:9},(_,i)=>({key:'U'+i,face:'U',index:i,x:i%3+2,y:Math.floor(i/3)+2,color:'#ffff00'})),
+  ...Array.from({length:3},(_,i)=>({key:'B'+(2-i),face:'B',index:2-i,x:i+2,y:1,color:'#0000ff'})),
+  ...Array.from({length:3},(_,i)=>({key:'F'+i,face:'F',index:i,x:i+2,y:5,color:'#00ff00'})),
+  ...Array.from({length:3},(_,i)=>({key:'L'+i,face:'L',index:i,x:1,y:i+2,color:'#ff0000'})),
+  ...Array.from({length:3},(_,i)=>({key:'R'+(2-i),face:'R',index:2-i,x:5,y:i+2,color:'#ff9900'})),
+];
+// Sample sticker centers in the reference PNG's last-layer top-view layout.
+const caseDrawingCache=new Map();
+function caseDrawing(image){
+  if(!image)return Promise.resolve({});
+  if(!caseDrawingCache.has(image)){
+    const pending=new Promise((resolve,reject)=>{
+      const img=new Image();
+      img.onload=()=>{
+        try{
+          const canvas=document.createElement('canvas');
+          canvas.width=img.naturalWidth;canvas.height=img.naturalHeight;
+          const ctx=canvas.getContext('2d',{willReadFrequently:true});
+          ctx.drawImage(img,0,0);
+          const centers=[.08,.27,.5,.73,.92];
+          const stickers={};
+          for(const {key,x,y} of lastLayer){
+            const [r,g,b]=ctx.getImageData(Math.floor(centers[x-1]*canvas.width),Math.floor(centers[y-1]*canvas.height),1,1).data;
+            stickers[key]={color:'#'+[r,g,b].map(v=>v.toString(16).padStart(2,'0')).join(''),highlight:false};
+          }
+          resolve(stickers);
+        }catch(error){reject(error);}
+      };
+      img.onerror=()=>reject(Error('Could not load the case image for the recognition drawing.'));
+      img.src=image;
+    });
+    caseDrawingCache.set(image,pending);
+    pending.catch(()=>caseDrawingCache.delete(image));
+  }
+  return caseDrawingCache.get(image);
+}
+const restartNotice='The running Python server is out of date. Stop it with Ctrl+C, run python3 app.py again, then refresh this page. Your saved cases will be kept.';
+async function api(path,data){if((path==='progress'||path==='practice-result'||(path==='case'&&data&&'learning' in data))&&!library.progress_states?.includes('learning'))throw Error(restartNotice);const response=await fetch('/api/'+path,data?{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)}:{});const result=await response.json();if(path==='progress'&&(!response.ok&&result.error==='Learned must be true or false'||response.ok&&!('learning' in result)))throw Error(restartNotice);if(!response.ok)throw Error(path==='progress'&&response.status===404&&result.error==='Not found'?'Restart the Python app (Ctrl+C, then python3 app.py) and refresh this page to enable saved progress.':result.error||'Request failed');return result;}
+function progressState(c){return c.learned?'learned':c.learning?'learning':'not-learned';}
+function options(select,values,selected){select.replaceChildren(...values.map(value=>{const option=document.createElement('option');option.value=value;option.textContent=value;return option}));select.value=selected;}
+// Category paths preserve existing category values while allowing any depth.
+function categoryPaths(algSet){
+  const paths=new Set();
+  for(const c of library.cases.filter(c=>c.alg_set===algSet)){
+    const parts=c.category.split('/').map(part=>part.trim()).filter(Boolean);
+    parts.forEach((_,i)=>paths.add(parts.slice(0,i+1).join(' / ')));
+  }
+  return [...paths].sort((a,b)=>a.localeCompare(b));
+}
+function withinCategory(value,parent){return !parent||value===parent||value.startsWith(parent+' / ');}
+async function load(){library=await api('library');$('server-notice').hidden=!!library.progress_states?.includes('learning');$('server-notice').textContent=restartNotice;if(!library.sets.includes(set))set=library.sets[0];options($('sets'),library.sets,set);render();}
+function net(container,state,mini=false){
+  const ns='http://www.w3.org/2000/svg';
+  const svg=document.createElementNS(ns,'svg');
+  svg.setAttribute('viewBox','0 0 100 100');
+  svg.setAttribute('class','cube-diagram');
+  svg.setAttribute('aria-label',mini?'Recognition drawing':'Editable last-layer drawing');
+  if(mini)svg.setAttribute('role','img');
+  for(const {key,face,index,x,y,color:defaultColor} of lastLayer){
+    const sticker=state[key]||{color:defaultColor,highlight:false};
+    const left=x===1?3:x===5?85:16+(x-2)*23;
+    const top=y===1?3:y===5?85:16+(y-2)*23;
+    const width=x===1||x===5?13:23;
+    const height=y===1||y===5?13:23;
+    const rect=document.createElementNS(ns,'rect');
+    for(const [attr,value] of Object.entries({x:left,y:top,width,height,fill:sticker.color,stroke:'#000','stroke-width':3}))rect.setAttribute(attr,value);
+    if(!mini){
+      rect.setAttribute('class','sticker');
+      rect.setAttribute('role','button');rect.setAttribute('tabindex','0');
+      rect.setAttribute('aria-label',`${face} sticker ${index+1}${sticker.highlight?', highlighted':''}`);
+      rect.setAttribute('aria-pressed',String(sticker.highlight));
+      const edit=()=>{
+        drawing[key]={color:mode==='paint'?color:sticker.color,highlight:mode==='highlight'?!sticker.highlight:sticker.highlight};
+        dirty=true;net(container,drawing);
+        const replacement=container.querySelector(`[data-key="${key}"]`);
+        replacement?.focus({preventScroll:true});
+      };
+      rect.dataset.key=key;rect.onclick=edit;
+      rect.onkeydown=event=>{if(event.key==='Enter'||event.code==='Space'){event.preventDefault();edit();}};
+    }
+    svg.append(rect);
+    if(sticker.highlight){
+      const mark=document.createElementNS(ns,'text');
+      mark.setAttribute('x',left+width/2);mark.setAttribute('y',top+height/2);
+      mark.setAttribute('class','recognition-star');
+      mark.setAttribute('font-size',Math.min(width,height)*.75);
+      mark.setAttribute('aria-hidden','true');mark.textContent='★';svg.append(mark);
+    }
+  }
+  container.replaceChildren(svg);
+}
+
+function render(){const all=library.cases.filter(c=>c.alg_set===set);$('title').textContent=set;$('subtitle').textContent='Build your recognition, one pattern at a time.';const categories=['',...categoryPaths(set)];if(!categories.includes(category))category='';$('categories').replaceChildren(...categories.map(value=>{const b=document.createElement('button');const parts=value.split(' / ');b.textContent=(value?parts.at(-1):'All cases')+' · '+all.filter(c=>withinCategory(c.category,value)).length;b.title=value||'All cases';b.style.paddingLeft=(14+Math.max(0,parts.length-1)*16)+'px';b.className=value===category?'active':'';b.onclick=()=>{category=value;render()};return b}));const query=$('search').value.toLowerCase();const cases=all.filter(c=>withinCategory(c.category,category)&&($('progress-filter').value==='all'||progressState(c)===$('progress-filter').value)&&[c.name,c.category,c.algorithm,c.recognition,c.description].some(v=>v.toLowerCase().includes(query)));const compare=(a,b)=>a.localeCompare(b,undefined,{numeric:true,sensitivity:'base'});
+cases.sort((a,b)=>compare(a.category||'\uffff',b.category||'\uffff')||compare(a.name,b.name)||a.id-b.id);
+$('count').textContent=`${cases.length} shown`;
+visibleCases=cases;
+const learnedCount=cases.filter(c=>c.learned).length;
+$('learned-count').textContent=`${learnedCount} / ${cases.length} algs learned`;
+$('learned-progress').max=cases.length||1;
+$('learned-progress').value=learnedCount;
+$('progress-scope').textContent=[set,category].filter(Boolean).join(' / ')+(query||$('progress-filter').value!=='all'?' · Filtered cases':'');
+$('grid').replaceChildren();
+let previousParent=null;
+for(const c of cases){
+  const parent=c.category.split('/')[0].trim()||'Uncategorized';
+  if(!category&&parent!==previousParent){
+    const heading=document.createElement('h2');
+    heading.className='category-heading';
+    heading.textContent=parent;
+    $('grid').append(heading);
+    previousParent=parent;
+  }
+const card=document.createElement('article');card.className='card '+progressState(c);const preview=document.createElement('div');preview.className='preview';const state=JSON.parse(c.drawing||'{}');if($('recognition-only').checked||state.useDrawing||!c.image){const mini=document.createElement('div');mini.className='mini-net';net(mini,state.stickers||{},true);caseDrawing(c.image).then(base=>net(mini,{...base,...state.stickers},true)).catch(()=>{});preview.append(mini);}else{const img=document.createElement('img');img.src=c.image;img.alt=c.name+' cube state';preview.append(img);}const name=document.createElement('strong');name.textContent=c.name;const tag=document.createElement('small');tag.textContent=c.category||'Uncategorized';const badge=document.createElement('span');badge.className='badge';badge.textContent=c.algorithm?'ALG SAVED':'ADD ALG';const progress=document.createElement('button');progress.type='button';const nextState={'not-learned':'learning',learning:'learned',learned:'not-learned'}[progressState(c)];progress.setAttribute('aria-label',`${c.name}: ${progressState(c).replace('-',' ')}. Change to ${nextState.replace('-',' ')}`);progress.onclick=async()=>{progress.disabled=true;try{const result=await api('progress',{id:c.id,state:nextState});Object.assign(c,result);render();}catch(error){progress.disabled=false;alert('Could not save progress: '+error.message);}};progress.className='progress '+(c.learned?'is-learned':'');progress.textContent=c.learned?'✓ Learned':c.learning?'◐ Learning':'○ Not learned';const open=document.createElement('button');open.type='button';open.className='case-open';open.setAttribute('aria-label',`Open ${c.name}`);open.append(preview,badge,name,tag);open.onclick=()=>openCase(c);card.append(open,progress);$('grid').append(card);}if(!cases.length){const empty=document.createElement('p');empty.textContent='No cases here yet. Add a case or change your search.';$('grid').append(empty);}}
+async function openCase(c){current=c?{...c}:{name:'',alg_set:set,category:category,algorithm:'',description:'',recognition:'',image:'',drawing:'{}'};const opened=current;const state=JSON.parse(current.drawing||'{}');let base={};let drawingError='';try{base=await caseDrawing(current.image);}catch(error){drawingError=error.message;}if(current!==opened)return;drawing=structuredClone({...base,...state.stickers});$('use-drawing').checked=!!state.useDrawing;$('learned').value=progressState(current);for(const key of ['name','algorithm','description','recognition'])$(key).value=current[key];$('category-path').value=[current.alg_set,...current.category.split('/').map(part=>part.trim()).filter(Boolean)].join('/');$('detail-title').textContent=c?c.name:'New case';$('original').replaceChildren();if(current.image){const img=document.createElement('img');img.src=current.image;img.alt=current.name+' original reference';$('original').append(img);}else $('original').textContent='Your custom cube state';$('status').textContent=drawingError;net($('cube'),drawing);dirty=false;updateSetup();$('detail').showModal();}
+let inverseSequence=0;async function updateSetup(){$('algorithm-heading').textContent=$('algorithm').value||'No algorithm yet';const sequence=++inverseSequence;try{const result=await api('inverse',{algorithm:$('algorithm').value});if(sequence===inverseSequence)$('setup').textContent=result.setup||'Enter a solution to generate its setup.';}catch(e){if(sequence===inverseSequence)$('setup').textContent=e.message;}}
+$('algorithm').addEventListener('input',updateSetup);$('case-form').addEventListener('input',()=>dirty=true);
+$('case-form').onsubmit=async e=>{e.preventDefault();const updated={...current};for(const key of ['name','algorithm','description','recognition'])updated[key]=$(key).value;const parts=$('category-path').value.split('/').map(part=>part.trim());if(parts.some(part=>!part)){$('status').textContent='Enter a set and category names separated by /, with no empty parts.';return;}const enteredSet=parts.shift();updated.alg_set=library.sets.find(name=>name.toLowerCase()===enteredSet.toLowerCase())||enteredSet;updated.category=parts.join(' / ');updated.learned=Number($('learned').value==='learned');updated.learning=Number($('learned').value==='learning');updated.drawing=JSON.stringify({useDrawing:$('use-drawing').checked,stickers:drawing});try{if(!library.sets.includes(updated.alg_set))await api('sets',{name:updated.alg_set});const result=await api('case',updated);current={...updated,id:result.id};dirty=false;set=updated.alg_set;category='';$('status').textContent='Saved to your library.';await load();$('detail').close();}catch(error){$('status').textContent=error.message;}};
+function closeCase(){if(!dirty||confirm('Discard unsaved changes?')){$('detail').close();dirty=false;}}
+$('close').onclick=closeCase;$('detail').addEventListener('cancel',e=>{e.preventDefault();closeCase()});window.addEventListener('beforeunload',e=>{if(dirty){e.preventDefault();e.returnValue='';}});
+$('sets').onchange=()=>{set=$('sets').value;category='';render()};$('search').oninput=render;$('progress-filter').onchange=render;$('recognition-only').onchange=render;$('new-case').onclick=()=>openCase(null);
+$('add-set').onclick=async()=>{const name=prompt('Name your algorithm set (e.g. OLL, PLL, ZBLL)');if(!name?.trim())return;try{await api('sets',{name:name.trim()});set=name.trim();category='';await load();}catch(e){alert(e.message)}};
+for(const value of ['#ffff00','#ffffff','#ff0000','#ff9900','#00ff00','#0000ff','#aab2a7']){const b=document.createElement('button');b.type='button';b.className='swatch'+(value===color?' selected':'');b.style.backgroundColor=value;b.setAttribute('aria-label',({'#ffff00':'Yellow','#ffffff':'White','#ff0000':'Red','#ff9900':'Orange','#00ff00':'Green','#0000ff':'Blue','#aab2a7':'Gray'})[value]);b.onclick=()=>{color=value;document.querySelectorAll('.swatch').forEach(s=>s.classList.remove('selected'));b.classList.add('selected')};$('palette').append(b);}
+for(const tool of ['paint','highlight'])$(tool).onclick=()=>{mode=tool;for(const t of ['paint','highlight'])$(t).setAttribute('aria-pressed',String(t===tool))};
+$('rotate-layer').onclick=()=>{
+  const rotated={...drawing};
+  for(const source of lastLayer){
+    const target=lastLayer.find(sticker=>sticker.x===6-source.y&&sticker.y===source.x);
+    rotated[target.key]={...(drawing[source.key]||{color:source.color,highlight:false})};
+  }
+  drawing=rotated;dirty=true;net($('cube'),drawing);
+};
+$('reset').onclick=async()=>{
+  if(!confirm('Reset colors to the original case state and remove highlights?'))return;
+  const opened=current;
+  try{const base=await caseDrawing(current.image);if(current!==opened||!$('detail').open)return;drawing=structuredClone(base);dirty=true;net($('cube'),drawing);}
+  catch(error){$('status').textContent=error.message;}
+};
+$('copy').onclick=async()=>{try{const {setup}=await api('inverse',{algorithm:$('algorithm').value});if(!setup)throw Error('Enter an algorithm first.');await navigator.clipboard.writeText(setup);$('status').textContent='Setup copied.';}catch(e){$('status').textContent=e.message}};
+load().catch(e=>{$('grid').textContent='Could not load the library: '+e.message});

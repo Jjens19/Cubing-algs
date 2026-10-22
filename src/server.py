@@ -1,0 +1,198 @@
+import argparse
+import json
+import math
+import re
+import sqlite3
+import webbrowser
+from http.server import BaseHTTPRequestHandler, HTTPServer
+from pathlib import Path
+from urllib.parse import urlparse, unquote
+
+ROOT = Path(__file__).resolve().parent.parent
+DB = ROOT / 'data' / 'library.sqlite3'
+MOVE = re.compile(r"(?:[URFDLB]w?|[urfdlbMESxyz])(?:2'?|')?")
+
+
+def y_to_u(algorithm):
+    replacements = {'y': 'U', "y'": "U'", 'y2': 'U2', "y2'": 'U2'}
+    return re.sub(r"\((y(?:2'?|')?)\)|(?<!\w)(y(?:2'?|')?)(?![\w'])",
+                  lambda match: replacements[match[1] or match[2]], algorithm)
+
+
+def inverse(algorithm):
+    """Invert ordinary move notation; reject ambiguous shorthand."""
+    text = algorithm.replace('’', "'").strip()
+    tokens = text.split()
+    if any(not MOVE.fullmatch(token) for token in tokens):
+        raise ValueError("Use space-separated moves such as R U R' U', M2, Rw or y. Expand parentheses, commutators and repetitions first.")
+    return ' '.join(t[0:-1] if t.endswith("2'") else t if t.endswith('2') else t[:-1] if t.endswith("'") else t + "'" for t in reversed(tokens))
+
+
+def connect():
+    db = sqlite3.connect(DB)
+    db.row_factory = sqlite3.Row
+    return db
+
+
+def initialize():
+    DB.parent.mkdir(parents=True, exist_ok=True)
+    with connect() as db:
+        db.execute('CREATE TABLE IF NOT EXISTS sets (name TEXT PRIMARY KEY)')
+        db.execute('CREATE TABLE IF NOT EXISTS cases (id INTEGER PRIMARY KEY, name TEXT NOT NULL, alg_set TEXT NOT NULL, category TEXT NOT NULL DEFAULT "", algorithm TEXT NOT NULL DEFAULT "", description TEXT NOT NULL DEFAULT "", recognition TEXT NOT NULL DEFAULT "", image TEXT NOT NULL DEFAULT "", drawing TEXT NOT NULL DEFAULT "{}")')
+        db.execute('INSERT OR IGNORE INTO sets VALUES (?)', ('ELL',))
+        if 'learned' not in {row['name'] for row in db.execute('PRAGMA table_info(cases)')}:
+            db.execute('ALTER TABLE cases ADD COLUMN learned INTEGER NOT NULL DEFAULT 0 CHECK (learned IN (0, 1))')
+        if 'learning' not in {row['name'] for row in db.execute('PRAGMA table_info(cases)')}:
+            db.execute('ALTER TABLE cases ADD COLUMN learning INTEGER NOT NULL DEFAULT 0 CHECK (learning IN (0, 1))')
+        # Only seed once; later startup must not overwrite the user’s library.
+        if not db.execute('SELECT 1 FROM cases LIMIT 1').fetchone():
+            for path in sorted((ROOT / 'ELL').glob('*.png')):
+                name = path.stem.removeprefix('ell-')
+                category = 'EPLL' if name.startswith('epll') else name[0]
+                db.execute('INSERT INTO cases(name, alg_set, category, image) VALUES (?, ?, ?, ?)', (name.upper(), 'ELL', category, '/ELL/' + path.name))
+        # Apply the bundled website import once to both existing and new libraries.
+        # Tracking the migration also lets users clear an algorithm afterwards.
+        db.execute('CREATE TABLE IF NOT EXISTS migrations (name TEXT PRIMARY KEY)')
+        migration = 'sarah-ell-algorithms-v1'
+        if not db.execute('SELECT 1 FROM migrations WHERE name=?', (migration,)).fetchone():
+            bundled = json.loads((ROOT / 'src' / 'ell_algorithms.json').read_text())
+            for filename, case in bundled['cases'].items():
+                db.execute("UPDATE cases SET algorithm=? WHERE alg_set='ELL' AND image=? AND trim(algorithm)=''",
+                           (case['algorithm'], '/ELL/' + filename))
+                if not case['algorithm']:
+                    db.execute("UPDATE cases SET description=? WHERE alg_set='ELL' AND image=? AND trim(description)=''",
+                               ('Solved / ELL skip: no moves are needed.', '/ELL/' + filename))
+            db.execute('INSERT INTO migrations VALUES (?)', (migration,))
+        migration = 'algorithm-y-to-u-v1'
+        if not db.execute('SELECT 1 FROM migrations WHERE name=?', (migration,)).fetchone():
+            for row in db.execute('SELECT id, algorithm FROM cases').fetchall():
+                converted = y_to_u(row['algorithm'])
+                if converted != row['algorithm']:
+                    db.execute('UPDATE cases SET algorithm=? WHERE id=?', (converted, row['id']))
+            db.execute('INSERT INTO migrations VALUES (?)', (migration,))
+
+
+class Handler(BaseHTTPRequestHandler):
+    def send(self, status, body, content_type='application/json'):
+        if not isinstance(body, bytes):
+            body = json.dumps(body).encode()
+        self.send_response(status)
+        self.send_header('Content-Type', content_type)
+        self.send_header('Content-Length', str(len(body)))
+        self.send_header('X-Content-Type-Options', 'nosniff')
+        self.send_header('Cache-Control', 'no-store')
+        self.end_headers()
+        self.wfile.write(body)
+
+    def do_GET(self):
+        path = unquote(urlparse(self.path).path)
+        if path == '/api/library':
+            with connect() as db:
+                return self.send(200, {'progress_states': ['not-learned', 'learning', 'learned'], 'sets': [r[0] for r in db.execute('SELECT name FROM sets ORDER BY name')], 'cases': [dict(r) for r in db.execute('SELECT * FROM cases ORDER BY id')]})
+        if path == '/api/export':
+            with connect() as db:
+                return self.send(200, {'sets': [r[0] for r in db.execute('SELECT name FROM sets')], 'cases': [dict(r) for r in db.execute('SELECT * FROM cases')]})
+        base = ROOT / 'ELL' if path.startswith('/ELL/') else ROOT / 'src' / 'static'
+        relative = path[5:] if path.startswith('/ELL/') else ('index.html' if path == '/' else path.lstrip('/'))
+        file = (base / relative).resolve()
+        if not file.is_relative_to(base.resolve()) or not file.is_file():
+            return self.send(404, {'error': 'Not found'})
+        mime = {'.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8', '.png': 'image/png'}.get(file.suffix, 'application/octet-stream')
+        self.send(200, file.read_bytes(), mime)
+
+    def do_POST(self):
+        # A local browser app: reject cross-origin mutation requests.
+        origin = self.headers.get('Origin')
+        if origin and origin != 'http://' + self.headers.get('Host', ''):
+            return self.send(403, {'error': 'Origin rejected'})
+        try:
+            size = int(self.headers.get('Content-Length', 0))
+            if not 0 < size <= 1_000_000:
+                raise ValueError('Invalid request size')
+            data = json.loads(self.rfile.read(size))
+            path = urlparse(self.path).path
+            if path == '/api/inverse':
+                return self.send(200, {'setup': inverse(data['algorithm'])})
+            if path == '/api/progress':
+                state = data.get('state')
+                if state is not None and state not in ('not-learned', 'learning', 'learned'):
+                    raise ValueError('Unknown progress state')
+                learned = int(state == 'learned') if state else data.get('learned')
+                if type(learned) not in (bool, int) or learned not in (0, 1):
+                    raise ValueError('Learned must be true or false')
+                with connect() as db:
+                    learning = int(state == 'learning')
+                    result = db.execute('UPDATE cases SET learned=?, learning=? WHERE id=?', (int(learned), learning, data['id']))
+                    if not result.rowcount:
+                        return self.send(404, {'error': 'Case not found'})
+                return self.send(200, {'learned': int(learned), 'learning': learning})
+            if path == '/api/practice-result':
+                elapsed = data.get('elapsed_ms')
+                if type(elapsed) not in (int, float) or not math.isfinite(elapsed) or elapsed < 0:
+                    raise ValueError('Invalid solve time')
+                with connect() as db:
+                    if not db.execute('SELECT 1 FROM cases WHERE id=?', (data['id'],)).fetchone():
+                        return self.send(404, {'error': 'Case not found'})
+                    result = db.execute('UPDATE cases SET learned=1, learning=0 WHERE id=? AND learning=1 AND ? < 3000', (data['id'], elapsed))
+                    promoted = bool(result.rowcount)
+                return self.send(200, {'promoted': promoted})
+            if path == '/api/sets':
+                name = data['name'].strip()
+                if not name:
+                    raise ValueError('Enter a set name')
+                with connect() as db:
+                    db.execute('INSERT OR IGNORE INTO sets VALUES (?)', (name,))
+                return self.send(200, {'ok': True})
+            if path == '/api/case':
+                fields = ['name', 'alg_set', 'category', 'algorithm', 'description', 'recognition', 'image', 'drawing']
+                values = [data.get(k, '') for k in fields]
+                if not all(isinstance(v, str) for v in values):
+                    raise ValueError('Case fields must be text')
+                learned = data.get('learned', 0)
+                if type(learned) not in (bool, int) or learned not in (0, 1):
+                    raise ValueError('Learned must be true or false')
+                # An older client editing other details must not clear progress.
+                if 'learned' in data or not data.get('id'):
+                    fields.append('learned')
+                    values.append(int(learned))
+                if 'learning' in data or 'learned' in data or not data.get('id'):
+                    learning = data.get('learning', 0)
+                    if type(learning) not in (bool, int) or learning not in (0, 1) or (learning and learned):
+                        raise ValueError('Invalid learning state')
+                    fields.append('learning')
+                    values.append(int(learning))
+                if not values[0].strip() or not values[1].strip():
+                    raise ValueError('Name and set are required')
+                json.loads(data.get('drawing') or '{}')
+                with connect() as db:
+                    if not db.execute('SELECT 1 FROM sets WHERE name=?', (data['alg_set'],)).fetchone():
+                        raise ValueError('Unknown algorithm set')
+                    if data.get('id'):
+                        db.execute('UPDATE cases SET ' + ','.join(f'{f}=?' for f in fields) + ' WHERE id=?', values + [data['id']])
+                        case_id = data['id']
+                    else:
+                        cur = db.execute('INSERT INTO cases (' + ','.join(fields) + ') VALUES (' + ','.join('?' for _ in fields) + ')', values)
+                        case_id = cur.lastrowid
+                return self.send(200, {'id': case_id})
+            return self.send(404, {'error': 'Not found'})
+        except (ValueError, KeyError, TypeError, sqlite3.Error) as exc:
+            self.send(400, {'error': str(exc)})
+
+
+def main():
+    parser = argparse.ArgumentParser(description='Your local Rubik’s cube algorithm library')
+    parser.add_argument('--port', type=int, default=8765)
+    parser.add_argument('--no-browser', action='store_true')
+    args = parser.parse_args()
+    initialize()
+    server = HTTPServer(('127.0.0.1', args.port), Handler)
+    url = f'http://127.0.0.1:{server.server_port}'
+    print(f'Cube Library running at {url}. Press Ctrl+C to stop.', flush=True)
+    if not args.no_browser:
+        webbrowser.open(url)
+    try:
+        server.serve_forever()
+    except KeyboardInterrupt:
+        pass
+    finally:
+        server.server_close()
