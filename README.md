@@ -4,6 +4,22 @@ This project is just a little thing for fun. It will be mostly vibe-coded.
 
 A local Python Rubik’s cube algorithm database with a browser interface. Requires Python **3.10 or newer**. The library works without extra packages; alternate practice scrambles require `kociemba` from `requirements.txt`.
 
+## Screenshots
+
+**Algorithm library** — Browse sets and nested categories, filter cases, and track your learning progress.
+
+![Algorithm library showing categorized ELL cases and Not learned, Learning, and Learned states](docs/screenshots/library.png)
+
+**Case editor** — Edit algorithms and setup scrambles, draw recognition patterns, and add your own notes.
+
+![Case editor with the solution algorithm, category path, and editable last-layer recognition drawing](docs/screenshots/case-editor.png)
+
+**Practicer** — Train with randomized case scrambles, a keyboard timer, and a DNF button for incorrect solves.
+
+![Algorithm practicer displaying a setup scramble, timer, and DNF button](docs/screenshots/practicer.png)
+
+## Running the app
+
 Run from this folder:
 
 ```bash
