@@ -31,6 +31,7 @@ class CLLTests(unittest.TestCase):
                 image = server.ROOT / 'src/static' / case['image'].lstrip('/')
                 svg = ET.parse(image).getroot()
                 self.assertEqual(svg.get('viewBox'), '0 0 420 420')
+                self.assertEqual((svg.get('width'), svg.get('height')), ('420', '420'))
                 self.assertTrue(all(e.tag.split('}')[-1] in ('svg', 'path') for e in svg.iter()))
 
     def test_import_is_idempotent_and_preserves_edits(self):
@@ -44,7 +45,7 @@ class CLLTests(unittest.TestCase):
                     db.execute("UPDATE cases SET algorithm='R U', learned=1 WHERE alg_set='CLL' AND name='U1'")
                 server.initialize()
                 with server.connect() as db:
-                    self.assertEqual(db.execute('SELECT count(*) FROM cases').fetchone()[0], 72)
+                    self.assertEqual(db.execute('SELECT count(*) FROM cases').fetchone()[0], 204)
                     self.assertEqual(tuple(db.execute("SELECT algorithm, learned FROM cases WHERE alg_set='CLL' AND name='U1'").fetchone()), ('R U', 1))
             finally:
                 server.DB = previous

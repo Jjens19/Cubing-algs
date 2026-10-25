@@ -11,7 +11,7 @@ from src.scrambler import generate as generate_practice_scramble
 
 ROOT = Path(__file__).resolve().parent.parent
 DB = ROOT / 'data' / 'library.sqlite3'
-MOVE = re.compile(r"(?:[URFDLB]w?|[urfdlbMESxyz])(?:2'?|')?")
+MOVE = re.compile(r"(?:[URFDLB]w?|[urfdlbMESxyz])(?:[23]'?|')?")
 
 
 def y_to_u(algorithm):
@@ -25,8 +25,14 @@ def inverse(algorithm):
     text = algorithm.replace('’', "'").strip()
     tokens = text.split()
     if any(not MOVE.fullmatch(token) for token in tokens):
-        raise ValueError("Use space-separated moves such as R U R' U', M2, Rw or y. Expand parentheses, commutators and repetitions first.")
-    return ' '.join(t[0:-1] if t.endswith("2'") else t if t.endswith('2') else t[:-1] if t.endswith("'") else t + "'" for t in reversed(tokens))
+        raise ValueError("Use space-separated moves such as R U R' U', M2, R3, Rw or y. Expand parentheses, commutators and repetitions first.")
+    def inverted_move(token):
+        if token.endswith("3'"):
+            return token[:-2] + "'"
+        if token.endswith('3'):
+            return token[:-1]
+        return token[:-1] if token.endswith("2'") else token if token.endswith('2') else token[:-1] if token.endswith("'") else token + "'"
+    return ' '.join(inverted_move(token) for token in reversed(tokens))
 
 
 def connect():
@@ -40,20 +46,26 @@ def initialize():
     with connect() as db:
         db.execute('CREATE TABLE IF NOT EXISTS sets (name TEXT PRIMARY KEY)')
         db.execute('CREATE TABLE IF NOT EXISTS cases (id INTEGER PRIMARY KEY, name TEXT NOT NULL, alg_set TEXT NOT NULL, category TEXT NOT NULL DEFAULT "", algorithm TEXT NOT NULL DEFAULT "", description TEXT NOT NULL DEFAULT "", recognition TEXT NOT NULL DEFAULT "", image TEXT NOT NULL DEFAULT "", drawing TEXT NOT NULL DEFAULT "{}")')
-        db.execute('INSERT OR IGNORE INTO sets VALUES (?)', ('ELL',))
+        db.executemany('INSERT OR IGNORE INTO sets VALUES (?)', [(name,) for name in ('ELL', 'OLL', 'PLL', 'WV', 'SV')])
         if 'learned' not in {row['name'] for row in db.execute('PRAGMA table_info(cases)')}:
             db.execute('ALTER TABLE cases ADD COLUMN learned INTEGER NOT NULL DEFAULT 0 CHECK (learned IN (0, 1))')
         if 'learning' not in {row['name'] for row in db.execute('PRAGMA table_info(cases)')}:
             db.execute('ALTER TABLE cases ADD COLUMN learning INTEGER NOT NULL DEFAULT 0 CHECK (learning IN (0, 1))')
         # Only seed once; later startup must not overwrite the user’s library.
         if not db.execute('SELECT 1 FROM cases LIMIT 1').fetchone():
-            for path in sorted((ROOT / 'ELL').glob('*.png')):
+            for path in sorted((ROOT / 'ELL').glob('*.svg')):
                 name = path.stem.removeprefix('ell-')
                 category = 'EPLL' if name.startswith('epll') else name[0]
                 db.execute('INSERT INTO cases(name, alg_set, category, image) VALUES (?, ?, ?, ?)', (name.upper(), 'ELL', category, '/ELL/' + path.name))
         # Apply the bundled website import once to both existing and new libraries.
         # Tracking the migration also lets users clear an algorithm afterwards.
         db.execute('CREATE TABLE IF NOT EXISTS migrations (name TEXT PRIMARY KEY)')
+        migration = 'ell-vector-images-v1'
+        if not db.execute('SELECT 1 FROM migrations WHERE name=?', (migration,)).fetchone():
+            for filename in json.loads((ROOT / 'src/ell_stickers.json').read_text()):
+                old_image = '/ELL/' + Path(filename).with_suffix('.png').name
+                db.execute('UPDATE cases SET image=? WHERE image=?', ('/ELL/' + filename, old_image))
+            db.execute('INSERT INTO migrations VALUES (?)', (migration,))
         migration = 'sarah-ell-algorithms-v1'
         if not db.execute('SELECT 1 FROM migrations WHERE name=?', (migration,)).fetchone():
             bundled = json.loads((ROOT / 'src' / 'ell_algorithms.json').read_text())
@@ -86,6 +98,56 @@ def initialize():
                 converted = y_to_u(row['algorithm'])
                 if converted != row['algorithm']:
                     db.execute('UPDATE cases SET algorithm=? WHERE id=?', (converted, row['id']))
+            db.execute('INSERT INTO migrations VALUES (?)', (migration,))
+
+        migration = 'jperm-wv-oll-pll-v1'
+        if not db.execute('SELECT 1 FROM migrations WHERE name=?', (migration,)).fetchone():
+            bundled = json.loads((ROOT / 'src/jperm_algorithms.json').read_text())
+            for case in bundled['cases']:
+                db.execute('INSERT OR IGNORE INTO sets VALUES (?)', (case['alg_set'],))
+                if db.execute('SELECT 1 FROM cases WHERE alg_set=? AND (name=? OR image=?)',
+                              (case['alg_set'], case['name'], case['image'])).fetchone():
+                    continue
+                description = 'Source: ' + case['source']
+                if case['alg_set'] == 'WV':
+                    description += "\nWinter Variation: start with the top cross oriented and the final F2L pair ready for R U' R' insertion."
+                if case['alternatives']:
+                    description += '\n\nAlternative solutions from J Perm (as listed; may need a different setup or orientation):\n' + '\n'.join(case['alternatives'])
+                db.execute('INSERT INTO cases(name, alg_set, category, algorithm, description, image) VALUES (?, ?, ?, ?, ?, ?)',
+                           (case['name'], case['alg_set'], case['category'], case['algorithm'], description, case['image']))
+            db.execute('INSERT INTO migrations VALUES (?)', (migration,))
+
+        migration = 'speedcubedb-sv-v1'
+        if not db.execute('SELECT 1 FROM migrations WHERE name=?', (migration,)).fetchone():
+            bundled = json.loads((ROOT / 'src/sv_algorithms.json').read_text())
+            db.execute('INSERT OR IGNORE INTO sets VALUES (?)', ('SV',))
+            for case in bundled['cases']:
+                if db.execute("SELECT 1 FROM cases WHERE alg_set='SV' AND (name=? OR image=?)",
+                              (case['name'], case['image'])).fetchone():
+                    continue
+                description = 'Source: ' + case['source']
+                if case['name'] == 'SV7':
+                    description += '\nUses the second listed algorithm, as requested.'
+                if case['alternatives']:
+                    description += '\n\nAlternative solutions from SpeedCubeDB (as listed):\n' + '\n'.join(case['alternatives'])
+                db.execute('INSERT INTO cases(name, alg_set, category, algorithm, description, image) VALUES (?, ?, ?, ?, ?, ?)',
+                           (case['name'], 'SV', case['category'], case['algorithm'], description, case['image']))
+            db.execute('INSERT INTO migrations VALUES (?)', (migration,))
+
+        migration = 'speedcubedb-primary-algorithms-v1'
+        if not db.execute('SELECT 1 FROM migrations WHERE name=?', (migration,)).fetchone():
+            bundled = json.loads((ROOT / 'src/speedcubedb_overrides.json').read_text())
+            for case in bundled['cases']:
+                rows = db.execute('SELECT id, algorithm, description FROM cases WHERE alg_set=? AND (image=? OR name=?)',
+                                  (case['alg_set'], case['image'], case['name'])).fetchall()
+                for row in rows:
+                    note = f"\n\nMain algorithm: SpeedCubeDB {case['source_name']}\n{case['source']}"
+                    if row['algorithm'] != case['algorithm']:
+                        note += '\nPrevious main algorithm: ' + row['algorithm']
+                    if case['source_algorithms'][1:]:
+                        note += '\nOther SpeedCubeDB solutions (as listed):\n' + '\n'.join(case['source_algorithms'][1:])
+                    db.execute('UPDATE cases SET algorithm=?, description=? WHERE id=?',
+                               (case['algorithm'], row['description']+note, row['id']))
             db.execute('INSERT INTO migrations VALUES (?)', (migration,))
 
 

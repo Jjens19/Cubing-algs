@@ -4,7 +4,7 @@ import re
 
 FACES = 'URFDLB'
 SOLVED = ''.join(face * 9 for face in FACES)
-TOKEN = re.compile(r"([URFDLB]w?|[urfdlbMESxyz])(2'?|')?")
+TOKEN = re.compile(r"([URFDLB]w?|[urfdlbMESxyz])([23]'?|')?")
 
 
 def geometry():
@@ -56,7 +56,9 @@ class Cube:
                 axis, layer, sign = {'M': (0, 0, 1), 'E': (1, 0, 1), 'S': (2, 0, -1)}[move]
             else:
                 axis, layer, sign = 'xyz'.index(move), None, -1
-            turns = 2 if suffix and suffix.startswith('2') else -1 if suffix else 1
+            turns = int(suffix[0]) if suffix and suffix[0].isdigit() else 1
+            if suffix and suffix.endswith("'"):
+                turns = -turns
             for _ in range((sign * turns) % 4):
                 result = self.facelets.copy()
                 for index, (position, normal) in enumerate(GEOMETRY):

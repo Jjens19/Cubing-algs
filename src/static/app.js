@@ -10,7 +10,7 @@ const lastLayer = [
   ...Array.from({length:3},(_,i)=>({key:'L'+i,face:'L',index:i,x:1,y:i+2,color:'#ff0000'})),
   ...Array.from({length:3},(_,i)=>({key:'R'+(2-i),face:'R',index:2-i,x:5,y:i+2,color:'#ff9900'})),
 ];
-// Sample sticker centers in the reference PNG's last-layer top-view layout.
+// Sample sticker centers from either PNG or SVG last-layer diagrams.
 const caseDrawingCache=new Map();
 function caseDrawing(image){
   if(!image)return Promise.resolve({});
@@ -22,7 +22,7 @@ function caseDrawing(image){
           const canvas=document.createElement('canvas');
           canvas.width=img.naturalWidth;canvas.height=img.naturalHeight;
           const ctx=canvas.getContext('2d',{willReadFrequently:true});
-          ctx.drawImage(img,0,0);
+          ctx.drawImage(img,0,0,canvas.width,canvas.height);
           const centers=[.08,.27,.5,.73,.92];
           const stickers={};
           for(const {key,x,y} of lastLayer){
@@ -96,18 +96,46 @@ function renderCategories(all,categories){
   for(const value of categories.filter(path=>path&&!path.includes(' / ')))add(value,nav);
 }
 function withinCategory(value,parent){return !parent||value===parent||value.startsWith(parent+' / ');}
+const METHODS={
+  cfce:{name:'CFCE',sets:['CLL','ELL'],summary:'Cross → F2L → CLL → ELL',description:'Cross, First two layers, Corners, Edges. Choose a last-layer algorithm set.'},
+  cfop:{name:'CFOP',sets:['OLL','PLL'],summary:'Cross → F2L → OLL → PLL',description:'Cross, First two layers, Orientation, Permutation. Choose a last-layer algorithm set.'},
+};
+const ADVANCED_SETS=['WV','SV'];
+const SUBSET_NAMES={WV:'Winter Variation',SV:'Summer Variation',CLL:'Corners of the Last Layer',ELL:'Edges of the Last Layer',OLL:'Orientation of the Last Layer',PLL:'Permutation of the Last Layer'};
 function navigateSet(name){location.hash='/sets/'+encodeURIComponent(name);}
+function navigationDiagram(subset){
+  const drawing={};
+  for(const sticker of lastLayer){
+    const corner=sticker.face==='U'?[0,2,6,8].includes(sticker.index):sticker.index!==1;
+    const emphasized=subset==='OLL'?sticker.face==='U':subset==='PLL'?true:subset==='CLL'?corner:!corner;
+    drawing[sticker.key]={color:emphasized?sticker.color:'#cbd2c8',highlight:false};
+  }
+  const diagram=document.createElement('div');diagram.className='mini-net';
+  net(diagram,drawing,true);
+  diagram.querySelector('svg').setAttribute('aria-label',subset==='OLL'?'Top face orientation':subset==='PLL'?'Oriented last layer with side sticker permutation':subset==='CLL'?'Top view with last-layer corners emphasized':'Top view with last-layer edges emphasized');
+  return diagram;
+}
 function navigationCard(title,description,sets,onClick){
   const button=document.createElement('button');button.className='navigation-card';
   const heading=document.createElement('h2');heading.textContent=title;
   const text=document.createElement('p');text.textContent=description;
   const cases=library.cases.filter(c=>sets.includes(c.alg_set));
   const count=document.createElement('span');count.textContent=`${cases.filter(c=>c.learned).length} / ${cases.length} algs learned`;
+  if(['CFCE','CFOP','CLL','ELL','OLL','PLL'].includes(title)){
+    const picture=document.createElement('div');picture.className='navigation-picture';
+    if(title==='CFCE'||title==='CFOP'){
+      const arrow=document.createElement('span');arrow.className='diagram-arrow';arrow.textContent='→';arrow.setAttribute('aria-hidden','true');
+      picture.append(navigationDiagram(title==='CFCE'?'CLL':'OLL'),arrow,navigationDiagram(title==='CFCE'?'ELL':'PLL'));
+    }else picture.append(navigationDiagram(title));
+    button.append(picture);
+  }
   button.append(heading,text,count);button.onclick=onClick;return button;
 }
 function renderNavigation(){
   const route=location.hash.slice(1)||'/';
-  const isMethod=route==='/methods/cfce';
+  const method=route.startsWith('/methods/')?METHODS[route.slice(9)]:null;
+  const isAdvanced=route==='/advanced';
+  const isMethod=!!method||isAdvanced;
   const isLibrary=route.startsWith('/sets/');
   if(isLibrary){
     let requested;try{requested=decodeURIComponent(route.slice(6));}catch{requested='';}
@@ -118,14 +146,26 @@ function renderNavigation(){
   $('library-view').hidden=!isLibrary;
   $('categories').hidden=!isLibrary;
   options($('sets'),library.sets,set);
-  $('library-back').href=['CLL','ELL'].includes(set)?'#/methods/cfce':'#/';
-  $('library-back').textContent=['CLL','ELL'].includes(set)?'← CFCE algorithm sets':'← Home';
-  $('method-cards').replaceChildren(navigationCard('CFCE','Cross → F2L → CLL → ELL',['CLL','ELL'],()=>{location.hash='/methods/cfce';}));
-  $('subset-cards').replaceChildren(...['CLL','ELL'].filter(name=>library.sets.includes(name)).map(name=>navigationCard(name,name==='CLL'?'Corners of the Last Layer':'Edges of the Last Layer',[name],()=>navigateSet(name))));
-  const custom=library.sets.filter(name=>!['CLL','ELL'].includes(name));
+  const parent=Object.entries(METHODS).find(([,method])=>method.sets.includes(set));
+  $('library-back').href=parent?'#/methods/'+parent[0]:ADVANCED_SETS.includes(set)?'#/advanced':'#/';
+  $('library-back').textContent=parent?'← '+parent[1].name+' algorithm sets':ADVANCED_SETS.includes(set)?'← Advanced subsets':'← Home';
+  $('method-cards').replaceChildren(...Object.entries(METHODS).map(([key,method])=>navigationCard(method.name,method.summary,method.sets,()=>{location.hash='/methods/'+key;})));
+  $('advanced-cards').replaceChildren(...ADVANCED_SETS.map(name=>navigationCard(name,SUBSET_NAMES[name],[name],()=>navigateSet(name))));
+  $('method-eyebrow').textContent=isAdvanced?'3×3 ALGORITHM SETS':'3×3 METHOD';
+  if(isAdvanced){
+    $('method-title').textContent='Advanced subsets';
+    $('method-description').textContent='Choose Winter Variation or Summer Variation.';
+    $('subset-cards').replaceChildren(...ADVANCED_SETS.map(name=>navigationCard(name,SUBSET_NAMES[name],[name],()=>navigateSet(name))));
+  }else if(method){
+    $('method-title').textContent=method.name;
+    $('method-description').textContent=method.description;
+    $('subset-cards').replaceChildren(...method.sets.map(name=>navigationCard(name,SUBSET_NAMES[name],[name],()=>navigateSet(name))));
+  }
+  const supported=[...Object.values(METHODS).flatMap(method=>method.sets),...ADVANCED_SETS];
+  const custom=library.sets.filter(name=>!supported.includes(name));
   $('custom-sets').hidden=!custom.length;
   $('custom-set-cards').replaceChildren(...custom.map(name=>navigationCard(name,'Your custom algorithm set',[name],()=>navigateSet(name))));
-  document.title=isLibrary?set+' · Cube Library':isMethod?'CFCE · Cube Library':'Cube Library';
+  document.title=isLibrary?set+' · Cube Library':isAdvanced?'Advanced subsets · Cube Library':isMethod?method.name+' · Cube Library':'Cube Library';
 }
 window.addEventListener('hashchange',()=>{category='';$('search').value='';$('progress-filter').value='all';render();});
 async function load(){library=await api('library');$('server-notice').hidden=!!library.progress_states?.includes('learning');$('server-notice').textContent=restartNotice;if(!library.sets.includes(set))set=library.sets[0];options($('sets'),library.sets,set);render();}

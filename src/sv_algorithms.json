@@ -1,0 +1,2853 @@
+{
+  "source": "https://speedcubedb.com/a/3x3/SV",
+  "cases": [
+    {
+      "name": "SV1",
+      "alg_set": "SV",
+      "source_number": 1,
+      "category": "3 Corners",
+      "algorithm": "U2 R' D' r U2 r' D R",
+      "source_algorithms": [
+        "U2 R' D' r U2 r' D R",
+        "L R U' R' U L' U2 R U' R'",
+        "U2 R U R' U2 L U' R U R' L'",
+        "R U R D R' U2 R D' R' U2 R'"
+      ],
+      "selected_algorithm": 1,
+      "alternatives": [
+        "L R U' R' U L' U2 R U' R'",
+        "U2 R U R' U2 L U' R U R' L'",
+        "R U R D R' U2 R D' R' U2 R'"
+      ],
+      "source_setup": "R U R' U2' L U' R U R' L'",
+      "source": "https://speedcubedb.com/a/3x3/SV",
+      "facelets": "UFUUUUUURDRRFRRURRFBFFFUFFBDDLDDDDDDRLLLLLLLLBRFBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ffffff",
+          "highlight": false
+        }
+      },
+      "image": "/cases/sv/1.svg"
+    },
+    {
+      "name": "SV2",
+      "alg_set": "SV",
+      "source_number": 2,
+      "category": "2 Corners",
+      "algorithm": "U2 R' D' R U R' D R U R U R'",
+      "source_algorithms": [
+        "U2 R' D' R U R' D R U R U R'",
+        "L' R U R' U L U R U2 L' U' L U2 R'",
+        "R U R' U2 R U R' U R U2 R'",
+        "R U R' U R' U2 R U R' U R"
+      ],
+      "selected_algorithm": 1,
+      "alternatives": [
+        "L' R U R' U L U R U2 L' U' L U2 R'",
+        "R U R' U2 R U R' U R U2 R'",
+        "R U R' U R' U2 R U R' U R"
+      ],
+      "source_setup": "R' U' R U' R' U2' R U' R U' R'",
+      "source": "https://speedcubedb.com/a/3x3/SV",
+      "facelets": "UFUUUUFURDRRFRRFRRLLFFFUFFRDDUDDDDDDLBULLLLLLBRBBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ffffff",
+          "highlight": false
+        }
+      },
+      "image": "/cases/sv/2.svg"
+    },
+    {
+      "name": "SV3",
+      "alg_set": "SV",
+      "source_number": 3,
+      "category": "2 Corners",
+      "algorithm": "R U R D R' U R D' R' U' R'",
+      "source_algorithms": [
+        "R U R D R' U R D' R' U' R'",
+        "U2 R L U' R' U' L' U' L U' L'",
+        "R U' R' U' R2 D R' U' R D' R2",
+        "M x D L U L' D' L R'"
+      ],
+      "selected_algorithm": 1,
+      "alternatives": [
+        "U2 R L U' R' U' L' U' L U' L'",
+        "R U' R' U' R2 D R' U' R D' R2",
+        "M x D L U L' D' L R'"
+      ],
+      "source_setup": "R U R D R' U' R D' R' U' R'",
+      "source": "https://speedcubedb.com/a/3x3/SV",
+      "facelets": "UFUUUURURDRFFRRFRRULFFFUFFUDDLDDDDDDLBBLLLLLLRRBBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ffffff",
+          "highlight": false
+        }
+      },
+      "image": "/cases/sv/3.svg"
+    },
+    {
+      "name": "SV4",
+      "alg_set": "SV",
+      "source_number": 4,
+      "category": "2 Corners",
+      "algorithm": "U2 L R U' R' U L'",
+      "source_algorithms": [
+        "U2 L R U' R' U L'",
+        "R' D' r U2 r' D R2 U R'"
+      ],
+      "selected_algorithm": 1,
+      "alternatives": [
+        "R' D' r U2 r' D R2 U R'"
+      ],
+      "source_setup": "L U' R U R' L' U2'",
+      "source": "https://speedcubedb.com/a/3x3/SV",
+      "facelets": "BFUUUUUURDLLRRRBRRRBFFFUFFLDDUDDDDDDRFFLLLLLLFRUBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ffffff",
+          "highlight": false
+        }
+      },
+      "image": "/cases/sv/4.svg"
+    },
+    {
+      "name": "SV5",
+      "alg_set": "SV",
+      "source_number": 5,
+      "category": "1 Corner",
+      "algorithm": "R U2 R' U' R' F R U R U' R' F'",
+      "source_algorithms": [
+        "R U2 R' U' R' F R U R U' R' F'",
+        "L' U2 L U L' U L R U2 R'",
+        "R U' L' U L U2 R' L' U L",
+        "U2 L U F2 r U2 r' U' L'"
+      ],
+      "selected_algorithm": 1,
+      "alternatives": [
+        "L' U2 L U L' U L R U2 R'",
+        "R U' L' U L U2 R' L' U L",
+        "U2 L U F2 r U2 r' U' L'"
+      ],
+      "source_setup": "L' U' L R U2' L' U' L U R'",
+      "source": "https://speedcubedb.com/a/3x3/SV",
+      "facelets": "FFUUUURURDRRFRRLRRFLFFFUFFUDDBDDDDDDLBULLLLLLBRUBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ffffff",
+          "highlight": false
+        }
+      },
+      "image": "/cases/sv/5.svg"
+    },
+    {
+      "name": "SV6",
+      "alg_set": "SV",
+      "source_number": 6,
+      "category": "1 Corner",
+      "algorithm": "R U' R' U' R U' R'",
+      "source_algorithms": [
+        "R U' R' U' R U' R'"
+      ],
+      "selected_algorithm": 1,
+      "alternatives": [],
+      "source_setup": "R U R' U R U R'",
+      "source": "https://speedcubedb.com/a/3x3/SV",
+      "facelets": "LFUUUUFURDLLFRRURRUBFFFUFFRDDBDDDDDDBRRLLLLLLFRUBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ffffff",
+          "highlight": false
+        }
+      },
+      "image": "/cases/sv/6.svg"
+    },
+    {
+      "name": "SV7",
+      "alg_set": "SV",
+      "source_number": 7,
+      "category": "2 Corners",
+      "algorithm": "R U R'",
+      "source_algorithms": [
+        "R U2 R' U R U' R' U R U' R' U R U' R' U R U' R' U R U' R' U R U' R' U R U' R' U R U' R' U R U' R' U",
+        "R U R'",
+        "R U' U' U' R'",
+        "B' D' B2 R' U' B U B2 R D R U R'"
+      ],
+      "selected_algorithm": 2,
+      "alternatives": [
+        "R U2 R' U R U' R' U R U' R' U R U' R' U R U' R' U R U' R' U R U' R' U R U' R' U R U' R' U R U' R' U",
+        "R U' U' U' R'",
+        "B' D' B2 R' U' B U B2 R D R U R'"
+      ],
+      "source_setup": "R U' R'",
+      "source": "https://speedcubedb.com/a/3x3/SV",
+      "facelets": "FFUUUUUURDRRFRRFRRLLFFFUFFUDDLDDDDDDUBBLLLLLLBRRBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ffffff",
+          "highlight": false
+        }
+      },
+      "image": "/cases/sv/7.svg"
+    },
+    {
+      "name": "SV8",
+      "alg_set": "SV",
+      "source_number": 8,
+      "category": "1 Corner",
+      "algorithm": "R U M' U R' U' r' F R F'",
+      "source_algorithms": [
+        "R U M' U R' U' r' F R F'",
+        "U2 M' F' U2 F M",
+        "R U2 R' U' L' U R U' R' L",
+        "R U2 R' U' r' F R F' M'"
+      ],
+      "selected_algorithm": 1,
+      "alternatives": [
+        "U2 M' F' U2 F M",
+        "R U2 R' U' L' U R U' R' L",
+        "R U2 R' U' r' F R F' M'"
+      ],
+      "source_setup": "L' R U R' U' L U R U2' R'",
+      "source": "https://speedcubedb.com/a/3x3/SV",
+      "facelets": "FFUUUUFURDRBFRRURRLLFFFUFFRDDBDDDDDDUBULLLLLLLRRBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ffffff",
+          "highlight": false
+        }
+      },
+      "image": "/cases/sv/8.svg"
+    },
+    {
+      "name": "SV9",
+      "alg_set": "SV",
+      "source_number": 9,
+      "category": "1 Corner",
+      "algorithm": "R U' R' L' U R U' R' L U' R U' R'",
+      "source_algorithms": [
+        "R U' R' L' U R U' R' L U' R U' R'",
+        "R U' R2 F R F' U' S' R U' R' S"
+      ],
+      "selected_algorithm": 1,
+      "alternatives": [
+        "R U' R2 F R F' U' S' R U' R' S"
+      ],
+      "source_setup": "R U R' U L' R U R' U' L R U R'",
+      "source": "https://speedcubedb.com/a/3x3/SV",
+      "facelets": "LFUUUURURDBBLRRFRRUFFFFUFFRDDUDDDDDDURBLLLLLLLRFBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ffffff",
+          "highlight": false
+        }
+      },
+      "image": "/cases/sv/9.svg"
+    },
+    {
+      "name": "SV10",
+      "alg_set": "SV",
+      "source_number": 10,
+      "category": "2 Corners",
+      "algorithm": "R U R' U' R U R' U R U2 R'",
+      "source_algorithms": [
+        "R U R' U' R U R' U R U2 R'",
+        "U2 R' D' R U' R' D R U' R U R'"
+      ],
+      "selected_algorithm": 1,
+      "alternatives": [
+        "U2 R' D' R U' R' D R U' R U R'"
+      ],
+      "source_setup": "R U2' R' U' R U' R' U R U' R'",
+      "source": "https://speedcubedb.com/a/3x3/SV",
+      "facelets": "UFRUUUUURDLUBRRBRRBFFFFUFFLDDUDDDDDDFRRLLLLLLFRLBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ffffff",
+          "highlight": false
+        }
+      },
+      "image": "/cases/sv/10.svg"
+    },
+    {
+      "name": "SV11",
+      "alg_set": "SV",
+      "source_number": 11,
+      "category": "1 Corner",
+      "algorithm": "M F R' F' r",
+      "source_algorithms": [
+        "M F R' F' r",
+        "L' R U R' U' L",
+        "R U2 R' U R U2 R'"
+      ],
+      "selected_algorithm": 1,
+      "alternatives": [
+        "L' R U R' U' L",
+        "R U2 R' U R U2 R'"
+      ],
+      "source_setup": "R U2' R' U' R U2' R'",
+      "source": "https://speedcubedb.com/a/3x3/SV",
+      "facelets": "UFFUUUBURDBURRRRRRRFFFFUFFUDDFDDDDDDLLULLLLLLLRBBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ffffff",
+          "highlight": false
+        }
+      },
+      "image": "/cases/sv/11.svg"
+    },
+    {
+      "name": "SV12",
+      "alg_set": "SV",
+      "source_number": 12,
+      "category": "1 Corner",
+      "algorithm": "R U2 R' U F' R U2 R' U2 R' F R",
+      "source_algorithms": [
+        "R U2 R' U F' R U2 R' U2 R' F R",
+        "R2 U R' U R' U' R2 U R' U' R U' R2",
+        "R U R' U R U2 R2 U' R2 U' R2 U2 R"
+      ],
+      "selected_algorithm": 1,
+      "alternatives": [
+        "R2 U R' U R' U' R2 U R' U' R U' R2",
+        "R U R' U R U2 R2 U' R2 U' R2 U2 R"
+      ],
+      "source_setup": "R2' U R' U R U' R2' U R U' R U' R2'",
+      "source": "https://speedcubedb.com/a/3x3/SV",
+      "facelets": "UFLUUULURDFUBRRURRULFFFUFFRDDBDDDDDDRRFLLLLLLBRFBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ffffff",
+          "highlight": false
+        }
+      },
+      "image": "/cases/sv/12.svg"
+    },
+    {
+      "name": "SV13",
+      "alg_set": "SV",
+      "source_number": 13,
+      "category": "1 Corner",
+      "algorithm": "U L' R U R' U R U' R' U2 L",
+      "source_algorithms": [
+        "U L' R U R' U R U' R' U2 L",
+        "R U2 R2 D' R U R' D R2 U2 R'",
+        "R U' R' U' R U' R' U' R U R' U R U2 R'"
+      ],
+      "selected_algorithm": 1,
+      "alternatives": [
+        "R U2 R2 D' R U R' D R2 U2 R'",
+        "R U' R' U' R U' R' U' R U R' U R U2 R'"
+      ],
+      "source_setup": "L' U2' R U R' U' R U' R' L U'",
+      "source": "https://speedcubedb.com/a/3x3/SV",
+      "facelets": "RFFUUUUURDRUBRRBRRLLFFFUFFUDDRDDDDDDFFBLLLLLLLRUBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ffffff",
+          "highlight": false
+        }
+      },
+      "image": "/cases/sv/13.svg"
+    },
+    {
+      "name": "SV14",
+      "alg_set": "SV",
+      "source_number": 14,
+      "category": "0 Corners",
+      "algorithm": "U2 L R U' R2 U L' U' R",
+      "source_algorithms": [
+        "U2 L R U' R2 U L' U' R",
+        "U2 L' R U R' U' L U2 R U R'"
+      ],
+      "selected_algorithm": 1,
+      "alternatives": [
+        "U2 L' R U R' U' L U2 R U R'"
+      ],
+      "source_setup": "R' U L U' R2' U R' L' U2'",
+      "source": "https://speedcubedb.com/a/3x3/SV",
+      "facelets": "LFBUUUFURDFUBRRURRLLFFFUFFFDDRDDDDDDBRULLLLLLRRUBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ffffff",
+          "highlight": false
+        }
+      },
+      "image": "/cases/sv/14.svg"
+    },
+    {
+      "name": "SV15",
+      "alg_set": "SV",
+      "source_number": 15,
+      "category": "0 Corners",
+      "algorithm": "R U2 R' U R U' R' U R U2 R'",
+      "source_algorithms": [
+        "R U2 R' U R U' R' U R U2 R'"
+      ],
+      "selected_algorithm": 1,
+      "alternatives": [],
+      "source_setup": "R U2' R' U' R U R' U' R U2' R'",
+      "source": "https://speedcubedb.com/a/3x3/SV",
+      "facelets": "RFBUUUBURDLUFRRLRRUBFFFUFFFDDUDDDDDDFRLLLLLLLRRUBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ffffff",
+          "highlight": false
+        }
+      },
+      "image": "/cases/sv/15.svg"
+    },
+    {
+      "name": "SV16",
+      "alg_set": "SV",
+      "source_number": 16,
+      "category": "1 Corner",
+      "algorithm": "R U' R D R' U2 R D' R2",
+      "source_algorithms": [
+        "R U' R D R' U2 R D' R2"
+      ],
+      "selected_algorithm": 1,
+      "alternatives": [],
+      "source_setup": "R2' D R' U2' R D' R' U R'",
+      "source": "https://speedcubedb.com/a/3x3/SV",
+      "facelets": "RFFUUUUURDRUFRRURRLLFFFUFFFDDRDDDDDDUBBLLLLLLLRBBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ffffff",
+          "highlight": false
+        }
+      },
+      "image": "/cases/sv/16.svg"
+    },
+    {
+      "name": "SV17",
+      "alg_set": "SV",
+      "source_number": 17,
+      "category": "0 Corners",
+      "algorithm": "R U R2 U2 R U R' U R",
+      "source_algorithms": [
+        "R U R2 U2 R U R' U R"
+      ],
+      "selected_algorithm": 1,
+      "alternatives": [],
+      "source_setup": "R' U' R U' R' U2' R2' U' R'",
+      "source": "https://speedcubedb.com/a/3x3/SV",
+      "facelets": "BFFUUURURDLURRRRRRFFFFFUFFBDDUDDDDDDUBULLLLLLLRLBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ffffff",
+          "highlight": false
+        }
+      },
+      "image": "/cases/sv/17.svg"
+    },
+    {
+      "name": "SV18",
+      "alg_set": "SV",
+      "source_number": 18,
+      "category": "0 Corners",
+      "algorithm": "R U2 R D R' U' R D' R2",
+      "source_algorithms": [
+        "R U2 R D R' U' R D' R2",
+        "R U2 R' U R' D' R U' R' D R2 U' R'"
+      ],
+      "selected_algorithm": 1,
+      "alternatives": [
+        "R U2 R' U R' D' R U' R' D R2 U' R'"
+      ],
+      "source_setup": "R2' D R' U R D' R' U2' R'",
+      "source": "https://speedcubedb.com/a/3x3/SV",
+      "facelets": "RFLUUUFURDRUFRRFRRULFFFUFFUDDLDDDDDDUBRLLLLLLBRBBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ffffff",
+          "highlight": false
+        }
+      },
+      "image": "/cases/sv/18.svg"
+    },
+    {
+      "name": "SV19",
+      "alg_set": "SV",
+      "source_number": 19,
+      "category": "2 Corners",
+      "algorithm": "R U R2 F' r U R U' r' F",
+      "source_algorithms": [
+        "R U R2 F' r U R U' r' F",
+        "R U L' U' L' U R' U' L U L",
+        "R U' R' F' R U2 R' U2 R' F R",
+        "R U2 R' U' R' F' R U2 R U2 R' F"
+      ],
+      "selected_algorithm": 1,
+      "alternatives": [
+        "R U L' U' L' U R' U' L U L",
+        "R U' R' F' R U2 R' U2 R' F R",
+        "R U2 R' U' R' F' R U2 R U2 R' F"
+      ],
+      "source_setup": "L' U' L' U R U' L U L U' R'",
+      "source": "https://speedcubedb.com/a/3x3/SV",
+      "facelets": "UFFUUUUURDRRFRRFRRBLFFFUFFUDDLDDDDDDLBRLLLLLLURBBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ffffff",
+          "highlight": false
+        }
+      },
+      "image": "/cases/sv/19.svg"
+    },
+    {
+      "name": "SV20",
+      "alg_set": "SV",
+      "source_number": 20,
+      "category": "1 Corner",
+      "algorithm": "R U' R' U' R U R' U' R U' R'",
+      "source_algorithms": [
+        "R U' R' U' R U R' U' R U' R'"
+      ],
+      "selected_algorithm": 1,
+      "alternatives": [],
+      "source_setup": "R U R' U R U' R' U R U R'",
+      "source": "https://speedcubedb.com/a/3x3/SV",
+      "facelets": "UFRUUULURDBBFRRURRBRFFFUFFLDDFDDDDDDRLULLLLLLURFBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ffffff",
+          "highlight": false
+        }
+      },
+      "image": "/cases/sv/20.svg"
+    },
+    {
+      "name": "SV21",
+      "alg_set": "SV",
+      "source_number": 21,
+      "category": "1 Corner",
+      "algorithm": "R U' R2 U' R2 U' R2 U2 R",
+      "source_algorithms": [
+        "R U' R2 U' R2 U' R2 U2 R"
+      ],
+      "selected_algorithm": 1,
+      "alternatives": [],
+      "source_setup": "R' U2' R2' U R2' U R2' U R'",
+      "source": "https://speedcubedb.com/a/3x3/SV",
+      "facelets": "UFLUUUFURDRFBRRRRRUFFFFUFFBDDUDDDDDDLLRLLLLLLURBBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ffffff",
+          "highlight": false
+        }
+      },
+      "image": "/cases/sv/21.svg"
+    },
+    {
+      "name": "SV22",
+      "alg_set": "SV",
+      "source_number": 22,
+      "category": "1 Corner",
+      "algorithm": "R U R2 U' R U' R' U2 R",
+      "source_algorithms": [
+        "R U R2 U' R U' R' U2 R"
+      ],
+      "selected_algorithm": 1,
+      "alternatives": [],
+      "source_setup": "R' U2' R U R' U R2' U' R'",
+      "source": "https://speedcubedb.com/a/3x3/SV",
+      "facelets": "LFLUUUUURDFFLRRURRRRFFFUFFRDDBDDDDDDBBFLLLLLLURUBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ffffff",
+          "highlight": false
+        }
+      },
+      "image": "/cases/sv/22.svg"
+    },
+    {
+      "name": "SV23",
+      "alg_set": "SV",
+      "source_number": 23,
+      "category": "0 Corners",
+      "algorithm": "R U' R' U' R U' R2 U' R U' R' U2 R",
+      "source_algorithms": [
+        "R U' R' U' R U' R2 U' R U' R' U2 R",
+        "R U2 R' U R U2 R2 U2 R U R' U R"
+      ],
+      "selected_algorithm": 1,
+      "alternatives": [
+        "R U2 R' U R U2 R2 U2 R U R' U R"
+      ],
+      "source_setup": "R' U2' R U R' U R2' U R' U R U R'",
+      "source": "https://speedcubedb.com/a/3x3/SV",
+      "facelets": "RFRUUULURDRBLRRLRRBBFFFUFFFDDUDDDDDDFFULLLLLLURUBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ffffff",
+          "highlight": false
+        }
+      },
+      "image": "/cases/sv/23.svg"
+    },
+    {
+      "name": "SV24",
+      "alg_set": "SV",
+      "source_number": 24,
+      "category": "0 Corners",
+      "algorithm": "R U R' U R' U' R U' R' U2 R",
+      "source_algorithms": [
+        "R U R' U R' U' R U' R' U2 R"
+      ],
+      "selected_algorithm": 1,
+      "alternatives": [],
+      "source_setup": "R' U2' R U R' U R U' R U' R'",
+      "source": "https://speedcubedb.com/a/3x3/SV",
+      "facelets": "BFBUUULURDLLRRRRRRUBFFFUFFUDDFDDDDDDRFFLLLLLLURUBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ffffff",
+          "highlight": false
+        }
+      },
+      "image": "/cases/sv/24.svg"
+    },
+    {
+      "name": "SV25",
+      "alg_set": "SV",
+      "source_number": 25,
+      "category": "1 Corner",
+      "algorithm": "R U R D' R U' R' D R U R",
+      "source_algorithms": [
+        "R U R D' R U' R' D R U R",
+        "R U2 R' U R U' R' U R U' R' U R U2 R'",
+        "R U' R' U' R U R' U' R U R' U' R U' R'",
+        "U' r' F R2 F' r U R' U R'"
+      ],
+      "selected_algorithm": 1,
+      "alternatives": [
+        "R U2 R' U R U' R' U R U' R' U R U2 R'",
+        "R U' R' U' R U R' U' R U R' U' R U' R'",
+        "U' r' F R2 F' r U R' U R'"
+      ],
+      "source_setup": "R' U' R' D' R U R' D R' U' R'",
+      "source": "https://speedcubedb.com/a/3x3/SV",
+      "facelets": "RFLUUUUURDRFFRRFRRLLFFFUFFRDDUDDDDDDUBBLLLLLLURBBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ffffff",
+          "highlight": false
+        }
+      },
+      "image": "/cases/sv/25.svg"
+    },
+    {
+      "name": "SV26",
+      "alg_set": "SV",
+      "source_number": 26,
+      "category": "0 Corners",
+      "algorithm": "U' R U R D R' U R D' R2",
+      "source_algorithms": [
+        "U' R U R D R' U R D' R2"
+      ],
+      "selected_algorithm": 1,
+      "alternatives": [],
+      "source_setup": "R2' D R' U' R D' R' U' R' U",
+      "source": "https://speedcubedb.com/a/3x3/SV",
+      "facelets": "RFFUUUFURDFRLRRLRRLRFFFUFFUDDBDDDDDDUBULLLLLLURBBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ffffff",
+          "highlight": false
+        }
+      },
+      "image": "/cases/sv/26.svg"
+    },
+    {
+      "name": "SV27",
+      "alg_set": "SV",
+      "source_number": 27,
+      "category": "0 Corners",
+      "algorithm": "R' U L U' R2 U R' L'",
+      "source_algorithms": [
+        "R' U L U' R2 U R' L'",
+        "R U R' U' R U2 R' U' R U' R'",
+        "R U R' U2 R' U' R U' R' U2 R"
+      ],
+      "selected_algorithm": 1,
+      "alternatives": [
+        "R U R' U' R U2 R' U' R U' R'",
+        "R U R' U2 R' U' R U' R' U2 R"
+      ],
+      "source_setup": "L R U' R2' U L' U' R",
+      "source": "https://speedcubedb.com/a/3x3/SV",
+      "facelets": "FFLUUURURDRFFRRURRULFFFUFFBDDLDDDDDDUBBLLLLLLURRBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ffffff",
+          "highlight": false
+        }
+      },
+      "image": "/cases/sv/27.svg"
+    }
+  ]
+}

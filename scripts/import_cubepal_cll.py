@@ -52,7 +52,7 @@ def build(page, sprite):
         assert symbol in (name, 'cll_' + name)
         assert algorithms
         paths, source_colors = expand(elements[symbol])
-        image = ET.Element(f'{{{SVG}}}svg', {'viewBox': '0 0 420 420'})
+        image = ET.Element(f'{{{SVG}}}svg', {'viewBox': '0 0 420 420', 'width': '420', 'height': '420'})
         for path in paths:
             path = copy.deepcopy(path)
             for key, value in COLORS.items():

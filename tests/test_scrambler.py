@@ -8,6 +8,23 @@ from src.scrambler import Cube, SOLVED, generate, invert
 
 
 class CubeTests(unittest.TestCase):
+    def test_triple_turns_preserve_notation_and_simulate_correctly(self):
+        for move in ['R', 'U', 'F', 'D', 'L', 'B', 'M', 'E', 'S', 'r', 'Rw', 'x', 'y', 'z']:
+            with self.subTest(move=move):
+                self.assertEqual(Cube().apply(move+'3').facelets, Cube().apply(move+"'").facelets)
+                self.assertEqual(Cube().apply(move+"3'").facelets, Cube().apply(move).facelets)
+                self.assertEqual(invert(move+'3'), move+"3'")
+                self.assertEqual(invert(move+"3'"), move+'3')
+
+    @unittest.skipUnless(importlib.util.find_spec('kociemba'), 'Install requirements.txt for scrambler tests')
+    def test_practice_output_has_no_triple_turns(self):
+        algorithm = "R U R3 U3"
+        scramble = generate(algorithm, random.Random(3))
+        self.assertNotIn('3', scramble)
+        target = Cube().apply(invert(algorithm))
+        expected = {Cube(''.join(target.facelets)).apply(auf).normalized() for auf in ['', 'U', "U'", 'U2']}
+        self.assertIn(Cube().apply(scramble).normalized(), expected)
+
     def test_turns_and_notation(self):
         for move in ['U', 'R', 'F', 'D', 'L', 'B', 'M', 'E', 'S', 'r', 'u', 'f', 'x', 'y', 'z']:
             with self.subTest(move=move):

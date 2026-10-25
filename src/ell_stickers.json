@@ -1,0 +1,2582 @@
+{
+  "ell-A1.svg": {
+    "U0": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U1": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "U2": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U3": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "U4": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U5": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U6": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U7": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U8": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "B2": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "B1": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "B0": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "F0": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "F1": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "F2": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "L0": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "L1": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "L2": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "R2": {
+      "color": "#ff8000",
+      "highlight": false
+    },
+    "R1": {
+      "color": "#ff8000",
+      "highlight": false
+    },
+    "R0": {
+      "color": "#ff8000",
+      "highlight": false
+    }
+  },
+  "ell-A10.svg": {
+    "U0": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U1": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "U2": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U3": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "U4": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U5": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U6": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U7": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U8": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "B2": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "B1": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "B0": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "F0": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "F1": {
+      "color": "#ff8000",
+      "highlight": false
+    },
+    "F2": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "L0": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "L1": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "L2": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "R2": {
+      "color": "#ff8000",
+      "highlight": false
+    },
+    "R1": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "R0": {
+      "color": "#ff8000",
+      "highlight": false
+    }
+  },
+  "ell-A11.svg": {
+    "U0": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U1": {
+      "color": "#ff8000",
+      "highlight": false
+    },
+    "U2": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U3": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "U4": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U5": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U6": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U7": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U8": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "B2": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "B1": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "B0": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "F0": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "F1": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "F2": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "L0": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "L1": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "L2": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "R2": {
+      "color": "#ff8000",
+      "highlight": false
+    },
+    "R1": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "R0": {
+      "color": "#ff8000",
+      "highlight": false
+    }
+  },
+  "ell-A12.svg": {
+    "U0": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U1": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "U2": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U3": {
+      "color": "#ff8000",
+      "highlight": false
+    },
+    "U4": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U5": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U6": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U7": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U8": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "B2": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "B1": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "B0": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "F0": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "F1": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "F2": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "L0": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "L1": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "L2": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "R2": {
+      "color": "#ff8000",
+      "highlight": false
+    },
+    "R1": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "R0": {
+      "color": "#ff8000",
+      "highlight": false
+    }
+  },
+  "ell-A2.svg": {
+    "U0": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U1": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "U2": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U3": {
+      "color": "#ff8000",
+      "highlight": false
+    },
+    "U4": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U5": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U6": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U7": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U8": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "B2": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "B1": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "B0": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "F0": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "F1": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "F2": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "L0": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "L1": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "L2": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "R2": {
+      "color": "#ff8000",
+      "highlight": false
+    },
+    "R1": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "R0": {
+      "color": "#ff8000",
+      "highlight": false
+    }
+  },
+  "ell-A3.svg": {
+    "U0": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U1": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "U2": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U3": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "U4": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U5": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U6": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U7": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U8": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "B2": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "B1": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "B0": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "F0": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "F1": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "F2": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "L0": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "L1": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "L2": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "R2": {
+      "color": "#ff8000",
+      "highlight": false
+    },
+    "R1": {
+      "color": "#ff8000",
+      "highlight": false
+    },
+    "R0": {
+      "color": "#ff8000",
+      "highlight": false
+    }
+  },
+  "ell-A4.svg": {
+    "U0": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U1": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "U2": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U3": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "U4": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U5": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U6": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U7": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U8": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "B2": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "B1": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "B0": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "F0": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "F1": {
+      "color": "#ff8000",
+      "highlight": false
+    },
+    "F2": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "L0": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "L1": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "L2": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "R2": {
+      "color": "#ff8000",
+      "highlight": false
+    },
+    "R1": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "R0": {
+      "color": "#ff8000",
+      "highlight": false
+    }
+  },
+  "ell-A5.svg": {
+    "U0": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U1": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "U2": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U3": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "U4": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U5": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U6": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U7": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U8": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "B2": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "B1": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "B0": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "F0": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "F1": {
+      "color": "#ff8000",
+      "highlight": false
+    },
+    "F2": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "L0": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "L1": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "L2": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "R2": {
+      "color": "#ff8000",
+      "highlight": false
+    },
+    "R1": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "R0": {
+      "color": "#ff8000",
+      "highlight": false
+    }
+  },
+  "ell-A6.svg": {
+    "U0": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U1": {
+      "color": "#ff8000",
+      "highlight": false
+    },
+    "U2": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U3": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "U4": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U5": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U6": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U7": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U8": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "B2": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "B1": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "B0": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "F0": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "F1": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "F2": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "L0": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "L1": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "L2": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "R2": {
+      "color": "#ff8000",
+      "highlight": false
+    },
+    "R1": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "R0": {
+      "color": "#ff8000",
+      "highlight": false
+    }
+  },
+  "ell-A7.svg": {
+    "U0": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U1": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "U2": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U3": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "U4": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U5": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U6": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U7": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U8": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "B2": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "B1": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "B0": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "F0": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "F1": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "F2": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "L0": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "L1": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "L2": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "R2": {
+      "color": "#ff8000",
+      "highlight": false
+    },
+    "R1": {
+      "color": "#ff8000",
+      "highlight": false
+    },
+    "R0": {
+      "color": "#ff8000",
+      "highlight": false
+    }
+  },
+  "ell-A8.svg": {
+    "U0": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U1": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "U2": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U3": {
+      "color": "#ff8000",
+      "highlight": false
+    },
+    "U4": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U5": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U6": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U7": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U8": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "B2": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "B1": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "B0": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "F0": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "F1": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "F2": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "L0": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "L1": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "L2": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "R2": {
+      "color": "#ff8000",
+      "highlight": false
+    },
+    "R1": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "R0": {
+      "color": "#ff8000",
+      "highlight": false
+    }
+  },
+  "ell-A9.svg": {
+    "U0": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U1": {
+      "color": "#ff8000",
+      "highlight": false
+    },
+    "U2": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U3": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "U4": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U5": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U6": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U7": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U8": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "B2": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "B1": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "B0": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "F0": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "F1": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "F2": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "L0": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "L1": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "L2": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "R2": {
+      "color": "#ff8000",
+      "highlight": false
+    },
+    "R1": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "R0": {
+      "color": "#ff8000",
+      "highlight": false
+    }
+  },
+  "ell-H1.svg": {
+    "U0": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U1": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "U2": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U3": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U4": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U5": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U6": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U7": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "U8": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "B2": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "B1": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "B0": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "F0": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "F1": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "F2": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "L0": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "L1": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "L2": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "R2": {
+      "color": "#ff8000",
+      "highlight": false
+    },
+    "R1": {
+      "color": "#ff8000",
+      "highlight": false
+    },
+    "R0": {
+      "color": "#ff8000",
+      "highlight": false
+    }
+  },
+  "ell-H2.svg": {
+    "U0": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U1": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "U2": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U3": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U4": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U5": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U6": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U7": {
+      "color": "#ff8000",
+      "highlight": false
+    },
+    "U8": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "B2": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "B1": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "B0": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "F0": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "F1": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "F2": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "L0": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "L1": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "L2": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "R2": {
+      "color": "#ff8000",
+      "highlight": false
+    },
+    "R1": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "R0": {
+      "color": "#ff8000",
+      "highlight": false
+    }
+  },
+  "ell-H3.svg": {
+    "U0": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U1": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "U2": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U3": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U4": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U5": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U6": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U7": {
+      "color": "#ff8000",
+      "highlight": false
+    },
+    "U8": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "B2": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "B1": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "B0": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "F0": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "F1": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "F2": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "L0": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "L1": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "L2": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "R2": {
+      "color": "#ff8000",
+      "highlight": false
+    },
+    "R1": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "R0": {
+      "color": "#ff8000",
+      "highlight": false
+    }
+  },
+  "ell-H4.svg": {
+    "U0": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U1": {
+      "color": "#ff8000",
+      "highlight": false
+    },
+    "U2": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U3": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U4": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U5": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U6": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U7": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "U8": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "B2": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "B1": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "B0": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "F0": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "F1": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "F2": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "L0": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "L1": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "L2": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "R2": {
+      "color": "#ff8000",
+      "highlight": false
+    },
+    "R1": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "R0": {
+      "color": "#ff8000",
+      "highlight": false
+    }
+  },
+  "ell-H5.svg": {
+    "U0": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U1": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "U2": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U3": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U4": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U5": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U6": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U7": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "U8": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "B2": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "B1": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "B0": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "F0": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "F1": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "F2": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "L0": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "L1": {
+      "color": "#ff8000",
+      "highlight": false
+    },
+    "L2": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "R2": {
+      "color": "#ff8000",
+      "highlight": false
+    },
+    "R1": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "R0": {
+      "color": "#ff8000",
+      "highlight": false
+    }
+  },
+  "ell-H6.svg": {
+    "U0": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U1": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "U2": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U3": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U4": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U5": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U6": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U7": {
+      "color": "#ff8000",
+      "highlight": false
+    },
+    "U8": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "B2": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "B1": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "B0": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "F0": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "F1": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "F2": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "L0": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "L1": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "L2": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "R2": {
+      "color": "#ff8000",
+      "highlight": false
+    },
+    "R1": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "R0": {
+      "color": "#ff8000",
+      "highlight": false
+    }
+  },
+  "ell-H7.svg": {
+    "U0": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U1": {
+      "color": "#ff8000",
+      "highlight": false
+    },
+    "U2": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U3": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U4": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U5": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U6": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U7": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "U8": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "B2": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "B1": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "B0": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "F0": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "F1": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "F2": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "L0": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "L1": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "L2": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "R2": {
+      "color": "#ff8000",
+      "highlight": false
+    },
+    "R1": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "R0": {
+      "color": "#ff8000",
+      "highlight": false
+    }
+  },
+  "ell-H8.svg": {
+    "U0": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U1": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "U2": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U3": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U4": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U5": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U6": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U7": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "U8": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "B2": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "B1": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "B0": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "F0": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "F1": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "F2": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "L0": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "L1": {
+      "color": "#ff8000",
+      "highlight": false
+    },
+    "L2": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "R2": {
+      "color": "#ff8000",
+      "highlight": false
+    },
+    "R1": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "R0": {
+      "color": "#ff8000",
+      "highlight": false
+    }
+  },
+  "ell-X1.svg": {
+    "U0": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U1": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "U2": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U3": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "U4": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U5": {
+      "color": "#ff8000",
+      "highlight": false
+    },
+    "U6": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U7": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "U8": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "B2": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "B1": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "B0": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "F0": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "F1": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "F2": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "L0": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "L1": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "L2": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "R2": {
+      "color": "#ff8000",
+      "highlight": false
+    },
+    "R1": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "R0": {
+      "color": "#ff8000",
+      "highlight": false
+    }
+  },
+  "ell-X2.svg": {
+    "U0": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U1": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "U2": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U3": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "U4": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U5": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "U6": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U7": {
+      "color": "#ff8000",
+      "highlight": false
+    },
+    "U8": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "B2": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "B1": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "B0": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "F0": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "F1": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "F2": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "L0": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "L1": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "L2": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "R2": {
+      "color": "#ff8000",
+      "highlight": false
+    },
+    "R1": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "R0": {
+      "color": "#ff8000",
+      "highlight": false
+    }
+  },
+  "ell-X3.svg": {
+    "U0": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U1": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "U2": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U3": {
+      "color": "#ff8000",
+      "highlight": false
+    },
+    "U4": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U5": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "U6": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U7": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "U8": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "B2": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "B1": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "B0": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "F0": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "F1": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "F2": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "L0": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "L1": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "L2": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "R2": {
+      "color": "#ff8000",
+      "highlight": false
+    },
+    "R1": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "R0": {
+      "color": "#ff8000",
+      "highlight": false
+    }
+  },
+  "ell-X4.svg": {
+    "U0": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U1": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "U2": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U3": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "U4": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U5": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "U6": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U7": {
+      "color": "#ff8000",
+      "highlight": false
+    },
+    "U8": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "B2": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "B1": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "B0": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "F0": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "F1": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "F2": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "L0": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "L1": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "L2": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "R2": {
+      "color": "#ff8000",
+      "highlight": false
+    },
+    "R1": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "R0": {
+      "color": "#ff8000",
+      "highlight": false
+    }
+  },
+  "ell-X5.svg": {
+    "U0": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U1": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "U2": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U3": {
+      "color": "#ff8000",
+      "highlight": false
+    },
+    "U4": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U5": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "U6": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U7": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "U8": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "B2": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "B1": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "B0": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "F0": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "F1": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "F2": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "L0": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "L1": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "L2": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "R2": {
+      "color": "#ff8000",
+      "highlight": false
+    },
+    "R1": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "R0": {
+      "color": "#ff8000",
+      "highlight": false
+    }
+  },
+  "ell-epll0.svg": {
+    "U0": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U1": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U2": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U3": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U4": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U5": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U6": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U7": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U8": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "B2": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "B1": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "B0": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "F0": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "F1": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "F2": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "L0": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "L1": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "L2": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "R2": {
+      "color": "#ff8000",
+      "highlight": false
+    },
+    "R1": {
+      "color": "#ff8000",
+      "highlight": false
+    },
+    "R0": {
+      "color": "#ff8000",
+      "highlight": false
+    }
+  },
+  "ell-epll1.svg": {
+    "U0": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U1": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U2": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U3": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U4": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U5": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U6": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U7": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U8": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "B2": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "B1": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "B0": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "F0": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "F1": {
+      "color": "#ff8000",
+      "highlight": false
+    },
+    "F2": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "L0": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "L1": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "L2": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "R2": {
+      "color": "#ff8000",
+      "highlight": false
+    },
+    "R1": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "R0": {
+      "color": "#ff8000",
+      "highlight": false
+    }
+  },
+  "ell-epll2.svg": {
+    "U0": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U1": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U2": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U3": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U4": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U5": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U6": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U7": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U8": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "B2": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "B1": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "B0": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "F0": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "F1": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "F2": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "L0": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "L1": {
+      "color": "#ff8000",
+      "highlight": false
+    },
+    "L2": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "R2": {
+      "color": "#ff8000",
+      "highlight": false
+    },
+    "R1": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "R0": {
+      "color": "#ff8000",
+      "highlight": false
+    }
+  },
+  "ell-epll3.svg": {
+    "U0": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U1": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U2": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U3": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U4": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U5": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U6": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U7": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U8": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "B2": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "B1": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "B0": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "F0": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "F1": {
+      "color": "#ff8000",
+      "highlight": false
+    },
+    "F2": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "L0": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "L1": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "L2": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "R2": {
+      "color": "#ff8000",
+      "highlight": false
+    },
+    "R1": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "R0": {
+      "color": "#ff8000",
+      "highlight": false
+    }
+  },
+  "ell-epll4.svg": {
+    "U0": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U1": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U2": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U3": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U4": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U5": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U6": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U7": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "U8": {
+      "color": "#ffff00",
+      "highlight": false
+    },
+    "B2": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "B1": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "B0": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "F0": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "F1": {
+      "color": "#0000ff",
+      "highlight": false
+    },
+    "F2": {
+      "color": "#00ff00",
+      "highlight": false
+    },
+    "L0": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "L1": {
+      "color": "#ff8000",
+      "highlight": false
+    },
+    "L2": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "R2": {
+      "color": "#ff8000",
+      "highlight": false
+    },
+    "R1": {
+      "color": "#ff0000",
+      "highlight": false
+    },
+    "R0": {
+      "color": "#ff8000",
+      "highlight": false
+    }
+  }
+}

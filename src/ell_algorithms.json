@@ -1,125 +1,155 @@
 {
   "source": "https://sarah.cubing.net/3x3x3/ell",
   "cases": {
-    "ell-epll0.png": {
+    "ell-epll0.svg": {
       "algorithm": "",
-      "source_algorithm": "Skip!"
+      "source_algorithm": "Skip!",
+      "source_image": "ell-epll0.png"
     },
-    "ell-epll1.png": {
+    "ell-epll1.svg": {
       "algorithm": "R U' R U R U R U' R' U' R2",
-      "source_algorithm": "R U' R U R U R U' R' U' R2"
+      "source_algorithm": "R U' R U R U R U' R' U' R2",
+      "source_image": "ell-epll1.png"
     },
-    "ell-epll2.png": {
+    "ell-epll2.svg": {
       "algorithm": "R2 U R U R' U' R' U' R' U R'",
-      "source_algorithm": "R2 U R U R' U' R' U' R' U R'"
+      "source_algorithm": "R2 U R U R' U' R' U' R' U R'",
+      "source_image": "ell-epll2.png"
     },
-    "ell-epll3.png": {
+    "ell-epll3.svg": {
       "algorithm": "M2 U M2 U M' U2 M2 U2 M'",
-      "source_algorithm": "M2 U M2 U M' U2 M2 U2 M'"
+      "source_algorithm": "M2 U M2 U M' U2 M2 U2 M'",
+      "source_image": "ell-epll3.png"
     },
-    "ell-epll4.png": {
+    "ell-epll4.svg": {
       "algorithm": "M2 U M2 U2 M2 U M2",
-      "source_algorithm": "M2 U M2 U2 M2 U M2"
+      "source_algorithm": "M2 U M2 U2 M2 U M2",
+      "source_image": "ell-epll4.png"
     },
-    "ell-A1.png": {
+    "ell-A1.svg": {
       "algorithm": "U' M2 U M U2 M' U M' U M' U2 M U M'",
-      "source_algorithm": "(y') M2 U M U2 M' U M' U M' U2 M U M'"
+      "source_algorithm": "(y') M2 U M U2 M' U M' U M' U2 M U M'",
+      "source_image": "ell-A1.png"
     },
-    "ell-A2.png": {
+    "ell-A2.svg": {
       "algorithm": "U r' U' R U M' U' R' U R",
-      "source_algorithm": "(y) r' U' R U M' U' R' U R"
+      "source_algorithm": "(y) r' U' R U M' U' R' U R",
+      "source_image": "ell-A2.png"
     },
-    "ell-A3.png": {
+    "ell-A3.svg": {
       "algorithm": "U M' U' M U2 M' U' M",
-      "source_algorithm": "(y) M' U' M U2 M' U' M"
+      "source_algorithm": "(y) M' U' M U2 M' U' M",
+      "source_image": "ell-A3.png"
     },
-    "ell-A4.png": {
+    "ell-A4.svg": {
       "algorithm": "M U M' U' M' U' M' U M' U M U' M2",
-      "source_algorithm": "M U M' U' M' U' M' U M' U M U' M2"
+      "source_algorithm": "M U M' U' M' U' M' U M' U M U' M2",
+      "source_image": "ell-A4.png"
     },
-    "ell-A5.png": {
+    "ell-A5.svg": {
       "algorithm": "U' M' U M2 U M U2 M' U M'",
-      "source_algorithm": "(y') M' U M2 U M U2 M' U M'"
+      "source_algorithm": "(y') M' U M2 U M U2 M' U M'",
+      "source_image": "ell-A5.png"
     },
-    "ell-A6.png": {
+    "ell-A6.svg": {
       "algorithm": "M' U M U2 M' U M",
-      "source_algorithm": "M' U M U2 M' U M"
+      "source_algorithm": "M' U M U2 M' U M",
+      "source_image": "ell-A6.png"
     },
-    "ell-A7.png": {
+    "ell-A7.svg": {
       "algorithm": "U2 r U R' U' M U R U' R'",
-      "source_algorithm": "(y2) r U R' U' M U R U' R'"
+      "source_algorithm": "(y2) r U R' U' M U R U' R'",
+      "source_image": "ell-A7.png"
     },
-    "ell-A8.png": {
+    "ell-A8.svg": {
       "algorithm": "U2 M' U' M2 U' M U2 M' U' M'",
-      "source_algorithm": "(y2) M' U' M2 U' M U2 M' U' M'"
+      "source_algorithm": "(y2) M' U' M2 U' M U2 M' U' M'",
+      "source_image": "ell-A8.png"
     },
-    "ell-A9.png": {
+    "ell-A9.svg": {
       "algorithm": "U' M U' M' U M' U M' U' M' U' M U M2",
-      "source_algorithm": "(y') M U' M' U M' U M' U' M' U' M U M2"
+      "source_algorithm": "(y') M U' M' U M' U M' U' M' U' M U M2",
+      "source_image": "ell-A9.png"
     },
-    "ell-A10.png": {
+    "ell-A10.svg": {
       "algorithm": "U2 F R U R' U' F2 L' U' L U F",
-      "source_algorithm": "(y2) F R U R' U' F2 L' U' L U F"
+      "source_algorithm": "(y2) F R U R' U' F2 L' U' L U F",
+      "source_image": "ell-A10.png"
     },
-    "ell-A11.png": {
+    "ell-A11.svg": {
       "algorithm": "M' U M U M' U2 M U' M' U' M",
-      "source_algorithm": "M' U M U M' U2 M U' M' U' M"
+      "source_algorithm": "M' U M U M' U2 M U' M' U' M",
+      "source_image": "ell-A11.png"
     },
-    "ell-A12.png": {
+    "ell-A12.svg": {
       "algorithm": "U' M' U M U M' U M U M' U M",
-      "source_algorithm": "(y') M' U M U M' U M U M' U M"
+      "source_algorithm": "(y') M' U M U M' U M U M' U M",
+      "source_image": "ell-A12.png"
     },
-    "ell-H1.png": {
+    "ell-H1.svg": {
       "algorithm": "M' U M' U M' U M' U2 M' U M' U M' U M'",
-      "source_algorithm": "M' U M' U M' U M' U2 M' U M' U M' U M'"
+      "source_algorithm": "M' U M' U M' U M' U2 M' U M' U M' U M'",
+      "source_image": "ell-H1.png"
     },
-    "ell-H2.png": {
+    "ell-H2.svg": {
       "algorithm": "R U R' U' M' U R U' r'",
-      "source_algorithm": "R U R' U' M' U R U' r'"
+      "source_algorithm": "R U R' U' M' U R U' r'",
+      "source_image": "ell-H2.png"
     },
-    "ell-H3.png": {
+    "ell-H3.svg": {
       "algorithm": "M2 U' M U M' U M' U' M' U' M' U M",
-      "source_algorithm": "M2 U' M U M' U M' U' M' U' M' U M"
+      "source_algorithm": "M2 U' M U M' U M' U' M' U' M' U M",
+      "source_image": "ell-H3.png"
     },
-    "ell-H4.png": {
+    "ell-H4.svg": {
       "algorithm": "R' U' R U M U' R' U r",
-      "source_algorithm": "R' U' R U M U' R' U r"
+      "source_algorithm": "R' U' R U M U' R' U r",
+      "source_image": "ell-H4.png"
     },
-    "ell-H5.png": {
+    "ell-H5.svg": {
       "algorithm": "M2 U M U' M' U' M' U M' U M' U' M",
-      "source_algorithm": "M2 U M U' M' U' M' U M' U M' U' M"
+      "source_algorithm": "M2 U M U' M' U' M' U M' U M' U' M",
+      "source_image": "ell-H5.png"
     },
-    "ell-H6.png": {
+    "ell-H6.svg": {
       "algorithm": "M' U' M U M' U' M U' M' U2 M",
-      "source_algorithm": "M' U' M U M' U' M U' M' U2 M"
+      "source_algorithm": "M' U' M U M' U' M U' M' U2 M",
+      "source_image": "ell-H6.png"
     },
-    "ell-H7.png": {
+    "ell-H7.svg": {
       "algorithm": "M' U M U' M' U M U M' U2 M",
-      "source_algorithm": "M' U M U' M' U M U M' U2 M"
+      "source_algorithm": "M' U M U' M' U M U M' U2 M",
+      "source_image": "ell-H7.png"
     },
-    "ell-H8.png": {
+    "ell-H8.svg": {
       "algorithm": "M' U M2 U2 M' U M' U2 M' U' M U' M",
-      "source_algorithm": "M' U M2 U2 M' U M' U2 M' U' M U' M"
+      "source_algorithm": "M' U M2 U2 M' U M' U2 M' U' M U' M",
+      "source_image": "ell-H8.png"
     },
-    "ell-X1.png": {
+    "ell-X1.svg": {
       "algorithm": "M' U M' U M' U M' U' M' U M' U M' U M'",
-      "source_algorithm": "M' U M' U M' U M' U' M' U M' U M' U M'"
+      "source_algorithm": "M' U M' U M' U M' U' M' U M' U M' U M'",
+      "source_image": "ell-X1.png"
     },
-    "ell-X2.png": {
+    "ell-X2.svg": {
       "algorithm": "M' U' M U' M' U2 M' U' M' U' M U' M' U' M'",
-      "source_algorithm": "M' U' M U' M' U2 M' U' M' U' M U' M' U' M'"
+      "source_algorithm": "M' U' M U' M' U2 M' U' M' U' M U' M' U' M'",
+      "source_image": "ell-X2.png"
     },
-    "ell-X3.png": {
+    "ell-X3.svg": {
       "algorithm": "M' U M U M' U2 M' U M' U M U M' U M'",
-      "source_algorithm": "M' U M U M' U2 M' U M' U M U M' U M'"
+      "source_algorithm": "M' U M U M' U2 M' U M' U M U M' U M'",
+      "source_image": "ell-X3.png"
     },
-    "ell-X4.png": {
+    "ell-X4.svg": {
       "algorithm": "M' U M U2 M' U M2 U' M' U2 M U' M'",
-      "source_algorithm": "M' U M U2 M' U M2 U' M' U2 M U' M'"
+      "source_algorithm": "M' U M U2 M' U M2 U' M' U2 M U' M'",
+      "source_image": "ell-X4.png"
     },
-    "ell-X5.png": {
+    "ell-X5.svg": {
       "algorithm": "r U R' U' M2 U R U' R' U' M'",
-      "source_algorithm": "r U R' U' M2 U R U' R' U' M'"
+      "source_algorithm": "r U R' U' M2 U R U' R' U' M'",
+      "source_image": "ell-X5.png"
     }
   }
 }
