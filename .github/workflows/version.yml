@@ -1,0 +1,47 @@
+name: Version code updates
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - '**/*.md'
+      - 'docs/**'
+      - 'changelog/**'
+      - 'VERSION'
+      - '.github/release-state.json'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: version-main
+  cancel-in-progress: false
+
+jobs:
+  version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Generate version and release notes
+        id: release
+        env:
+          BEFORE_SHA: ${{ github.event.before }}
+          AFTER_SHA: ${{ github.sha }}
+        run: python scripts/release.py --before "$BEFORE_SHA" --after "$AFTER_SHA"
+      - name: Commit and tag release
+        if: steps.release.outputs.released == 'true'
+        env:
+          RELEASE_VERSION: ${{ steps.release.outputs.version }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add VERSION CHANGELOG.md changelog/ .github/release-state.json
+          git commit -m "chore(release): v$RELEASE_VERSION [skip ci]"
+          git tag "v$RELEASE_VERSION"
+          git push --atomic origin HEAD:main "refs/tags/v$RELEASE_VERSION"

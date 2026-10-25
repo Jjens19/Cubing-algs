@@ -53,7 +53,81 @@ function categoryPaths(algSet){
   }
   return [...paths].sort((a,b)=>a.localeCompare(b));
 }
+// Keep each set's expanded branches while browsing and updating progress.
+const expandedCategories=new Set();
+function renderCategories(all,categories){
+  const nav=$('categories');
+  nav.replaceChildren();
+  function add(value,container){
+    const descendants=categories.filter(path=>path&&path!==value&&path.split(' / ').slice(0,-1).join(' / ')===value);
+    const row=document.createElement('div');row.className='category-row';
+    const button=document.createElement('button');button.type='button';
+    button.className='category-select'+(value===category?' active':'');
+    button.textContent=(value?value.split(' / ').at(-1):'All cases')+' · '+all.filter(c=>withinCategory(c.category,value)).length;
+    button.title=value||'All cases';
+    if(value===category)button.setAttribute('aria-current','page');
+    row.append(button);container.append(row);
+    const key=JSON.stringify([set,value]);
+    const hasChildren=!!value&&descendants.length>0;
+    if(hasChildren){
+      const children=document.createElement('div');children.className='category-children';
+      children.id='category-branch-'+categories.indexOf(value);
+      const toggle=document.createElement('button');toggle.type='button';toggle.className='category-toggle';
+      function update(){
+        const open=expandedCategories.has(key);
+        children.hidden=!open;
+        toggle.textContent=open?'▾':'▸';
+        toggle.setAttribute('aria-label',`${open?'Collapse':'Expand'} ${value}`);
+        for(const control of [button,toggle]){
+          control.setAttribute('aria-expanded',String(open));
+          control.setAttribute('aria-controls',children.id);
+        }
+      }
+      function flip(){expandedCategories.has(key)?expandedCategories.delete(key):expandedCategories.add(key);update();}
+      toggle.onclick=flip;
+      row.prepend(toggle);container.append(children);update();
+      for(const child of descendants)add(child,children);
+      button.onclick=()=>{flip();category=value;render();};
+    }else{
+      button.onclick=()=>{category=value;render();};
+    }
+  }
+  add('',nav);
+  for(const value of categories.filter(path=>path&&!path.includes(' / ')))add(value,nav);
+}
 function withinCategory(value,parent){return !parent||value===parent||value.startsWith(parent+' / ');}
+function navigateSet(name){location.hash='/sets/'+encodeURIComponent(name);}
+function navigationCard(title,description,sets,onClick){
+  const button=document.createElement('button');button.className='navigation-card';
+  const heading=document.createElement('h2');heading.textContent=title;
+  const text=document.createElement('p');text.textContent=description;
+  const cases=library.cases.filter(c=>sets.includes(c.alg_set));
+  const count=document.createElement('span');count.textContent=`${cases.filter(c=>c.learned).length} / ${cases.length} algs learned`;
+  button.append(heading,text,count);button.onclick=onClick;return button;
+}
+function renderNavigation(){
+  const route=location.hash.slice(1)||'/';
+  const isMethod=route==='/methods/cfce';
+  const isLibrary=route.startsWith('/sets/');
+  if(isLibrary){
+    let requested;try{requested=decodeURIComponent(route.slice(6));}catch{requested='';}
+    if(library.sets.includes(requested))set=requested;
+  }
+  $('home-view').hidden=isMethod||isLibrary;
+  $('method-view').hidden=!isMethod;
+  $('library-view').hidden=!isLibrary;
+  $('categories').hidden=!isLibrary;
+  options($('sets'),library.sets,set);
+  $('library-back').href=['CLL','ELL'].includes(set)?'#/methods/cfce':'#/';
+  $('library-back').textContent=['CLL','ELL'].includes(set)?'← CFCE algorithm sets':'← Home';
+  $('method-cards').replaceChildren(navigationCard('CFCE','Cross → F2L → CLL → ELL',['CLL','ELL'],()=>{location.hash='/methods/cfce';}));
+  $('subset-cards').replaceChildren(...['CLL','ELL'].filter(name=>library.sets.includes(name)).map(name=>navigationCard(name,name==='CLL'?'Corners of the Last Layer':'Edges of the Last Layer',[name],()=>navigateSet(name))));
+  const custom=library.sets.filter(name=>!['CLL','ELL'].includes(name));
+  $('custom-sets').hidden=!custom.length;
+  $('custom-set-cards').replaceChildren(...custom.map(name=>navigationCard(name,'Your custom algorithm set',[name],()=>navigateSet(name))));
+  document.title=isLibrary?set+' · Cube Library':isMethod?'CFCE · Cube Library':'Cube Library';
+}
+window.addEventListener('hashchange',()=>{category='';$('search').value='';$('progress-filter').value='all';render();});
 async function load(){library=await api('library');$('server-notice').hidden=!!library.progress_states?.includes('learning');$('server-notice').textContent=restartNotice;if(!library.sets.includes(set))set=library.sets[0];options($('sets'),library.sets,set);render();}
 function net(container,state,mini=false){
   const ns='http://www.w3.org/2000/svg';
@@ -96,7 +170,7 @@ function net(container,state,mini=false){
   container.replaceChildren(svg);
 }
 
-function render(){const all=library.cases.filter(c=>c.alg_set===set);$('title').textContent=set;$('subtitle').textContent='Build your recognition, one pattern at a time.';const categories=['',...categoryPaths(set)];if(!categories.includes(category))category='';$('categories').replaceChildren(...categories.map(value=>{const b=document.createElement('button');const parts=value.split(' / ');b.textContent=(value?parts.at(-1):'All cases')+' · '+all.filter(c=>withinCategory(c.category,value)).length;b.title=value||'All cases';b.style.paddingLeft=(14+Math.max(0,parts.length-1)*16)+'px';b.className=value===category?'active':'';b.onclick=()=>{category=value;render()};return b}));const query=$('search').value.toLowerCase();const cases=all.filter(c=>withinCategory(c.category,category)&&($('progress-filter').value==='all'||progressState(c)===$('progress-filter').value)&&[c.name,c.category,c.algorithm,c.recognition,c.description].some(v=>v.toLowerCase().includes(query)));const compare=(a,b)=>a.localeCompare(b,undefined,{numeric:true,sensitivity:'base'});
+function render(){renderNavigation();const all=library.cases.filter(c=>c.alg_set===set);$('title').textContent=set;$('subtitle').textContent='Build your recognition, one pattern at a time.';const categories=['',...categoryPaths(set)];if(!categories.includes(category))category='';renderCategories(all,categories);const query=$('search').value.toLowerCase();const cases=all.filter(c=>withinCategory(c.category,category)&&($('progress-filter').value==='all'||progressState(c)===$('progress-filter').value)&&[c.name,c.category,c.algorithm,c.recognition,c.description].some(v=>v.toLowerCase().includes(query)));const compare=(a,b)=>a.localeCompare(b,undefined,{numeric:true,sensitivity:'base'});
 cases.sort((a,b)=>compare(a.category||'\uffff',b.category||'\uffff')||compare(a.name,b.name)||a.id-b.id);
 $('count').textContent=`${cases.length} shown`;
 visibleCases=cases;
@@ -120,11 +194,11 @@ const card=document.createElement('article');card.className='card '+progressStat
 async function openCase(c){current=c?{...c}:{name:'',alg_set:set,category:category,algorithm:'',description:'',recognition:'',image:'',drawing:'{}'};const opened=current;const state=JSON.parse(current.drawing||'{}');let base={};let drawingError='';try{base=await caseDrawing(current.image);}catch(error){drawingError=error.message;}if(current!==opened)return;drawing=structuredClone({...base,...state.stickers});$('use-drawing').checked=!!state.useDrawing;$('learned').value=progressState(current);for(const key of ['name','algorithm','description','recognition'])$(key).value=current[key];$('category-path').value=[current.alg_set,...current.category.split('/').map(part=>part.trim()).filter(Boolean)].join('/');$('detail-title').textContent=c?c.name:'New case';$('original').replaceChildren();if(current.image){const img=document.createElement('img');img.src=current.image;img.alt=current.name+' original reference';$('original').append(img);}else $('original').textContent='Your custom cube state';$('status').textContent=drawingError;net($('cube'),drawing);dirty=false;updateSetup();$('detail').showModal();}
 let inverseSequence=0;async function updateSetup(){$('algorithm-heading').textContent=$('algorithm').value||'No algorithm yet';const sequence=++inverseSequence;try{const result=await api('inverse',{algorithm:$('algorithm').value});if(sequence===inverseSequence)$('setup').textContent=result.setup||'Enter a solution to generate its setup.';}catch(e){if(sequence===inverseSequence)$('setup').textContent=e.message;}}
 $('algorithm').addEventListener('input',updateSetup);$('case-form').addEventListener('input',()=>dirty=true);
-$('case-form').onsubmit=async e=>{e.preventDefault();const updated={...current};for(const key of ['name','algorithm','description','recognition'])updated[key]=$(key).value;const parts=$('category-path').value.split('/').map(part=>part.trim());if(parts.some(part=>!part)){$('status').textContent='Enter a set and category names separated by /, with no empty parts.';return;}const enteredSet=parts.shift();updated.alg_set=library.sets.find(name=>name.toLowerCase()===enteredSet.toLowerCase())||enteredSet;updated.category=parts.join(' / ');updated.learned=Number($('learned').value==='learned');updated.learning=Number($('learned').value==='learning');updated.drawing=JSON.stringify({useDrawing:$('use-drawing').checked,stickers:drawing});try{if(!library.sets.includes(updated.alg_set))await api('sets',{name:updated.alg_set});const result=await api('case',updated);current={...updated,id:result.id};dirty=false;set=updated.alg_set;category='';$('status').textContent='Saved to your library.';await load();$('detail').close();}catch(error){$('status').textContent=error.message;}};
+$('case-form').onsubmit=async e=>{e.preventDefault();const updated={...current};for(const key of ['name','algorithm','description','recognition'])updated[key]=$(key).value;const parts=$('category-path').value.split('/').map(part=>part.trim());if(parts.some(part=>!part)){$('status').textContent='Enter a set and category names separated by /, with no empty parts.';return;}const enteredSet=parts.shift();updated.alg_set=library.sets.find(name=>name.toLowerCase()===enteredSet.toLowerCase())||enteredSet;updated.category=parts.join(' / ');updated.learned=Number($('learned').value==='learned');updated.learning=Number($('learned').value==='learning');updated.drawing=JSON.stringify({useDrawing:$('use-drawing').checked,stickers:drawing});try{if(!library.sets.includes(updated.alg_set))await api('sets',{name:updated.alg_set});const result=await api('case',updated);current={...updated,id:result.id};dirty=false;set=updated.alg_set;navigateSet(set);category='';$('status').textContent='Saved to your library.';await load();$('detail').close();}catch(error){$('status').textContent=error.message;}};
 function closeCase(){if(!dirty||confirm('Discard unsaved changes?')){$('detail').close();dirty=false;}}
 $('close').onclick=closeCase;$('detail').addEventListener('cancel',e=>{e.preventDefault();closeCase()});window.addEventListener('beforeunload',e=>{if(dirty){e.preventDefault();e.returnValue='';}});
-$('sets').onchange=()=>{set=$('sets').value;category='';render()};$('search').oninput=render;$('progress-filter').onchange=render;$('recognition-only').onchange=render;$('new-case').onclick=()=>openCase(null);
-$('add-set').onclick=async()=>{const name=prompt('Name your algorithm set (e.g. OLL, PLL, ZBLL)');if(!name?.trim())return;try{await api('sets',{name:name.trim()});set=name.trim();category='';await load();}catch(e){alert(e.message)}};
+$('sets').onchange=()=>navigateSet($('sets').value);$('search').oninput=render;$('progress-filter').onchange=render;$('recognition-only').onchange=render;$('new-case').onclick=()=>openCase(null);
+$('add-set').onclick=async()=>{const name=prompt('Name your algorithm set (e.g. OLL, PLL, ZBLL)');if(!name?.trim())return;try{await api('sets',{name:name.trim()});set=name.trim();navigateSet(set);category='';await load();}catch(e){alert(e.message)}};
 for(const value of ['#ffff00','#ffffff','#ff0000','#ff9900','#00ff00','#0000ff','#aab2a7']){const b=document.createElement('button');b.type='button';b.className='swatch'+(value===color?' selected':'');b.style.backgroundColor=value;b.setAttribute('aria-label',({'#ffff00':'Yellow','#ffffff':'White','#ff0000':'Red','#ff9900':'Orange','#00ff00':'Green','#0000ff':'Blue','#aab2a7':'Gray'})[value]);b.onclick=()=>{color=value;document.querySelectorAll('.swatch').forEach(s=>s.classList.remove('selected'));b.classList.add('selected')};$('palette').append(b);}
 for(const tool of ['paint','highlight'])$(tool).onclick=()=>{mode=tool;for(const t of ['paint','highlight'])$(t).setAttribute('aria-pressed',String(t===tool))};
 $('rotate-layer').onclick=()=>{

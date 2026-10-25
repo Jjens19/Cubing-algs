@@ -64,6 +64,22 @@ def initialize():
                     db.execute("UPDATE cases SET description=? WHERE alg_set='ELL' AND image=? AND trim(description)=''",
                                ('Solved / ELL skip: no moves are needed.', '/ELL/' + filename))
             db.execute('INSERT INTO migrations VALUES (?)', (migration,))
+
+        migration = 'cubepal-cll-v1'
+        if not db.execute('SELECT 1 FROM migrations WHERE name=?', (migration,)).fetchone():
+            bundled = json.loads((ROOT / 'src/cll_algorithms.json').read_text())
+            db.execute('INSERT OR IGNORE INTO sets VALUES (?)', ('CLL',))
+            for case in bundled['cases']:
+                # Never replace an existing user's case with the same identity.
+                if db.execute("SELECT 1 FROM cases WHERE alg_set='CLL' AND (name=? OR image=?)",
+                              (case['name'], case['image'])).fetchone():
+                    continue
+                description = 'Source: ' + case['source']
+                if case['alternatives']:
+                    description += '\n\nAlternative solutions from CubePal:\n' + '\n'.join(case['alternatives'])
+                db.execute('INSERT INTO cases(name, alg_set, category, algorithm, description, image) VALUES (?, ?, ?, ?, ?, ?)',
+                           (case['name'], 'CLL', case['category'], case['algorithm'], description, case['image']))
+            db.execute('INSERT INTO migrations VALUES (?)', (migration,))
         migration = 'algorithm-y-to-u-v1'
         if not db.execute('SELECT 1 FROM migrations WHERE name=?', (migration,)).fetchone():
             for row in db.execute('SELECT id, algorithm FROM cases').fetchall():
@@ -98,7 +114,7 @@ class Handler(BaseHTTPRequestHandler):
         file = (base / relative).resolve()
         if not file.is_relative_to(base.resolve()) or not file.is_file():
             return self.send(404, {'error': 'Not found'})
-        mime = {'.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8', '.png': 'image/png'}.get(file.suffix, 'application/octet-stream')
+        mime = {'.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8', '.png': 'image/png', '.svg': 'image/svg+xml'}.get(file.suffix, 'application/octet-stream')
         self.send(200, file.read_bytes(), mime)
 
     def do_POST(self):

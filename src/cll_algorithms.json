@@ -1,0 +1,1121 @@
+{
+  "source": "https://www.cubepal.app/cubes/3x3x3/stages/cll",
+  "cases": [
+    {
+      "name": "PLL1",
+      "category": "PLL",
+      "algorithm": "F U2 F' U' F U2 B' U F' U' B",
+      "alternatives": [
+        "F' U2 F U F' U2 B U' F U B'",
+        "B U' F' U B' U2 F U' F' U2 F",
+        "B' U F U' B U2 F' U F U2 F'",
+        "R U R2 F' R U R U' R' F R U' R' U",
+        "L' U' L2 F L' U' L' U L F' L' U L U'",
+        "F' U' F R F' U' F U F R' F2 U F U",
+        "F U F' L' F U F' U' F' L F2 U' F' U'",
+        "R' F' U F U' F' U' F2 R F' U' F' U F",
+        "F' U' F U F R' F2 U F U F' U' F R",
+        "F U F' U' F' L F2 U' F' U' F U F' L'",
+        "L F U' F' U F U F2 L' F U F U' F'"
+      ],
+      "image": "/cases/cll/pll1.svg",
+      "source": "https://www.cubepal.app/cubes/3x3x3/stages/cll#pll1",
+      "corner_facelets": {
+        "U0": "U",
+        "U2": "U",
+        "U6": "U",
+        "U8": "U",
+        "L0": "L",
+        "L2": "F",
+        "F0": "R",
+        "F2": "L",
+        "R0": "F",
+        "R2": "R",
+        "B0": "B",
+        "B2": "B"
+      }
+    },
+    {
+      "name": "PLL2",
+      "category": "PLL",
+      "algorithm": "R U' R' U' F2 D' B L B' D F2",
+      "alternatives": [
+        "L U' L' U' B2 D' F R F' D B2",
+        "F' U F U R2 D L' B' L D' R2",
+        "B' U B U L2 D R' F' R D' L2",
+        "R2 D L' B L D' R2 U' F' U' F",
+        "L2 D R' F R D' L2 U' B' U' B",
+        "F2 D' B L' B' D F2 U R U R'",
+        "B2 D' F R' F' D B2 U L U L'",
+        "F U R U' R' F R U' R' U R U R2 F' R F'",
+        "F R' F R2 U' R' U' R U R' F' R U R' U' F'",
+        "R' U' F' U F R' F' U F U' F' U' F2 R F' R",
+        "R' F R' F2 U F U F' U' F R F' U' F U R",
+        "L' U' B' U B L' B' U B U' B' U' B2 L B' L",
+        "L' B L' B2 U B U B' U' B L B' U' B U L",
+        "B U L U' L' B L U' L' U L U L2 B' L B'",
+        "B L' B L2 U' L' U' L U L' B' L U L' U' B'",
+        "R' F' U F U F' U' F R F' U' F U F R' F' R",
+        "R' F R F' U' F' U F R' F' U F U' F' U' F R",
+        "F R U' R' U' R U R' F' R U R' U' R' F R F'",
+        "F R' F' R U R U' R' F R U' R' U R U R' F'",
+        "L' B' U B U B' U' B L B' U' B U B L' B' L",
+        "L' B L B' U' B' U B L' B' U B U' B' U' B L",
+        "B L U' L' U' L U L' B' L U L' U' L' B L B'",
+        "B L' B' L U L U' L' B L U' L' U L U L' B'"
+      ],
+      "image": "/cases/cll/pll2.svg",
+      "source": "https://www.cubepal.app/cubes/3x3x3/stages/cll#pll2",
+      "corner_facelets": {
+        "U0": "U",
+        "U2": "U",
+        "U6": "U",
+        "U8": "U",
+        "L0": "R",
+        "L2": "L",
+        "F0": "F",
+        "F2": "B",
+        "R0": "L",
+        "R2": "R",
+        "B0": "B",
+        "B2": "F"
+      }
+    },
+    {
+      "name": "U1",
+      "category": "U",
+      "algorithm": "R2 B U' B' U B U B2 R' B R' U'",
+      "alternatives": [
+        "L2 B' U B U' B' U' B2 L B' L U",
+        "R U R' U R U2 R2 U' R U' R' U2 R",
+        "L' U' L U' L' U2 L2 U L' U L U2 L'"
+      ],
+      "image": "/cases/cll/u1.svg",
+      "source": "https://www.cubepal.app/cubes/3x3x3/stages/cll#u1",
+      "corner_facelets": {
+        "U0": "U",
+        "U2": "U",
+        "U6": "L",
+        "U8": "R",
+        "L0": "L",
+        "L2": "F",
+        "F0": "U",
+        "F2": "U",
+        "R0": "F",
+        "R2": "R",
+        "B0": "B",
+        "B2": "B"
+      }
+    },
+    {
+      "name": "U2",
+      "category": "U",
+      "algorithm": "R B2 D B' U B D' B2 U' R' U'",
+      "alternatives": [
+        "L' B2 D' B U' B' D B2 U L U",
+        "B U L2 D L' U' L D' L2 B' U",
+        "B' U' R2 D' R U R' D R2 B U'",
+        "F U' F' U R' U' F U F' U' F' U F R U",
+        "F' U F U' L U F' U' F U F U' F' L' U'",
+        "F R U R' U' R' U R U' F' U R' U' R U",
+        "F' L' U' L U L U' L' U F U' L U L' U'"
+      ],
+      "image": "/cases/cll/u2.svg",
+      "source": "https://www.cubepal.app/cubes/3x3x3/stages/cll#u2",
+      "corner_facelets": {
+        "U0": "U",
+        "U2": "U",
+        "U6": "F",
+        "U8": "F",
+        "L0": "L",
+        "L2": "R",
+        "F0": "U",
+        "F2": "U",
+        "R0": "L",
+        "R2": "R",
+        "B0": "B",
+        "B2": "B"
+      }
+    },
+    {
+      "name": "U3",
+      "category": "U",
+      "algorithm": "R2 D R' U2 R D' R' U2 R' U'",
+      "alternatives": [
+        "L' U2 L U2 B U' L' U L U B'",
+        "B L' B' U2 L U L' U L U' L U' L' U'"
+      ],
+      "image": "/cases/cll/u3.svg",
+      "source": "https://www.cubepal.app/cubes/3x3x3/stages/cll#u3",
+      "corner_facelets": {
+        "U0": "U",
+        "U2": "U",
+        "U6": "B",
+        "U8": "R",
+        "L0": "F",
+        "L2": "L",
+        "F0": "U",
+        "F2": "U",
+        "R0": "F",
+        "R2": "R",
+        "B0": "B",
+        "B2": "L"
+      }
+    },
+    {
+      "name": "U4",
+      "category": "U",
+      "algorithm": "F U R U2 R' U R U2 R' U' F' U2",
+      "alternatives": [
+        "F' U' L' U2 L U' L' U2 L U F U2",
+        "B' R' U R U' R' U' R U' R' U R B U2",
+        "B L U' L' U L U L' U L U' L' B' U2"
+      ],
+      "image": "/cases/cll/u4.svg",
+      "source": "https://www.cubepal.app/cubes/3x3x3/stages/cll#u4",
+      "corner_facelets": {
+        "U0": "U",
+        "U2": "U",
+        "U6": "L",
+        "U8": "R",
+        "L0": "B",
+        "L2": "F",
+        "F0": "U",
+        "F2": "U",
+        "R0": "F",
+        "R2": "B",
+        "B0": "L",
+        "B2": "R"
+      }
+    },
+    {
+      "name": "U5",
+      "category": "U",
+      "algorithm": "L2 D' L U2 L' D L U2 L U",
+      "alternatives": [
+        "R U2 R' U2 B' U R U' R' U' B",
+        "B' R B U2 R' U' R U' R' U R' U R U"
+      ],
+      "image": "/cases/cll/u5.svg",
+      "source": "https://www.cubepal.app/cubes/3x3x3/stages/cll#u5",
+      "corner_facelets": {
+        "U0": "U",
+        "U2": "U",
+        "U6": "L",
+        "U8": "B",
+        "L0": "L",
+        "L2": "F",
+        "F0": "U",
+        "F2": "U",
+        "R0": "R",
+        "R2": "F",
+        "B0": "R",
+        "B2": "B"
+      }
+    },
+    {
+      "name": "U6",
+      "category": "U",
+      "algorithm": "R' U' F' U F R U'",
+      "alternatives": [
+        "R B U B' U' R' U'",
+        "L U F U' F' L' U'",
+        "L' B' U' B U L U'",
+        "F U F R' F' R U' F' U'",
+        "F' U' F' L F L' U F U'",
+        "B' U' R B' R' B U B U'",
+        "B U L' B L B' U' B' U'"
+      ],
+      "image": "/cases/cll/u6.svg",
+      "source": "https://www.cubepal.app/cubes/3x3x3/stages/cll#u6",
+      "corner_facelets": {
+        "U0": "U",
+        "U2": "U",
+        "U6": "L",
+        "U8": "L",
+        "L0": "R",
+        "L2": "F",
+        "F0": "U",
+        "F2": "U",
+        "R0": "B",
+        "R2": "R",
+        "B0": "B",
+        "B2": "F"
+      }
+    },
+    {
+      "name": "T1",
+      "category": "T",
+      "algorithm": "B' R B' R2 U R U R' U' R B2 U'",
+      "alternatives": [
+        "B L' B L2 U' L' U' L U L' B2 U",
+        "R' U2 R U R' U R2 U2 R' U' R U' R'",
+        "L U2 L' U' L U' L2 U2 L U L' U L"
+      ],
+      "image": "/cases/cll/t1.svg",
+      "source": "https://www.cubepal.app/cubes/3x3x3/stages/cll#t1",
+      "corner_facelets": {
+        "U0": "U",
+        "U2": "U",
+        "U6": "F",
+        "U8": "F",
+        "L0": "L",
+        "L2": "U",
+        "F0": "L",
+        "F2": "R",
+        "R0": "U",
+        "R2": "R",
+        "B0": "B",
+        "B2": "B"
+      }
+    },
+    {
+      "name": "T2",
+      "category": "T",
+      "algorithm": "R U' R' U2 R L U' R' U L' U2",
+      "alternatives": [
+        "R U' L U R' L' U2 L U L' U2",
+        "L' U R' U' R L U2 R' U' R U2",
+        "L' U L U2 R' L' U L U' R U2",
+        "R U R U R' U' R B R' U' R U R B' R",
+        "L' U' L' U' L U L' B' L U L' U' L' B L'",
+        "R' B R' U' R' U R B' R' U R U' R' U' R'",
+        "L B' L U L U' L' B L U' L' U L U L"
+      ],
+      "image": "/cases/cll/t2.svg",
+      "source": "https://www.cubepal.app/cubes/3x3x3/stages/cll#t2",
+      "corner_facelets": {
+        "U0": "U",
+        "U2": "U",
+        "U6": "R",
+        "U8": "L",
+        "L0": "L",
+        "L2": "U",
+        "F0": "F",
+        "F2": "F",
+        "R0": "U",
+        "R2": "R",
+        "B0": "B",
+        "B2": "B"
+      }
+    },
+    {
+      "name": "T3",
+      "category": "T",
+      "algorithm": "B' U' B U B L' B' L U'",
+      "alternatives": [
+        "R B U' B' U B U B' R' U2"
+      ],
+      "image": "/cases/cll/t3.svg",
+      "source": "https://www.cubepal.app/cubes/3x3x3/stages/cll#t3",
+      "corner_facelets": {
+        "U0": "U",
+        "U2": "U",
+        "U6": "L",
+        "U8": "F",
+        "L0": "F",
+        "L2": "U",
+        "F0": "B",
+        "F2": "R",
+        "R0": "U",
+        "R2": "R",
+        "B0": "B",
+        "B2": "L"
+      }
+    },
+    {
+      "name": "T4",
+      "category": "T",
+      "algorithm": "B' U' R' U2 R U R' U2 R U B U2",
+      "alternatives": [
+        "B U L U2 L' U' L U2 L' U' B' U2",
+        "F R U R' U' R U' R' U' R U R' F' U2",
+        "F' L' U' L U L' U L U L' U' L F U2"
+      ],
+      "image": "/cases/cll/t4.svg",
+      "source": "https://www.cubepal.app/cubes/3x3x3/stages/cll#t4",
+      "corner_facelets": {
+        "U0": "U",
+        "U2": "U",
+        "U6": "F",
+        "U8": "F",
+        "L0": "B",
+        "L2": "U",
+        "F0": "L",
+        "F2": "R",
+        "R0": "U",
+        "R2": "B",
+        "B0": "L",
+        "B2": "R"
+      }
+    },
+    {
+      "name": "T5",
+      "category": "T",
+      "algorithm": "B U B' U' B' R B R' U",
+      "alternatives": [
+        "L' B' U B U' B' U' B L U2"
+      ],
+      "image": "/cases/cll/t5.svg",
+      "source": "https://www.cubepal.app/cubes/3x3x3/stages/cll#t5",
+      "corner_facelets": {
+        "U0": "U",
+        "U2": "U",
+        "U6": "F",
+        "U8": "R",
+        "L0": "L",
+        "L2": "U",
+        "F0": "L",
+        "F2": "B",
+        "R0": "U",
+        "R2": "F",
+        "B0": "R",
+        "B2": "B"
+      }
+    },
+    {
+      "name": "T6",
+      "category": "T",
+      "algorithm": "B L' B' U' B2 U B' L B U' B2 U2",
+      "alternatives": [
+        "L2 U' L B L' U L2 U' L' B' L U2",
+        "L F U F' U L' U' L U L' U' L U' L' U'",
+        "L' U' L U' L' U L U' L' U B' U B L U'"
+      ],
+      "image": "/cases/cll/t6.svg",
+      "source": "https://www.cubepal.app/cubes/3x3x3/stages/cll#t6",
+      "corner_facelets": {
+        "U0": "U",
+        "U2": "U",
+        "U6": "F",
+        "U8": "B",
+        "L0": "R",
+        "L2": "U",
+        "F0": "L",
+        "F2": "L",
+        "R0": "U",
+        "R2": "R",
+        "B0": "B",
+        "B2": "F"
+      }
+    },
+    {
+      "name": "L1",
+      "category": "L",
+      "algorithm": "L U L' U L U' L' U L U' L' U L U2 L' U2",
+      "alternatives": [
+        "L U2 L' U' L U L' U' L U L' U' L U' L' U2",
+        "B' U' B U' B' U B U' B' U B U' B' U2 B U2",
+        "B' U2 B U B' U' B U B' U' B U B' U B U2"
+      ],
+      "image": "/cases/cll/l1.svg",
+      "source": "https://www.cubepal.app/cubes/3x3x3/stages/cll#l1",
+      "corner_facelets": {
+        "U0": "U",
+        "U2": "B",
+        "U6": "L",
+        "U8": "U",
+        "L0": "L",
+        "L2": "F",
+        "F0": "U",
+        "F2": "F",
+        "R0": "R",
+        "R2": "U",
+        "B0": "R",
+        "B2": "B"
+      }
+    },
+    {
+      "name": "L2",
+      "category": "L",
+      "algorithm": "R' F R F' U' F' U F U",
+      "alternatives": [
+        "F R U' R' U' R U R' F' U2"
+      ],
+      "image": "/cases/cll/l2.svg",
+      "source": "https://www.cubepal.app/cubes/3x3x3/stages/cll#l2",
+      "corner_facelets": {
+        "U0": "U",
+        "U2": "B",
+        "U6": "F",
+        "U8": "U",
+        "L0": "L",
+        "L2": "R",
+        "F0": "U",
+        "F2": "L",
+        "R0": "F",
+        "R2": "U",
+        "B0": "R",
+        "B2": "B"
+      }
+    },
+    {
+      "name": "L3",
+      "category": "L",
+      "algorithm": "F' U2 F' D' F U2 F' D F2 U'",
+      "alternatives": [
+        "F' U L U L' U' F U2 L U2 L'",
+        "B' U' B U' B U B' U B U2 L' B' L U'"
+      ],
+      "image": "/cases/cll/l3.svg",
+      "source": "https://www.cubepal.app/cubes/3x3x3/stages/cll#l3",
+      "corner_facelets": {
+        "U0": "U",
+        "U2": "B",
+        "U6": "B",
+        "U8": "U",
+        "L0": "F",
+        "L2": "L",
+        "F0": "U",
+        "F2": "F",
+        "R0": "R",
+        "R2": "U",
+        "B0": "R",
+        "B2": "L"
+      }
+    },
+    {
+      "name": "L4",
+      "category": "L",
+      "algorithm": "R U2 R D R' U2 R D' R2 U",
+      "alternatives": [
+        "R U' B' U' B U R' U2 B' U2 B",
+        "L U L' U L' U' L U' L' U2 B L B' U"
+      ],
+      "image": "/cases/cll/l4.svg",
+      "source": "https://www.cubepal.app/cubes/3x3x3/stages/cll#l4",
+      "corner_facelets": {
+        "U0": "U",
+        "U2": "L",
+        "U6": "L",
+        "U8": "U",
+        "L0": "B",
+        "L2": "F",
+        "F0": "U",
+        "F2": "F",
+        "R0": "R",
+        "R2": "U",
+        "B0": "B",
+        "B2": "R"
+      }
+    },
+    {
+      "name": "L5",
+      "category": "L",
+      "algorithm": "F R' F' R U R U' R' U'",
+      "alternatives": [
+        "R' F' U F U F' U' F R U2"
+      ],
+      "image": "/cases/cll/l5.svg",
+      "source": "https://www.cubepal.app/cubes/3x3x3/stages/cll#l5",
+      "corner_facelets": {
+        "U0": "U",
+        "U2": "R",
+        "U6": "L",
+        "U8": "U",
+        "L0": "L",
+        "L2": "F",
+        "F0": "U",
+        "F2": "R",
+        "R0": "B",
+        "R2": "U",
+        "B0": "F",
+        "B2": "B"
+      }
+    },
+    {
+      "name": "L6",
+      "category": "L",
+      "algorithm": "R U2 R2 F R F' R U2 R' U'",
+      "alternatives": [
+        "R' U2 R B' R B R2 U2 R U'",
+        "F' U2 F2 R' F' R F' U2 F U",
+        "F U2 F' L F' L' F2 U2 F' U",
+        "R2 B R' U' R' U R B' R' U R U' R' U",
+        "L' U' L U L' B' L U L' U' L' B L2 U",
+        "F2 L' F U F U' F' L F U' F' U F U'",
+        "B U B' U' B L B' U' B U B L' B2 U'"
+      ],
+      "image": "/cases/cll/l6.svg",
+      "source": "https://www.cubepal.app/cubes/3x3x3/stages/cll#l6",
+      "corner_facelets": {
+        "U0": "U",
+        "U2": "B",
+        "U6": "L",
+        "U8": "U",
+        "L0": "R",
+        "L2": "F",
+        "F0": "U",
+        "F2": "B",
+        "R0": "L",
+        "R2": "U",
+        "B0": "R",
+        "B2": "F"
+      }
+    },
+    {
+      "name": "S1",
+      "category": "S",
+      "algorithm": "F U F' U F U2 F' U2",
+      "alternatives": [
+        "L' U2 L U L' U L U2"
+      ],
+      "image": "/cases/cll/s1.svg",
+      "source": "https://www.cubepal.app/cubes/3x3x3/stages/cll#s1",
+      "corner_facelets": {
+        "U0": "U",
+        "U2": "B",
+        "U6": "F",
+        "U8": "R",
+        "L0": "L",
+        "L2": "U",
+        "F0": "L",
+        "F2": "U",
+        "R0": "F",
+        "R2": "U",
+        "B0": "R",
+        "B2": "B"
+      }
+    },
+    {
+      "name": "S2",
+      "category": "S",
+      "algorithm": "L F' L' F U2 F U2 F' U",
+      "alternatives": [
+        "F' L' U L U' L' U2 L U F U2"
+      ],
+      "image": "/cases/cll/s2.svg",
+      "source": "https://www.cubepal.app/cubes/3x3x3/stages/cll#s2",
+      "corner_facelets": {
+        "U0": "U",
+        "U2": "B",
+        "U6": "R",
+        "U8": "F",
+        "L0": "L",
+        "L2": "U",
+        "F0": "F",
+        "F2": "U",
+        "R0": "L",
+        "R2": "U",
+        "B0": "R",
+        "B2": "B"
+      }
+    },
+    {
+      "name": "S3",
+      "category": "S",
+      "algorithm": "B2 D' B U' B' D B U' B U B' U B U'",
+      "alternatives": [
+        "L U L' U L U' L D L' U' L D' L2 U'",
+        "R' U' R U' R2 F' R U R U' R' F U2 R U",
+        "B U2 L B' U' B U B L' B2 U' B U' B' U",
+        "R' U2 R U R' U R B' R B R' U' R' U R U'",
+        "F U F' U' F' L F L' F U F' U F U2 F' U'",
+        "R' F2 R2 U2 R' F R U2 R2 F2 R U2",
+        "L F2 L2 U2 L F L' U2 L2 F2 L' U2"
+      ],
+      "image": "/cases/cll/s3.svg",
+      "source": "https://www.cubepal.app/cubes/3x3x3/stages/cll#s3",
+      "corner_facelets": {
+        "U0": "U",
+        "U2": "B",
+        "U6": "L",
+        "U8": "R",
+        "L0": "F",
+        "L2": "U",
+        "F0": "B",
+        "F2": "U",
+        "R0": "F",
+        "R2": "U",
+        "B0": "R",
+        "B2": "L"
+      }
+    },
+    {
+      "name": "S4",
+      "category": "S",
+      "algorithm": "F U' B' U F' U' B U2",
+      "alternatives": [],
+      "image": "/cases/cll/s4.svg",
+      "source": "https://www.cubepal.app/cubes/3x3x3/stages/cll#s4",
+      "corner_facelets": {
+        "U0": "U",
+        "U2": "L",
+        "U6": "F",
+        "U8": "R",
+        "L0": "B",
+        "L2": "U",
+        "F0": "L",
+        "F2": "U",
+        "R0": "F",
+        "R2": "U",
+        "B0": "B",
+        "B2": "R"
+      }
+    },
+    {
+      "name": "S5",
+      "category": "S",
+      "algorithm": "B' U2 B U2 B L' B' L U",
+      "alternatives": [
+        "L U F U2 F' U' F U F' L' U2"
+      ],
+      "image": "/cases/cll/s5.svg",
+      "source": "https://www.cubepal.app/cubes/3x3x3/stages/cll#s5",
+      "corner_facelets": {
+        "U0": "U",
+        "U2": "R",
+        "U6": "F",
+        "U8": "B",
+        "L0": "L",
+        "L2": "U",
+        "F0": "L",
+        "F2": "U",
+        "R0": "R",
+        "R2": "U",
+        "B0": "F",
+        "B2": "B"
+      }
+    },
+    {
+      "name": "S6",
+      "category": "S",
+      "algorithm": "R U R' U R U' R B' R' B U' R' U'",
+      "alternatives": [
+        "R' U' F R' F' R U' R U R' U R U'",
+        "F' U2 F R' F R F' U F' U F U'",
+        "B U B' U B' R B R' B U2 B' U'"
+      ],
+      "image": "/cases/cll/s6.svg",
+      "source": "https://www.cubepal.app/cubes/3x3x3/stages/cll#s6",
+      "corner_facelets": {
+        "U0": "U",
+        "U2": "B",
+        "U6": "F",
+        "U8": "L",
+        "L0": "R",
+        "L2": "U",
+        "F0": "L",
+        "F2": "U",
+        "R0": "B",
+        "R2": "U",
+        "B0": "R",
+        "B2": "F"
+      }
+    },
+    {
+      "name": "AS1",
+      "category": "AS",
+      "algorithm": "R' U' R U' R' U2 R U2",
+      "alternatives": [
+        "B U2 B' U' B U' B' U2"
+      ],
+      "image": "/cases/cll/as1.svg",
+      "source": "https://www.cubepal.app/cubes/3x3x3/stages/cll#as1",
+      "corner_facelets": {
+        "U0": "U",
+        "U2": "R",
+        "U6": "L",
+        "U8": "F",
+        "L0": "L",
+        "L2": "F",
+        "F0": "U",
+        "F2": "R",
+        "R0": "U",
+        "R2": "B",
+        "B0": "U",
+        "B2": "B"
+      }
+    },
+    {
+      "name": "AS2",
+      "category": "AS",
+      "algorithm": "L U2 L' U2 L' B L B' U'",
+      "alternatives": [
+        "B' U' R' U2 R U R' U' R B U2"
+      ],
+      "image": "/cases/cll/as2.svg",
+      "source": "https://www.cubepal.app/cubes/3x3x3/stages/cll#as2",
+      "corner_facelets": {
+        "U0": "U",
+        "U2": "R",
+        "U6": "F",
+        "U8": "L",
+        "L0": "L",
+        "L2": "R",
+        "F0": "U",
+        "F2": "F",
+        "R0": "U",
+        "R2": "B",
+        "B0": "U",
+        "B2": "B"
+      }
+    },
+    {
+      "name": "AS3",
+      "category": "AS",
+      "algorithm": "R' U L U' R U L' U2",
+      "alternatives": [],
+      "image": "/cases/cll/as3.svg",
+      "source": "https://www.cubepal.app/cubes/3x3x3/stages/cll#as3",
+      "corner_facelets": {
+        "U0": "U",
+        "U2": "R",
+        "U6": "B",
+        "U8": "F",
+        "L0": "F",
+        "L2": "L",
+        "F0": "U",
+        "F2": "R",
+        "R0": "U",
+        "R2": "B",
+        "B0": "U",
+        "B2": "L"
+      }
+    },
+    {
+      "name": "AS4",
+      "category": "AS",
+      "algorithm": "B' U' B U' B' U B' D' B U B' D B2 U",
+      "alternatives": [
+        "L2 D L' U L D' L' U L' U' L U' L' U",
+        "F U F' U F2 R F' U' F' U F R' U2 F' U'",
+        "L' U2 B' L U L' U' L' B L2 U L' U L U'",
+        "R' U' R U R B' R' B R' U' R U' R' U2 R U",
+        "F U2 F' U' F U' F' L F' L' F U F U' F' U",
+        "F R2 F2 U2 F R' F' U2 F2 R2 F' U2",
+        "B' R2 B2 U2 B' R' B U2 B2 R2 B U2"
+      ],
+      "image": "/cases/cll/as4.svg",
+      "source": "https://www.cubepal.app/cubes/3x3x3/stages/cll#as4",
+      "corner_facelets": {
+        "U0": "U",
+        "U2": "B",
+        "U6": "L",
+        "U8": "F",
+        "L0": "B",
+        "L2": "F",
+        "F0": "U",
+        "F2": "R",
+        "R0": "U",
+        "R2": "L",
+        "B0": "U",
+        "B2": "R"
+      }
+    },
+    {
+      "name": "AS5",
+      "category": "AS",
+      "algorithm": "B' R B R' U2 R' U2 R U'",
+      "alternatives": [
+        "R B U' B' U B U2 B' U' R' U2"
+      ],
+      "image": "/cases/cll/as5.svg",
+      "source": "https://www.cubepal.app/cubes/3x3x3/stages/cll#as5",
+      "corner_facelets": {
+        "U0": "U",
+        "U2": "F",
+        "U6": "L",
+        "U8": "R",
+        "L0": "L",
+        "L2": "F",
+        "F0": "U",
+        "F2": "B",
+        "R0": "U",
+        "R2": "R",
+        "B0": "U",
+        "B2": "B"
+      }
+    },
+    {
+      "name": "AS6",
+      "category": "AS",
+      "algorithm": "F U R' F R F' U F' U' F U' F' U",
+      "alternatives": [
+        "F' U' F U' F' U F' L F L' U F U",
+        "L U' L' U L F' L F L2 U' L U L' U'",
+        "L' U L U' L2 B L B' L U L' U' L U'"
+      ],
+      "image": "/cases/cll/as6.svg",
+      "source": "https://www.cubepal.app/cubes/3x3x3/stages/cll#as6",
+      "corner_facelets": {
+        "U0": "U",
+        "U2": "R",
+        "U6": "L",
+        "U8": "B",
+        "L0": "R",
+        "L2": "F",
+        "F0": "U",
+        "F2": "L",
+        "R0": "U",
+        "R2": "B",
+        "B0": "U",
+        "B2": "F"
+      }
+    },
+    {
+      "name": "P1",
+      "category": "P",
+      "algorithm": "R' U' F' U F U' F' U F R",
+      "alternatives": [
+        "L U F U' F' U F U' F' L'",
+        "R B U B' U' B U B' U' R'",
+        "L' B' U' B U B' U' B U L",
+        "B' U2 B2 U B2 U B2 U2 B' U2",
+        "B U2 B2 U' B2 U' B2 U2 B U2"
+      ],
+      "image": "/cases/cll/p1.svg",
+      "source": "https://www.cubepal.app/cubes/3x3x3/stages/cll#p1",
+      "corner_facelets": {
+        "U0": "B",
+        "U2": "B",
+        "U6": "L",
+        "U8": "R",
+        "L0": "U",
+        "L2": "F",
+        "F0": "U",
+        "F2": "U",
+        "R0": "F",
+        "R2": "U",
+        "B0": "R",
+        "B2": "L"
+      }
+    },
+    {
+      "name": "P2",
+      "category": "P",
+      "algorithm": "B U' F' U B' U F U F' U F",
+      "alternatives": [
+        "B' U F U' B U' F' U' F U' F'",
+        "B' R B' R' B2 U2 L' B L B' U'",
+        "B L' B L B2 U2 R B' R' B U"
+      ],
+      "image": "/cases/cll/p2.svg",
+      "source": "https://www.cubepal.app/cubes/3x3x3/stages/cll#p2",
+      "corner_facelets": {
+        "U0": "B",
+        "U2": "B",
+        "U6": "F",
+        "U8": "F",
+        "L0": "U",
+        "L2": "R",
+        "F0": "U",
+        "F2": "U",
+        "R0": "L",
+        "R2": "U",
+        "B0": "R",
+        "B2": "L"
+      }
+    },
+    {
+      "name": "P3",
+      "category": "P",
+      "algorithm": "B' U2 B U2 B L' B2 U' B U L U'",
+      "alternatives": [
+        "B U L U' L2 B' L U2 L U2 L' U'",
+        "B L' B' L U2 L U' L' U L U2 L' U'",
+        "B' U2 B U B' U' B U2 B L' B' L U'"
+      ],
+      "image": "/cases/cll/p3.svg",
+      "source": "https://www.cubepal.app/cubes/3x3x3/stages/cll#p3",
+      "corner_facelets": {
+        "U0": "L",
+        "U2": "B",
+        "U6": "B",
+        "U8": "R",
+        "L0": "U",
+        "L2": "L",
+        "F0": "U",
+        "F2": "U",
+        "R0": "F",
+        "R2": "U",
+        "B0": "R",
+        "B2": "F"
+      }
+    },
+    {
+      "name": "P4",
+      "category": "P",
+      "algorithm": "R' F R F' U2 R' F R F2 U2 F U",
+      "alternatives": [
+        "L F' L' F U2 L F' L' F2 U2 F' U'",
+        "F R U' R' U' R U R' U R U' R' F' U2",
+        "F' L' U L U L' U' L U' L' U L F U2"
+      ],
+      "image": "/cases/cll/p4.svg",
+      "source": "https://www.cubepal.app/cubes/3x3x3/stages/cll#p4",
+      "corner_facelets": {
+        "U0": "R",
+        "U2": "L",
+        "U6": "L",
+        "U8": "R",
+        "L0": "U",
+        "L2": "F",
+        "F0": "U",
+        "F2": "U",
+        "R0": "F",
+        "R2": "U",
+        "B0": "B",
+        "B2": "B"
+      }
+    },
+    {
+      "name": "P5",
+      "category": "P",
+      "algorithm": "B' U' R' U R2 B R' U2 R' U2 R U",
+      "alternatives": [
+        "B U2 B' U2 B' R B2 U B' U' R' U",
+        "B' R B R' U2 R' U R U' R' U2 R U",
+        "B U2 B' U' B U B' U2 B' R B R' U"
+      ],
+      "image": "/cases/cll/p5.svg",
+      "source": "https://www.cubepal.app/cubes/3x3x3/stages/cll#p5",
+      "corner_facelets": {
+        "U0": "B",
+        "U2": "R",
+        "U6": "L",
+        "U8": "B",
+        "L0": "U",
+        "L2": "F",
+        "F0": "U",
+        "F2": "U",
+        "R0": "R",
+        "R2": "U",
+        "B0": "F",
+        "B2": "L"
+      }
+    },
+    {
+      "name": "P6",
+      "category": "P",
+      "algorithm": "R U2 R' U' R B' R B R' U' R' U'",
+      "alternatives": [
+        "R' U' R' F R F' R U' R' U2 R U'"
+      ],
+      "image": "/cases/cll/p6.svg",
+      "source": "https://www.cubepal.app/cubes/3x3x3/stages/cll#p6",
+      "corner_facelets": {
+        "U0": "F",
+        "U2": "B",
+        "U6": "L",
+        "U8": "L",
+        "L0": "U",
+        "L2": "F",
+        "F0": "U",
+        "F2": "U",
+        "R0": "B",
+        "R2": "U",
+        "B0": "R",
+        "B2": "R"
+      }
+    },
+    {
+      "name": "H1",
+      "category": "H",
+      "algorithm": "R U2 R' U' R U R' U' R U' R'",
+      "alternatives": [
+        "R' U2 R U R' U' R U R' U R",
+        "F U F' U F U' F' U F U2 F'",
+        "F' U' F U' F' U F U' F' U2 F",
+        "L U2 L' U' L U L' U' L U' L'",
+        "L' U2 L U L' U' L U L' U L",
+        "B U B' U B U' B' U B U2 B'",
+        "B' U' B U' B' U B U' B' U2 B"
+      ],
+      "image": "/cases/cll/h1.svg",
+      "source": "https://www.cubepal.app/cubes/3x3x3/stages/cll#h1",
+      "corner_facelets": {
+        "U0": "L",
+        "U2": "R",
+        "U6": "L",
+        "U8": "R",
+        "L0": "B",
+        "L2": "F",
+        "F0": "U",
+        "F2": "U",
+        "R0": "F",
+        "R2": "B",
+        "B0": "U",
+        "B2": "U"
+      }
+    },
+    {
+      "name": "H2",
+      "category": "H",
+      "algorithm": "F U F' U F U B' U F' U' B",
+      "alternatives": [
+        "F' U' F U' F' U' B U' F U B'",
+        "R' F R F' U2 R2 B' R' B R' U'",
+        "L F' L' F U2 L2 B L B' L U"
+      ],
+      "image": "/cases/cll/h2.svg",
+      "source": "https://www.cubepal.app/cubes/3x3x3/stages/cll#h2",
+      "corner_facelets": {
+        "U0": "L",
+        "U2": "R",
+        "U6": "F",
+        "U8": "F",
+        "L0": "B",
+        "L2": "R",
+        "F0": "U",
+        "F2": "U",
+        "R0": "L",
+        "R2": "B",
+        "B0": "U",
+        "B2": "U"
+      }
+    },
+    {
+      "name": "H3",
+      "category": "H",
+      "algorithm": "F' U2 F2 R' F' R U2 F R' F' R U'",
+      "alternatives": [
+        "B U2 B2 R B R' U2 B' R B R' U",
+        "L' B' U' B U B' U B U' B' U' B L U2",
+        "L F U F' U' F U' F' U F U F' L' U2"
+      ],
+      "image": "/cases/cll/h3.svg",
+      "source": "https://www.cubepal.app/cubes/3x3x3/stages/cll#h3",
+      "corner_facelets": {
+        "U0": "F",
+        "U2": "R",
+        "U6": "B",
+        "U8": "R",
+        "L0": "L",
+        "L2": "L",
+        "F0": "U",
+        "F2": "U",
+        "R0": "F",
+        "R2": "B",
+        "B0": "U",
+        "B2": "U"
+      }
+    },
+    {
+      "name": "H4",
+      "category": "H",
+      "algorithm": "F R U R' U' R U R' U' R U R' U' F' U",
+      "alternatives": [
+        "F' U' L' U L U' L' U L U' L' U L F U",
+        "B' U' R' U R U' R' U R U' R' U R B U",
+        "B L U L' U' L U L' U' L U L' U' B' U"
+      ],
+      "image": "/cases/cll/h4.svg",
+      "source": "https://www.cubepal.app/cubes/3x3x3/stages/cll#h4",
+      "corner_facelets": {
+        "U0": "R",
+        "U2": "R",
+        "U6": "L",
+        "U8": "L",
+        "L0": "F",
+        "L2": "F",
+        "F0": "U",
+        "F2": "U",
+        "R0": "B",
+        "R2": "B",
+        "B0": "U",
+        "B2": "U"
+      }
+    }
+  ]
+}

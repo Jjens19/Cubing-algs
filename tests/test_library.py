@@ -28,7 +28,7 @@ class LibraryTests(unittest.TestCase):
             try:
                 server.initialize()
                 with server.connect() as db:
-                    rows = db.execute('SELECT image, algorithm FROM cases').fetchall()
+                    rows = db.execute('SELECT image, algorithm FROM cases WHERE alg_set="ELL"').fetchall()
                     for row in rows:
                         self.assertEqual(row['algorithm'], bundled[row['image'].split('/')[-1]]['algorithm'])
                     # Simulate an existing library before this migration.
@@ -62,7 +62,7 @@ class LibraryTests(unittest.TestCase):
                 server.initialize()
                 server.initialize()
                 with server.connect() as db:
-                    self.assertEqual(db.execute('SELECT count(*) FROM cases').fetchone()[0], 30)
+                    self.assertEqual(db.execute("SELECT count(*) FROM cases WHERE alg_set='ELL'").fetchone()[0], 30)
                     self.assertEqual(db.execute('SELECT sum(learned) FROM cases').fetchone()[0], 0)
                 http = HTTPServer(('127.0.0.1', 0), server.Handler)
                 thread = threading.Thread(target=http.serve_forever, daemon=True)

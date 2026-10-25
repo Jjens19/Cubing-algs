@@ -1,9 +1,43 @@
 // Timing uses a monotonic clock; stopping Space never arms the next solve.
 let practicePool=[],practiceCase=null,practiceState='loading';
 let practiceHeld=false,practiceStart=0,practiceFrame=0,practiceSession=0,solveCount=0;
-let lastPracticeSolve=null,dnfSaving=false;
+let lastPracticeSolve=null,dnfSaving=false,practiceReviewOpening=false;
 const seconds=ms=>(ms/1000).toFixed(2);
+let practiceHintVersion=0;
+function resetPracticeHint(){
+  practiceHintVersion++;
+  $('practice-hint').hidden=true;
+  $('practice-hint-button').disabled=true;
+  $('practice-hint-button').textContent='Hint';
+  $('practice-hint-button').setAttribute('aria-expanded','false');
+  $('practice-hint-graphic').replaceChildren();
+  $('practice-hint-status').textContent='';
+}
+$('practice-hint-button').onclick=async()=>{
+  if(!practiceCase||!$('practice').open)return;
+  const showing=$('practice-hint').hidden;
+  $('practice-hint').hidden=!showing;
+  $('practice-hint-button').textContent=showing?'Hide hint':'Hint';
+  $('practice-hint-button').setAttribute('aria-expanded',String(showing));
+  const version=++practiceHintVersion;
+  if(!showing)return;
+  const chosen=practiceCase;
+  const c=library.cases.find(item=>item.id===chosen.id);
+  $('practice-hint-moves').textContent=chosen.algorithm.trim().split(/\s+/).slice(0,4).join(' ');
+  $('practice-hint-status').textContent='';
+  const state=JSON.parse(c?.drawing||'{}');
+  net($('practice-hint-graphic'),state.stickers||{},true);
+  try{
+    const base=await caseDrawing(c?.image);
+    if(version!==practiceHintVersion||practiceCase!==chosen)return;
+    net($('practice-hint-graphic'),{...base,...state.stickers},true);
+  }catch(error){
+    if(version===practiceHintVersion)$('practice-hint-status').textContent=error.message;
+  }
+};
+
 async function nextPracticeCase(){
+  resetPracticeHint();
   const alternatives=practicePool.filter(item=>item.id!==practiceCase?.id);
   const choices=alternatives.length?alternatives:practicePool;
   const chosen=choices[Math.floor(Math.random()*choices.length)];
@@ -14,7 +48,7 @@ async function nextPracticeCase(){
   try{
     const {setup}=await api('practice-scramble',{algorithm:chosen.algorithm});
     if(session!==practiceSession)return;
-    practiceCase=chosen;
+    practiceCase=chosen;$('practice-hint-button').disabled=false;
     $('practice-scramble').textContent=setup;
     practiceState='ready';
     $('practice-instruction').textContent='Press and release Space to start.';
@@ -33,6 +67,7 @@ function practiceTick(){
 }
 
 function closePractice(){
+  resetPracticeHint();
   practiceSession++;
   cancelAnimationFrame(practiceFrame);
   practiceState='closed';practiceHeld=false;
@@ -41,9 +76,10 @@ function closePractice(){
 }
 
 $('start-practice').onclick=async()=>{
+  resetPracticeHint();
   const selected=visibleCases.filter(c=>(c.learning||c.learned)&&c.algorithm.trim());
   const session=++practiceSession;
-  practiceState='loading';practiceHeld=false;practiceCase=null;solveCount=0;lastPracticeSolve=null;$('practice-dnf').disabled=true;
+  practiceState='loading';practiceHeld=false;practiceCase=null;solveCount=0;lastPracticeSolve=null;$('practice-dnf').disabled=true;$('practice-open-case').disabled=true;
   $('practice-title').textContent='Practice · '+set;
   $('practice-scope').textContent=$('progress-scope').textContent;
   $('practice-time').textContent='0.00';
@@ -69,7 +105,8 @@ $('start-practice').onclick=async()=>{
 };
 
 document.addEventListener('keydown',event=>{
-  if(!$('practice').open)return;
+  if(!$('practice').open||$('detail').open||practiceReviewOpening)return;
+  if(event.target.closest?.('#practice-open-case')||(practiceState!=='running'&&event.target.closest?.('#practice-hint-button')))return;
   if(practiceState!=='running'&&event.code!=='Space')return;
   event.preventDefault();
   if(dnfSaving||event.repeat||practiceHeld||!['ready','stopped','running'].includes(practiceState))return;
@@ -83,7 +120,7 @@ document.addEventListener('keydown',event=>{
     const record={case:practiceCase,elapsed,session:practiceSession,solve:solveCount,dnf:false};
     lastPracticeSolve=record;
     record.saved=savePracticeResult(practiceCase,elapsed,practiceSession,solveCount);
-    $('practice-dnf').disabled=false;
+    $('practice-dnf').disabled=false;$('practice-open-case').disabled=false;
     nextPracticeCase();
 
   }else{
@@ -94,12 +131,13 @@ document.addEventListener('keydown',event=>{
 },true);
 
 document.addEventListener('keyup',event=>{
-  if(!$('practice').open||event.code!=='Space')return;
+  if(!$('practice').open||$('detail').open||practiceReviewOpening||event.code!=='Space')return;
+  if(event.target.closest?.('#practice-open-case')||(practiceState!=='running'&&event.target.closest?.('#practice-hint-button')))return;
   event.preventDefault();
   if(!practiceHeld)return;
   practiceHeld=false;
   if(practiceState==='armed'){
-    practiceState='running';practiceStart=performance.now();lastPracticeSolve=null;$('practice-dnf').disabled=true;
+    practiceState='running';practiceStart=performance.now();lastPracticeSolve=null;$('practice-dnf').disabled=true;$('practice-open-case').disabled=true;
     $('practice-time').classList.remove('armed');
     $('practice-instruction').textContent='Solving… Press any key to stop.';
     practiceTick();
@@ -152,4 +190,24 @@ $('practice-dnf').onclick=async()=>{
       $('practice-dnf').disabled=false;
     }
   }finally{dnfSaving=false;}
+};
+
+$('practice-open-case').onclick=async()=>{
+  const record=lastPracticeSolve;
+  if(!record||dnfSaving||practiceReviewOpening||$('detail').open)return;
+  practiceReviewOpening=true;practiceHeld=false;
+  $('practice-open-case').disabled=true;
+  try{
+    // Let automatic promotion finish before filling the case's progress field.
+    await record.saved;
+    if(record.session!==practiceSession||!$('practice').open)return;
+    const c=library.cases.find(c=>c.id===record.case.id);
+    if(!c)throw Error('The practiced case is no longer in the library.');
+    await openCase(c);
+  }catch(error){
+    if(record.session===practiceSession)$('practice-promotion').textContent='Could not open case: '+error.message;
+  }finally{
+    practiceReviewOpening=false;
+    $('practice-open-case').disabled=!lastPracticeSolve;
+  }
 };
