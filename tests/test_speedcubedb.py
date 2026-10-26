@@ -3,14 +3,14 @@ from pathlib import Path
 import tempfile
 import unittest
 
-from scripts.cross_reference_speedcubedb import match_pose, stage_solved
+from tools.importers.common import match_pose, stage_solved
 from src import server
 from src.scrambler import Cube
 
 
 class SpeedCubeDBTests(unittest.TestCase):
     def test_source_case_matches_and_solutions(self):
-        cases = json.loads((server.ROOT / 'src/speedcubedb_overrides.json').read_text())['cases']
+        cases = json.loads((server.ROOT / 'src/data/speedcubedb_overrides.json').read_text())['cases']
         self.assertEqual(len(cases), 105)
         self.assertEqual(len({(c['alg_set'], c['source_name']) for c in cases}), 105)
         for case in cases:
@@ -33,7 +33,7 @@ class SpeedCubeDBTests(unittest.TestCase):
                     db.execute("UPDATE cases SET algorithm='R3 U', name='My renamed case', category='Custom / Notes', description='My description', recognition='My recognition', drawing='{}', learned=1 WHERE image='/cases/wv/21.svg'")
                     before = {r['id']: dict(r) for r in db.execute('SELECT * FROM cases')}
                 server.initialize()
-                source = json.loads((server.ROOT / 'src/speedcubedb_overrides.json').read_text())['cases']
+                source = json.loads((server.ROOT / 'src/data/speedcubedb_overrides.json').read_text())['cases']
                 expected = {c['image']: c for c in source}
                 with server.connect() as db:
                     rows = db.execute('SELECT * FROM cases').fetchall()

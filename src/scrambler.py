@@ -78,15 +78,22 @@ def invert(algorithm):
     return ' '.join(move[:-1] if move.endswith("2'") else move if move.endswith('2') else move[:-1] if move.endswith("'") else move + "'" for move in reversed(algorithm.split()))
 
 
-def generate(algorithm, rng=None):
+def generate(algorithm, rng=None, facelets=None):
     try:
         import kociemba
     except ImportError:
         raise ValueError('Install the practice solver with: python -m pip install -r requirements.txt, then restart the app.') from None
     rng = rng or random.SystemRandom()
-    target = Cube().apply(invert(algorithm.replace('’', "'")))
+    target = Cube(facelets) if facelets else Cube().apply(invert(algorithm.replace('’', "'")))
     target.apply(rng.choice(['', 'U', "U'", 'U2']))
-    target = target.normalized()
+    restore = ''
+    raw_target = ''.join(target.facelets)
+    if facelets:
+        rotation = next(r for r in ('', 'x', "x'", 'x2') if all(Cube(raw_target).apply(r).facelets[i*9+4] == face for i, face in enumerate(FACES)))
+        restore = invert(rotation)
+        target = ''.join(Cube(raw_target).apply(rotation).facelets)
+    else:
+        target = target.normalized()
     # Solve a perturbed target, then undo that perturbation at the end. This
     # yields a different route to the case rather than its saved alg backwards.
     suffix = []
@@ -99,4 +106,8 @@ def generate(algorithm, rng=None):
     scramble = (invert(solution) + ' ' + suffix).strip()
     if Cube().apply(scramble).normalized() != target:
         raise ValueError('Could not verify the generated practice scramble.')
+    if facelets:
+        scramble = (scramble+' '+restore).strip()
+        if ''.join(Cube().apply(scramble).facelets) != raw_target:
+            raise ValueError('Could not verify the case-specific practice scramble.')
     return scramble

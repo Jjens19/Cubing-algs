@@ -1,0 +1,503 @@
+{
+  "source": "https://speedcubedb.com/a/3x3/ELL",
+  "cases": [
+    {
+      "image": "/cases/ell/ell-A1.svg",
+      "name": "A1",
+      "source_name": "Pure Adj",
+      "source": "https://speedcubedb.com/a/3x3/ELL",
+      "source_setup": "R' U2' R2' U R' U' R' U2' r U R U' r'",
+      "source_algorithms": [
+        "r U R' U' r' U2 R U R U' R2 U2 R",
+        "R' F R U' M' U2 M U' S R' F' R S'",
+        "y' R U R' U' r' U2 R U R U' R2 U2 r",
+        "U2 R S R2 S2 R U' R' S2 R2 S' R'"
+      ],
+      "facelets": "UBULUUUUURRRRRRRRRFFFFFFFFFDDDDDDDDDLULLLLLLLBUBBBBBBB",
+      "alternatives": [
+        "U2 r U R' U' r' U2 R U R U' R2 U2 R U2",
+        "U2 R' F R U' M' U2 M U' S R' F' R S' U2",
+        "U2 y' R U R' U' r' U2 R U R U' R2 U2 r U2",
+        "U2 U2 R S R2 S2 R U' R' S2 R2 S' R' U"
+      ]
+    },
+    {
+      "image": "/cases/ell/ell-A2.svg",
+      "name": "A2",
+      "source_name": "RF Ua",
+      "source": "https://speedcubedb.com/a/3x3/ELL",
+      "source_setup": "R' U' R U M U' R' U r y",
+      "source_algorithms": [
+        "R' F R S R' F' R S'",
+        "y' r' U' R U M' U' R' U R",
+        "y l' U' L U l L' U' L' U L",
+        "S' R U R' S R U' R'"
+      ],
+      "facelets": "ULURUUUUURBRRRRRRRFFFFFFFFFDDDDDDDDDLULLLLLLLBUBBBBBBB",
+      "alternatives": [
+        "U2 R' F R S R' F' R S' U2",
+        "U2 y' r' U' R U M' U' R' U R U2",
+        "U2 y l' U' L U l L' U' L' U L U2",
+        "U2 S' R U R' S R U' R' U2"
+      ]
+    },
+    {
+      "image": "/cases/ell/ell-A3.svg",
+      "name": "A3",
+      "source_name": "FL Ua",
+      "source": "https://speedcubedb.com/a/3x3/ELL",
+      "source_setup": "M U M' U2' M U M'",
+      "source_algorithms": [
+        "y2 M' U' M U2 M' U' M",
+        "M U' M' U2 M U' M'",
+        "y' R u2 R2 F R2 u2 R2 F R",
+        "R' F R' S2 R F' R' S2 R2"
+      ],
+      "facelets": "ULUFUUUUURRRRRRRRRFBFFFFFFFDDDDDDDDDLULLLLLLLBUBBBBBBB",
+      "alternatives": [
+        "U' y2 M' U' M U2 M' U' M U",
+        "U' M U' M' U2 M U' M' U",
+        "U' y' R u2 R2 F R2 u2 R2 F R U",
+        "U' R' F R' S2 R F' R' S2 R2 U"
+      ]
+    },
+    {
+      "image": "/cases/ell/ell-A4.svg",
+      "name": "A4",
+      "source_name": "BL Ua",
+      "source": "https://speedcubedb.com/a/3x3/ELL",
+      "source_setup": "M2' U M' U2' M U' M' U M U2' M U' M",
+      "source_algorithms": [
+        "M' U M U2 M' U M U M2 U M U2 M' U M2",
+        "y R U2 R2 U' F R D R2 D' F' R' U R",
+        "M' U M R U R' U' M' U R U' r' U2 M' U M",
+        "M' U M U2 M' U M U' M2 U M' U2 M U M2"
+      ],
+      "facelets": "UUUUUBUFURURRRRRRRFUFFFFFFFDDDDDDDDDLRLLLLLLLBLBBBBBBB",
+      "alternatives": [
+        "U2 M' U M U2 M' U M U M2 U M U2 M' U M2 U",
+        "U2 y R U2 R2 U' F R D R2 D' F' R' U R U2",
+        "U2 M' U M R U R' U' M' U R U' r' U2 M' U M U2",
+        "U2 M' U M U2 M' U M U' M2 U M' U2 M U M2 U'"
+      ]
+    },
+    {
+      "image": "/cases/ell/ell-A5.svg",
+      "name": "A5",
+      "source_name": "BR Ua",
+      "source": "https://speedcubedb.com/a/3x3/ELL",
+      "source_setup": "M U' M2' U' M' U2' M U' M y",
+      "source_algorithms": [
+        "y' M' U M' U2 M U M2 U M'",
+        "y2 M' U M2 U M U2 M' U M'",
+        "y2 R2 U' F R U R2 U' F' R U R2 U' R",
+        "y' R' U' R' F R F' U R f R U R' U' f'"
+      ],
+      "facelets": "ULUBUUUUUFRFRRRRRRLFLFFFFFFDDDDDDDDDBUBLLLLLLRURBBBBBB",
+      "alternatives": [
+        "U y' M' U M' U2 M U M2 U M' U'",
+        "U y2 M' U M2 U M U2 M' U M' U'",
+        "U y2 R2 U' F R U R2 U' F' R U R2 U' R",
+        "U y' R' U' R' F R F' U R f R U R' U' f'"
+      ]
+    },
+    {
+      "image": "/cases/ell/ell-A6.svg",
+      "name": "A6",
+      "source_name": "RF Ub",
+      "source": "https://speedcubedb.com/a/3x3/ELL",
+      "source_setup": "M' U' M U2' M' U' M y2'",
+      "source_algorithms": [
+        "y2 M' U M U2 M' U M",
+        "M U M' U2 M U M'",
+        "r U R' U' M U2 R' U' R2 U' R' U R' U R"
+      ],
+      "facelets": "URUBUUUUURLRRRRRRRFFFFFFFFFDDDDDDDDDLULLLLLLLBUBBBBBBB",
+      "alternatives": [
+        "U2 y2 M' U M U2 M' U M U2",
+        "U2 M U M' U2 M U M' U2",
+        "U2 r U R' U' M U2 R' U' R2 U' R' U R' U R"
+      ]
+    },
+    {
+      "image": "/cases/ell/ell-A7.svg",
+      "name": "A7",
+      "source_name": "FL Ub",
+      "source": "https://speedcubedb.com/a/3x3/ELL",
+      "source_setup": "R U R' U' M' U R U' r' y",
+      "source_algorithms": [
+        "y' r U R' U' M U R U' R'",
+        "y2 S' R U' R' S R U R'",
+        "L F' L' S' L F L' S",
+        "M U' M' U2 M U' M U M U2 M' U M2"
+      ],
+      "facelets": "UFUBUUUUURRRRRRRRRFLFFFFFFFDDDDDDDDDLULLLLLLLBUBBBBBBB",
+      "alternatives": [
+        "U' y' r U R' U' M U R U' R' U",
+        "U' y2 S' R U' R' S R U R' U",
+        "U' L F' L' S' L F L' S U",
+        "U' M U' M' U2 M U' M U M U2 M' U M2 U"
+      ]
+    },
+    {
+      "image": "/cases/ell/ell-A8.svg",
+      "name": "A8",
+      "source_name": "BL Ub",
+      "source": "https://speedcubedb.com/a/3x3/ELL",
+      "source_setup": "M U M2' U M' U2' M U M y'",
+      "source_algorithms": [
+        "y2 M' U' M2 U' M U2 M' U' M'",
+        "y2 R' U R2 U' R' F U R2 U' R' F' U R2",
+        "y M' U' M' U2 M U' M2 U' M'",
+        "y L U L F' L' F U' L' f' L' U' L U f"
+      ],
+      "facelets": "ULUBUUUUUBRBRRRRRRRFRFFFFFFDDDDDDDDDFUFLLLLLLLULBBBBBB",
+      "alternatives": [
+        "y2 M' U' M2 U' M U2 M' U' M'",
+        "y2 R' U R2 U' R' F U R2 U' R' F' U R2 U'",
+        "y M' U' M' U2 M U' M2 U' M'",
+        "y L U L F' L' F U' L' f' L' U' L U f U'"
+      ]
+    },
+    {
+      "image": "/cases/ell/ell-A9.svg",
+      "name": "A9",
+      "source_name": "BR Ub",
+      "source": "https://speedcubedb.com/a/3x3/ELL",
+      "source_setup": "M2' U' M' U2' M U M' U' M U2' M U M",
+      "source_algorithms": [
+        "S U R' U2 R2 U R' U' R' U S' R' U R",
+        "r' U r U' r' U M' U' R U r' U2 M' U R",
+        "y R' U2 R2 U B' R' D' R2 D B R U' R'",
+        "y R' F R S R' F' R S' M2 U M2 U2 M2 U M2"
+      ],
+      "facelets": "URULUUUUURFRRRRRRRFBFFFFFFFDDDDDDDDDLULLLLLLLBUBBBBBBB",
+      "alternatives": [
+        "U S U R' U2 R2 U R' U' R' U S' R' U R U'",
+        "U r' U r U' r' U M' U' R U r' U2 M' U R U'",
+        "U y R' U2 R2 U B' R' D' R2 D B R U' R' U'",
+        "U y R' F R S R' F' R S' M2 U M2 U2 M2 U M2 U'"
+      ]
+    },
+    {
+      "image": "/cases/ell/ell-A10.svg",
+      "name": "A10",
+      "source_name": "FL Z",
+      "source": "https://speedcubedb.com/a/3x3/ELL",
+      "source_setup": "F' U' L' U L F2' U R U' R' F' y",
+      "source_algorithms": [
+        "y' F R U R' U' F2 L' U' L U F",
+        "y2 R U' r' U' M U r U r' U' M' U M'",
+        "F U R U' R' F2 U' L' U L F",
+        "U2 R' U' F' U F R2 U B U' B' R'"
+      ],
+      "facelets": "ULUBUUUUURFRRRRRRRFRFFFFFFFDDDDDDDDDLULLLLLLLBUBBBBBBB",
+      "alternatives": [
+        "U' y' F R U R' U' F2 L' U' L U F U",
+        "U' y2 R U' r' U' M U r U r' U' M' U M' U",
+        "U' F U R U' R' F2 U' L' U L F U",
+        "U' U2 R' U' F' U F R2 U B U' B' R' U'"
+      ]
+    },
+    {
+      "image": "/cases/ell/ell-A11.svg",
+      "name": "A11",
+      "source_name": "LB Z",
+      "source": "https://speedcubedb.com/a/3x3/ELL",
+      "source_setup": "R' U' F R' F' R U R F U R U' R' F'",
+      "source_algorithms": [
+        "y M' U' M U' M' U2 M U M' U M",
+        "y' R U' R' M' U' R U2 R' U r' R2 U R'",
+        "F R U R' U' F' R' U' R' F R F' U R",
+        "y' M U' M' U' M U2 M' U M U M'"
+      ],
+      "facelets": "ULUBUUUUULFLRRRRRRBRBFFFFFFDDDDDDDDDRURLLLLLLFUFBBBBBB",
+      "alternatives": [
+        "y M' U' M U' M' U2 M U M' U M",
+        "y' R U' R' M' U' R U2 R' U r' R2 U R'",
+        "F R U R' U' F' R' U' R' F R F' U R U2",
+        "y' M U' M' U' M U2 M' U M U M'"
+      ]
+    },
+    {
+      "image": "/cases/ell/ell-A12.svg",
+      "name": "A12",
+      "source_name": "FR H",
+      "source": "https://speedcubedb.com/a/3x3/ELL",
+      "source_setup": "M' U M U M' U M U M' U M",
+      "source_algorithms": [
+        "M' U' M U' M' U' M U' M' U' M",
+        "y F U R U2 R' F' U' r' F2 r",
+        "y' f R U R2 U' f' U' R' U2 R",
+        "y' r' F2 r U F R U2 R' U' F'"
+      ],
+      "facelets": "ULUFUUUUUFBFRRRRRRLRLFFFFFFDDDDDDDDDBUBLLLLLLRURBBBBBB",
+      "alternatives": [
+        "U2 M' U' M U' M' U' M U' M' U' M",
+        "U2 y F U R U2 R' F' U' r' F2 r U'",
+        "U2 y' f R U R2 U' f' U' R' U2 R U'",
+        "U2 y' r' F2 r U F R U2 R' U' F' U'"
+      ]
+    },
+    {
+      "image": "/cases/ell/ell-H1.svg",
+      "name": "H1",
+      "source_name": "Pure Opp",
+      "source": "https://speedcubedb.com/a/3x3/ELL",
+      "source_setup": "M U' M U' M U' M U2' M U' M U' M U' M",
+      "source_algorithms": [
+        "M' U2 M U R' F' R S R' F R S'",
+        "M' U M' U M' U2 M U M U M",
+        "y S R' F' R S' R' F R U' M' U2 M",
+        "M' U' M' U' M' U' M' U2 M' U' M' U' M' U' M'"
+      ],
+      "facelets": "UBUUUUUFURRRRRRRRRFUFFFFFFFDDDDDDDDDLLLLLLLLLBUBBBBBBB",
+      "alternatives": [
+        "M' U2 M U R' F' R S R' F R S' U",
+        "M' U M' U M' U2 M U M U M U2",
+        "y S R' F' R S' R' F R U' M' U2 M U'",
+        "M' U' M' U' M' U' M' U2 M' U' M' U' M' U' M'"
+      ]
+    },
+    {
+      "image": "/cases/ell/ell-H2.svg",
+      "name": "H2",
+      "source_name": "LR Ua",
+      "source": "https://speedcubedb.com/a/3x3/ELL",
+      "source_setup": "r U R' U' M U R U' R' y",
+      "source_algorithms": [
+        "y' R U R' U' M' U R U' r'",
+        "S' L F' L' S L F L'",
+        "y' R U R' U' R' r U R U' r'",
+        "y2 M2 U' M' U2 M U' M U M U2 M' U M"
+      ],
+      "facelets": "UFUUUUURURBRRRRRRRFUFFFFFFFDDDDDDDDDLLLLLLLLLBUBBBBBBB",
+      "alternatives": [
+        "U y' R U R' U' M' U R U' r' U'",
+        "U S' L F' L' S L F L' U'",
+        "U y' R U R' U' R' r U R U' r' U'",
+        "U y2 M2 U' M' U2 M U' M U M U2 M' U M U'"
+      ]
+    },
+    {
+      "image": "/cases/ell/ell-H3.svg",
+      "name": "H3",
+      "source_name": "BF Ua",
+      "source": "https://speedcubedb.com/a/3x3/ELL",
+      "source_setup": "M' U' M' U2' M' U M U' M' U2' M U M2'",
+      "source_algorithms": [
+        "y R U R' f' R' U2 R U f U' R2 U2 R",
+        "y r U r' R2 U R2 U R2 U2 R2 U2 r U' r'",
+        "y r U' r' U' r U2 r' U r U r' U M' U M",
+        "y2 L' U2 L U L' U L F' U' L F' L' F L' U L F"
+      ],
+      "facelets": "UBUUUUURURLRRRRRRRFUFFFFFFFDDDDDDDDDLFLLLLLLLBUBBBBBBB",
+      "alternatives": [
+        "y R U R' f' R' U2 R U f U' R2 U2 R",
+        "y r U r' R2 U R2 U R2 U2 R2 U2 r U' r' U2",
+        "y r U' r' U' r U2 r' U r U r' U M' U M",
+        "y2 L' U2 L U L' U L F' U' L F' L' F L' U L F"
+      ]
+    },
+    {
+      "image": "/cases/ell/ell-H4.svg",
+      "name": "H4",
+      "source_name": "RL Ub",
+      "source": "https://speedcubedb.com/a/3x3/ELL",
+      "source_setup": "l' U' L U M U' L' U L y'",
+      "source_algorithms": [
+        "R U R' S' R U' R' S",
+        "S R' F R S' R' F' R",
+        "y' R' U' R U M U' R' U r",
+        "y M2 U' M' U2 M U' M' U M' U2 M U M'"
+      ],
+      "facelets": "URUUUUUBURFRRRRRRRFUFFFFFFFDDDDDDDDDLLLLLLLLLBUBBBBBBB",
+      "alternatives": [
+        "U R U R' S' R U' R' S U'",
+        "U S R' F R S' R' F' R U'",
+        "U y' R' U' R U M U' R' U r U'",
+        "U y M2 U' M' U2 M U' M' U M' U2 M U M' U'"
+      ]
+    },
+    {
+      "image": "/cases/ell/ell-H5.svg",
+      "name": "H5",
+      "source_name": "BF Ub",
+      "source": "https://speedcubedb.com/a/3x3/ELL",
+      "source_setup": "R U2' R2' U' F R D R2' D' F' R' U R U'",
+      "source_algorithms": [
+        "y R' U' R F D R2 D' R' F' U R2 U2 R'",
+        "y2 R U2 R' U' R U' R' F U R' F R F' R U' R' F'",
+        "y M' U M U2 M' U M S R' F R S' R' F' R",
+        "y r' U' r R2 U' R2 U' R2 U2 R2 U2 r' U r"
+      ],
+      "facelets": "UBUUUUULURFRRRRRRRFUFFFFFFFDDDDDDDDDLRLLLLLLLBUBBBBBBB",
+      "alternatives": [
+        "y R' U' R F D R2 D' R' F' U R2 U2 R'",
+        "y2 R U2 R' U' R U' R' F U R' F R F' R U' R' F'",
+        "y M' U M U2 M' U M S R' F R S' R' F' R",
+        "y r' U' r R2 U' R2 U' R2 U2 R2 U2 r' U r U2"
+      ]
+    },
+    {
+      "image": "/cases/ell/ell-H6.svg",
+      "name": "H6",
+      "source_name": "LR Z",
+      "source": "https://speedcubedb.com/a/3x3/ELL",
+      "source_setup": "M' U2' M U M' U M U' M' U M y'",
+      "source_algorithms": [
+        "y M' U' M U M' U' M U' M' U2 M",
+        "M' U' M U' M' U M U' M' U' M",
+        "y R2 U R' U' R F R2 U R U' F' U R2",
+        "R' B' R' S R F R S' R' S D z'"
+      ],
+      "facelets": "ULUUUUURURFRRRRRRRFUFFFFFFFDDDDDDDDDLBLLLLLLLBUBBBBBBB",
+      "alternatives": [
+        "U y M' U' M U M' U' M U' M' U2 M U'",
+        "U M' U' M U' M' U M U' M' U' M U2",
+        "U y R2 U R' U' R F R2 U R U' F' U R2 U'",
+        "U R' B' R' S R F R S' R' S D z' U'"
+      ]
+    },
+    {
+      "image": "/cases/ell/ell-H7.svg",
+      "name": "H7",
+      "source_name": "BF Z",
+      "source": "https://speedcubedb.com/a/3x3/ELL",
+      "source_setup": "M' U2' M U' M' U' M U M' U' M",
+      "source_algorithms": [
+        "M' U M U' M' U M U M' U2 M",
+        "y' R2 U' F U R' U' R2 F' R' U R U' R2",
+        "M U M' U' M U M' U M U2 M'",
+        "y' M' U M U M' U' M U M' U M"
+      ],
+      "facelets": "URUUUUULURBRRRRRRRFUFFFFFFFDDDDDDDDDLFLLLLLLLBUBBBBBBB",
+      "alternatives": [
+        "M' U M U' M' U M U M' U2 M",
+        "y' R2 U' F U R' U' R2 F' R' U R U' R2",
+        "M U M' U' M U M' U M U2 M'",
+        "y' M' U M U M' U' M U M' U M U"
+      ]
+    },
+    {
+      "image": "/cases/ell/ell-H8.svg",
+      "name": "H8",
+      "source_name": "BF H",
+      "source": "https://speedcubedb.com/a/3x3/ELL",
+      "source_setup": "R U R' U' R' F R2' U R' U' R' F' R U2' R U2' R'",
+      "source_algorithms": [
+        "R' U2 R U' R' U' R' F R2 U R' U' R' F' R2",
+        "R2 S2 R F U' R' S2 R U F' R",
+        "F' U R U2 R2 U' D' F2 U D R U' F",
+        "r' U' M' U' R U r' U M' U' R U' R' U2 R"
+      ],
+      "facelets": "UFUUUUUBURLRRRRRRRFUFFFFFFFDDDDDDDDDLRLLLLLLLBUBBBBBBB",
+      "alternatives": [
+        "R' U2 R U' R' U' R' F R2 U R' U' R' F' R2",
+        "R2 S2 R F U' R' S2 R U F' R",
+        "F' U R U2 R2 U' D' F2 U D R U' F",
+        "r' U' M' U' R U r' U M' U' R U' R' U2 R"
+      ]
+    },
+    {
+      "image": "/cases/ell/ell-X1.svg",
+      "name": "X1",
+      "source_name": "Pure 4 Flip",
+      "source": "https://speedcubedb.com/a/3x3/ELL",
+      "source_setup": "M U' M U' M U' M U M U' M U' M U' M",
+      "source_algorithms": [
+        "M' U2 M U2 M' U M U2 M' U2 M",
+        "M' U2 M U2 M' U' M U2 M' U2 M",
+        "M' U' M' U' M' U' M' U M' U' M' U' M' U' M'",
+        "R2 S' R2 U2 S2 U' R2 S R2 S2"
+      ],
+      "facelets": "URUBUFULUFUFRRRRRRLULFFFFFFDDDDDDDDDBUBLLLLLLRURBBBBBB",
+      "alternatives": [
+        "M' U2 M U2 M' U M U2 M' U2 M",
+        "M' U2 M U2 M' U' M U2 M' U2 M U2",
+        "M' U' M' U' M' U' M' U M' U' M' U' M' U' M' U2",
+        "R2 S' R2 U2 S2 U' R2 S R2 S2"
+      ]
+    },
+    {
+      "image": "/cases/ell/ell-X2.svg",
+      "name": "X2",
+      "source_name": "4 Flip Ua",
+      "source": "https://speedcubedb.com/a/3x3/ELL",
+      "source_setup": "M' U M U2' M' U' M U' M' U' M U' M' U M y",
+      "source_algorithms": [
+        "y2 R U R' U M' U' R U' r' U2 M' U' M",
+        "R U R' S U' R' U' R' U R U2 S'",
+        "y2 R' U' F R' F' R U R f U R U' R' f'",
+        "y2 R' U R' S R U' R U S2 U' S"
+      ],
+      "facelets": "UBUFULURURURRRRRRRFUFFFFFFFDDDDDDDDDLULLLLLLLBUBBBBBBB",
+      "alternatives": [
+        "y2 R U R' U M' U' R U' r' U2 M' U' M U'",
+        "R U R' S U' R' U' R' U R U2 S' U'",
+        "y2 R' U' F R' F' R U R f U R U' R' f'",
+        "y2 R' U R' S R U' R U S2 U' S"
+      ]
+    },
+    {
+      "image": "/cases/ell/ell-X3.svg",
+      "name": "X3",
+      "source_name": "4 Flip Ub",
+      "source": "https://speedcubedb.com/a/3x3/ELL",
+      "source_setup": "M U' M U' M' U' M U' M U2' M U' M' U' M",
+      "source_algorithms": [
+        "y2 R' U' R S U R U R U' R' U2 S'",
+        "y S U2 R' U' R U R U S' R U' R'",
+        "y R U R' U' M' U R U' R' U M U2 M' U M",
+        "y2 f R U R' U' f' R' U' R' F R F' U R"
+      ],
+      "facelets": "UBURUFULURURRRRRRRFUFFFFFFFDDDDDDDDDLULLLLLLLBUBBBBBBB",
+      "alternatives": [
+        "y2 R' U' R S U R U R U' R' U2 S' U",
+        "y S U2 R' U' R U R U S' R U' R' U",
+        "y R U R' U' M' U R U' R' U M U2 M' U M",
+        "y2 f R U R' U' f' R' U' R' F R F' U R"
+      ]
+    },
+    {
+      "image": "/cases/ell/ell-X4.svg",
+      "name": "X4",
+      "source_name": "4 Flip Z",
+      "source": "https://speedcubedb.com/a/3x3/ELL",
+      "source_setup": "r' U M2' U' r U2' r' U M2' U' r",
+      "source_algorithms": [
+        "r' U M2 U' r U2 r' U M2 U' r",
+        "R2 S' R2 U' S2 U' R2 S' R2",
+        "y R2 S' R2 U S2 U R2 S' R2",
+        "y r U' M2 U r' U2 r U' M2 U r'"
+      ],
+      "facelets": "ULUBUFURURURRRRRRRFUFFFFFFFDDDDDDDDDLULLLLLLLBUBBBBBBB",
+      "alternatives": [
+        "U r' U M2 U' r U2 r' U M2 U' r U",
+        "U R2 S' R2 U' S2 U' R2 S' R2 U",
+        "U y R2 S' R2 U S2 U R2 S' R2 U",
+        "U y r U' M2 U r' U2 r U' M2 U r' U"
+      ]
+    },
+    {
+      "image": "/cases/ell/ell-X5.svg",
+      "name": "X5",
+      "source_name": "4 Flip H",
+      "source": "https://speedcubedb.com/a/3x3/ELL",
+      "source_setup": "r U R' U' M2' U R U' R' U' M'",
+      "source_algorithms": [
+        "r U R' U' M2 U R U' R' U' M'",
+        "S' R U R' S U' M' U R U' r'",
+        "S R' U' R U R U R U' R' S'",
+        "S U' S R' F R S2 R' F' R"
+      ],
+      "facelets": "URUBUFULUBUBRRRRRRRURFFFFFFDDDDDDDDDFUFLLLLLLLULBBBBBB",
+      "alternatives": [
+        "r U R' U' M2 U R U' R' U' M'",
+        "S' R U R' S U' M' U R U' r' U'",
+        "S R' U' R U R U R U' R' S' U2",
+        "S U' S R' F R S2 R' F' R"
+      ]
+    }
+  ]
+}

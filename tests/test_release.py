@@ -17,7 +17,7 @@ class ReleaseTests(unittest.TestCase):
         self.assertEqual(bump('1.2.3', ['change storage\n\nBREAKING CHANGE: new format']), '2.0.0')
         for path in ['README.md', 'docs/screenshots/library.png', 'changelog/0.1.0.md', 'VERSION', '.github/release-state.json']:
             self.assertFalse(is_code(path), path)
-        for path in ['app.py', 'src/static/app.js', 'requirements.txt', '.github/workflows/version.yml', 'ELL/ell-A1.svg']:
+        for path in ['app.py', 'src/static/app.js', 'requirements.txt', '.github/workflows/version.yml', 'src/static/cases/ell/ell-A1.svg']:
             self.assertTrue(is_code(path), path)
 
     def test_release_sequence(self):

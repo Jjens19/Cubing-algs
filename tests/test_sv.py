@@ -9,7 +9,7 @@ from src.scrambler import Cube, FACES
 
 class SVTests(unittest.TestCase):
     def test_selection_and_solutions_match_source_setups(self):
-        cases = json.loads((server.ROOT / 'src/sv_algorithms.json').read_text())['cases']
+        cases = json.loads((server.ROOT / 'src/data/sv_algorithms.json').read_text())['cases']
         self.assertEqual(len(cases), 27)
         self.assertEqual({c['source_number'] for c in cases}, set(range(1, 28)))
         for case in cases:

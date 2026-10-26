@@ -41,6 +41,17 @@ def connect():
     return db
 
 
+def eolr_reference(data):
+    if not data.get('id'):
+        return None
+    with connect() as db:
+        row = db.execute('SELECT image FROM cases WHERE id=?', (data['id'],)).fetchone()
+    if not row or not row['image'].startswith('/cases/lse/eolr/'):
+        return None
+    cases = json.loads((ROOT / 'src/data/eolr_algorithms.json').read_text())['cases']
+    return next((case for case in cases if case['image'] == row['image'] and case['algorithm'] == data.get('algorithm')), None)
+
+
 def initialize():
     DB.parent.mkdir(parents=True, exist_ok=True)
     with connect() as db:
@@ -53,33 +64,39 @@ def initialize():
             db.execute('ALTER TABLE cases ADD COLUMN learning INTEGER NOT NULL DEFAULT 0 CHECK (learning IN (0, 1))')
         # Only seed once; later startup must not overwrite the user’s library.
         if not db.execute('SELECT 1 FROM cases LIMIT 1').fetchone():
-            for path in sorted((ROOT / 'ELL').glob('*.svg')):
+            for path in sorted((ROOT / 'src/static/cases/ell').glob('*.svg')):
                 name = path.stem.removeprefix('ell-')
                 category = 'EPLL' if name.startswith('epll') else name[0]
-                db.execute('INSERT INTO cases(name, alg_set, category, image) VALUES (?, ?, ?, ?)', (name.upper(), 'ELL', category, '/ELL/' + path.name))
+                db.execute('INSERT INTO cases(name, alg_set, category, image) VALUES (?, ?, ?, ?)', (name.upper(), 'ELL', category, '/cases/ell/' + path.name))
         # Apply the bundled website import once to both existing and new libraries.
         # Tracking the migration also lets users clear an algorithm afterwards.
         db.execute('CREATE TABLE IF NOT EXISTS migrations (name TEXT PRIMARY KEY)')
         migration = 'ell-vector-images-v1'
         if not db.execute('SELECT 1 FROM migrations WHERE name=?', (migration,)).fetchone():
-            for filename in json.loads((ROOT / 'src/ell_stickers.json').read_text()):
+            for filename in json.loads((ROOT / 'src/data/ell_stickers.json').read_text()):
                 old_image = '/ELL/' + Path(filename).with_suffix('.png').name
-                db.execute('UPDATE cases SET image=? WHERE image=?', ('/ELL/' + filename, old_image))
+                db.execute('UPDATE cases SET image=? WHERE image=?', ('/cases/ell/' + filename, old_image))
+            db.execute('INSERT INTO migrations VALUES (?)', (migration,))
+        migration = 'ell-static-directory-v1'
+        if not db.execute('SELECT 1 FROM migrations WHERE name=?', (migration,)).fetchone():
+            for filename in json.loads((ROOT / 'src/data/ell_stickers.json').read_text()):
+                for legacy in (filename, Path(filename).with_suffix('.png').name):
+                    db.execute('UPDATE cases SET image=? WHERE image=?', ('/cases/ell/' + filename, '/ELL/' + legacy))
             db.execute('INSERT INTO migrations VALUES (?)', (migration,))
         migration = 'sarah-ell-algorithms-v1'
         if not db.execute('SELECT 1 FROM migrations WHERE name=?', (migration,)).fetchone():
-            bundled = json.loads((ROOT / 'src' / 'ell_algorithms.json').read_text())
+            bundled = json.loads((ROOT / 'src' / 'data' / 'ell_algorithms.json').read_text())
             for filename, case in bundled['cases'].items():
                 db.execute("UPDATE cases SET algorithm=? WHERE alg_set='ELL' AND image=? AND trim(algorithm)=''",
-                           (case['algorithm'], '/ELL/' + filename))
+                           (case['algorithm'], '/cases/ell/' + filename))
                 if not case['algorithm']:
                     db.execute("UPDATE cases SET description=? WHERE alg_set='ELL' AND image=? AND trim(description)=''",
-                               ('Solved / ELL skip: no moves are needed.', '/ELL/' + filename))
+                               ('Solved / ELL skip: no moves are needed.', '/cases/ell/' + filename))
             db.execute('INSERT INTO migrations VALUES (?)', (migration,))
 
         migration = 'cubepal-cll-v1'
         if not db.execute('SELECT 1 FROM migrations WHERE name=?', (migration,)).fetchone():
-            bundled = json.loads((ROOT / 'src/cll_algorithms.json').read_text())
+            bundled = json.loads((ROOT / 'src/data/cll_algorithms.json').read_text())
             db.execute('INSERT OR IGNORE INTO sets VALUES (?)', ('CLL',))
             for case in bundled['cases']:
                 # Never replace an existing user's case with the same identity.
@@ -102,7 +119,7 @@ def initialize():
 
         migration = 'jperm-wv-oll-pll-v1'
         if not db.execute('SELECT 1 FROM migrations WHERE name=?', (migration,)).fetchone():
-            bundled = json.loads((ROOT / 'src/jperm_algorithms.json').read_text())
+            bundled = json.loads((ROOT / 'src/data/jperm_algorithms.json').read_text())
             for case in bundled['cases']:
                 db.execute('INSERT OR IGNORE INTO sets VALUES (?)', (case['alg_set'],))
                 if db.execute('SELECT 1 FROM cases WHERE alg_set=? AND (name=? OR image=?)',
@@ -119,7 +136,7 @@ def initialize():
 
         migration = 'speedcubedb-sv-v1'
         if not db.execute('SELECT 1 FROM migrations WHERE name=?', (migration,)).fetchone():
-            bundled = json.loads((ROOT / 'src/sv_algorithms.json').read_text())
+            bundled = json.loads((ROOT / 'src/data/sv_algorithms.json').read_text())
             db.execute('INSERT OR IGNORE INTO sets VALUES (?)', ('SV',))
             for case in bundled['cases']:
                 if db.execute("SELECT 1 FROM cases WHERE alg_set='SV' AND (name=? OR image=?)",
@@ -134,9 +151,86 @@ def initialize():
                            (case['name'], 'SV', case['category'], case['algorithm'], description, case['image']))
             db.execute('INSERT INTO migrations VALUES (?)', (migration,))
 
+        migration = 'speedcubedb-ell-alternatives-v1'
+        if not db.execute('SELECT 1 FROM migrations WHERE name=?', (migration,)).fetchone():
+            bundled = json.loads((ROOT / 'src/data/ell_alternatives.json').read_text())
+            for case in bundled['cases']:
+                # Match by image so renamed or recategorized cases retain their alternatives.
+                for row in db.execute('SELECT id, algorithm, description FROM cases WHERE image=?', (case['image'],)).fetchall():
+                    alternatives = [alg for alg in case['alternatives'] if alg != row['algorithm']]
+                    if not alternatives:
+                        continue
+                    note = '\n\nAlternative algorithms: SpeedCubeDB ' + case['source_name'] + '\n' + case['source']
+                    note += '\nU adjustments are included for this case orientation; keep any cube rotations as written.\n'
+                    note += '\n'.join(alternatives)
+                    db.execute('UPDATE cases SET description=? WHERE id=?', (row['description'] + note, row['id']))
+            db.execute('INSERT INTO migrations VALUES (?)', (migration,))
+
+        migration = 'cubingapp-lse-eolr-v1'
+        if not db.execute('SELECT 1 FROM migrations WHERE name=?', (migration,)).fetchone():
+            bundled = json.loads((ROOT / 'src/data/eolr_algorithms.json').read_text())
+            db.execute('INSERT OR IGNORE INTO sets VALUES (?)', ('LSE',))
+            for case in bundled['cases']:
+                if db.execute("SELECT 1 FROM cases WHERE alg_set='LSE' AND (name=? OR image=?)",
+                              (case['name'], case['image'])).fetchone():
+                    continue
+                description = 'Source: ' + case['source'] + '\nEOLR combines edge orientation and UL/UR placement. Finish the listed algorithm with UL and UR on the bottom, then insert them using M2. It is a stage solution, not a full-cube solution.'
+                description += '\nThe positions in parentheses identify the starting positions of UL and UR. Inspect the bottom edges as well as the top-view diagram. Masked source stickers have been completed to a legal cube for setups and practice.'
+                if case['alternatives']:
+                    description += '\n\nAlternative algorithms from CubingApp (as listed):\n' + '\n'.join(case['alternatives'])
+                db.execute('INSERT INTO cases(name, alg_set, category, algorithm, description, image) VALUES (?, ?, ?, ?, ?, ?)',
+                           (case['name'], 'LSE', case['category'], case['algorithm'], description, case['image']))
+            db.execute('INSERT INTO migrations VALUES (?)', (migration,))
+
+        migration = 'speedcubedb-lse-eo4a-v1'
+        if not db.execute('SELECT 1 FROM migrations WHERE name=?', (migration,)).fetchone():
+            bundled = json.loads((ROOT / 'src/data/lse_algorithms.json').read_text())
+            db.execute('INSERT OR IGNORE INTO sets VALUES (?)', ('LSE',))
+            for case in bundled['cases']:
+                if db.execute("SELECT 1 FROM cases WHERE alg_set='LSE' AND (name=? OR image=?)",
+                              (case['name'], case['image'])).fetchone():
+                    continue
+                description = 'Source: ' + case['source'] + '\nEO4A is the edge-orientation stage of Roux LSE. Orient the last six edges while preserving both blocks and the solved corners. Edge placement and final centers may still need solving.'
+                description += '\nRecognition: the case name describes the misoriented-edge pattern, including bottom edges. The thumbnail shows the upper layer; inspect DF and DB on the cube as well.'
+                if case['alternatives']:
+                    description += '\n\nAlternative solutions from SpeedCubeDB (as listed; may use another setup or orientation):\n' + '\n'.join(case['alternatives'])
+                db.execute('INSERT INTO cases(name, alg_set, category, algorithm, description, image) VALUES (?, ?, ?, ?, ?, ?)',
+                           (case['name'], 'LSE', case['category'], case['algorithm'], description, case['image']))
+            db.execute('INSERT INTO migrations VALUES (?)', (migration,))
+
+        migration = 'speedcubedb-cmll-v1'
+        if not db.execute('SELECT 1 FROM migrations WHERE name=?', (migration,)).fetchone():
+            bundled = json.loads((ROOT / 'src/data/cmll_algorithms.json').read_text())
+            db.executemany('INSERT OR IGNORE INTO sets VALUES (?)', [('CMLL',), ('LSE',)])
+            for case in bundled['cases']:
+                if db.execute("SELECT 1 FROM cases WHERE alg_set='CMLL' AND (name=? OR image=?)",
+                              (case['name'], case['image'])).fetchone():
+                    continue
+                description = 'Source: ' + case['source'] + '\nCMLL solves the four upper corners while preserving both Roux blocks. The M slice and remaining edges are free to change.'
+                if case['alternatives']:
+                    description += '\n\nAlternative solutions from SpeedCubeDB (as listed):\n' + '\n'.join(case['alternatives'])
+                db.execute('INSERT INTO cases(name, alg_set, category, algorithm, description, image) VALUES (?, ?, ?, ?, ?, ?)',
+                           (case['name'], 'CMLL', case['category'], case['algorithm'], description, case['image']))
+            db.execute('INSERT INTO migrations VALUES (?)', (migration,))
+
+        migration = 'speedcubedb-coll-v1'
+        if not db.execute('SELECT 1 FROM migrations WHERE name=?', (migration,)).fetchone():
+            bundled = json.loads((ROOT / 'src/data/coll_algorithms.json').read_text())
+            db.execute('INSERT OR IGNORE INTO sets VALUES (?)', ('COLL',))
+            for case in bundled['cases']:
+                if db.execute("SELECT 1 FROM cases WHERE alg_set='COLL' AND (name=? OR image=?)",
+                              (case['name'], case['image'])).fetchone():
+                    continue
+                description = 'Source: ' + case['source'] + '\nCOLL solves the last-layer corners while preserving edge orientation; edge permutation remains.'
+                if case['alternatives']:
+                    description += '\n\nAlternative solutions from SpeedCubeDB (as listed):\n' + '\n'.join(case['alternatives'])
+                db.execute('INSERT INTO cases(name, alg_set, category, algorithm, description, image) VALUES (?, ?, ?, ?, ?, ?)',
+                           (case['name'], 'COLL', case['category'], case['algorithm'], description, case['image']))
+            db.execute('INSERT INTO migrations VALUES (?)', (migration,))
+
         migration = 'speedcubedb-primary-algorithms-v1'
         if not db.execute('SELECT 1 FROM migrations WHERE name=?', (migration,)).fetchone():
-            bundled = json.loads((ROOT / 'src/speedcubedb_overrides.json').read_text())
+            bundled = json.loads((ROOT / 'src/data/speedcubedb_overrides.json').read_text())
             for case in bundled['cases']:
                 rows = db.execute('SELECT id, algorithm, description FROM cases WHERE alg_set=? AND (image=? OR name=?)',
                                   (case['alg_set'], case['image'], case['name'])).fetchall()
@@ -148,6 +242,31 @@ def initialize():
                         note += '\nOther SpeedCubeDB solutions (as listed):\n' + '\n'.join(case['source_algorithms'][1:])
                     db.execute('UPDATE cases SET algorithm=?, description=? WHERE id=?',
                                (case['algorithm'], row['description']+note, row['id']))
+            db.execute('INSERT INTO migrations VALUES (?)', (migration,))
+
+
+        migration = 'speedcubedb-antipll-v1'
+        if not db.execute('SELECT 1 FROM migrations WHERE name=?', (migration,)).fetchone():
+            bundled = json.loads((ROOT / 'src/data/antipll_algorithms.json').read_text())
+            db.execute('INSERT OR IGNORE INTO sets VALUES (?)', ('Anti PLL',))
+            for case in bundled['cases']:
+                if db.execute("SELECT 1 FROM cases WHERE alg_set='Anti PLL' AND (name=? OR image=?)",
+                              (case['name'], case['image'])).fetchone():
+                    continue
+                description = 'Source: ' + case['source'] + '\nAnti PLL solves last-layer permutation with all four last-layer edges flipped. This shared set is available under both CFCE and CFOP; edits and progress apply to both.'
+                if case['alternatives']:
+                    description += '\n\nAlternative solutions from SpeedCubeDB (as listed; may use another orientation):\n' + '\n'.join(case['alternatives'])
+                db.execute('INSERT INTO cases(name, alg_set, category, algorithm, description, image) VALUES (?, ?, ?, ?, ?, ?)',
+                           (case['name'], 'Anti PLL', case['category'], case['algorithm'], description, case['image']))
+            db.execute('INSERT INTO migrations VALUES (?)', (migration,))
+
+        migration = 'method-advanced-subsets-v1'
+        if not db.execute('SELECT 1 FROM migrations WHERE name=?', (migration,)).fetchone():
+            db.execute('INSERT OR IGNORE INTO sets VALUES (?)', ('EOLR',))
+            for case in json.loads((ROOT / 'src/data/eolr_algorithms.json').read_text())['cases']:
+                category = case['category'].removeprefix('EOLR / ')
+                db.execute("UPDATE cases SET alg_set='EOLR', category=CASE WHEN category=? THEN ? ELSE category END WHERE alg_set='LSE' AND image=?",
+                           (case['category'], category, case['image']))
             db.execute('INSERT INTO migrations VALUES (?)', (migration,))
 
 
@@ -171,7 +290,7 @@ class Handler(BaseHTTPRequestHandler):
         if path == '/api/export':
             with connect() as db:
                 return self.send(200, {'sets': [r[0] for r in db.execute('SELECT name FROM sets')], 'cases': [dict(r) for r in db.execute('SELECT * FROM cases')]})
-        base = ROOT / 'ELL' if path.startswith('/ELL/') else ROOT / 'src' / 'static'
+        base = ROOT / 'src/static/cases/ell' if path.startswith('/ELL/') else ROOT / 'src' / 'static'
         relative = path[5:] if path.startswith('/ELL/') else ('index.html' if path == '/' else path.lstrip('/'))
         file = (base / relative).resolve()
         if not file.is_relative_to(base.resolve()) or not file.is_file():
@@ -191,11 +310,13 @@ class Handler(BaseHTTPRequestHandler):
             data = json.loads(self.rfile.read(size))
             path = urlparse(self.path).path
             if path == '/api/inverse':
-                return self.send(200, {'setup': inverse(data['algorithm'])})
+                reference = eolr_reference(data)
+                return self.send(200, {'setup': reference['setup'] if reference else inverse(data['algorithm'])})
             if path == '/api/practice-scramble':
                 # Validate the same notation accepted by the case editor.
                 inverse(data['algorithm'])
-                return self.send(200, {'setup': generate_practice_scramble(data['algorithm'])})
+                reference = eolr_reference(data)
+                return self.send(200, {'setup': generate_practice_scramble(data['algorithm'], facelets=reference['facelets'] if reference else None)})
             if path == '/api/progress':
                 state = data.get('state')
                 if state is not None and state not in ('not-learned', 'learning', 'learned'):

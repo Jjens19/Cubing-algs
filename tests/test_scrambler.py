@@ -36,7 +36,7 @@ class CubeTests(unittest.TestCase):
 
     @unittest.skipUnless(importlib.util.find_spec('kociemba'), 'Install requirements.txt for scrambler tests')
     def test_all_ell_scrambles_reach_the_case_with_random_auf(self):
-        cases = json.loads((Path(__file__).resolve().parents[1] / 'src' / 'ell_algorithms.json').read_text())['cases']
+        cases = json.loads((Path(__file__).resolve().parents[1] / 'src' / 'data' / 'ell_algorithms.json').read_text())['cases']
         for name, case in cases.items():
             algorithm = case['algorithm']
             if not algorithm:

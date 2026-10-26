@@ -1,0 +1,4285 @@
+{
+  "source": "https://speedcubedb.com/a/3x3/COLL",
+  "cases": [
+    {
+      "name": "AS 1",
+      "alg_set": "COLL",
+      "category": "Anti Sune",
+      "algorithm": "y R U2 R' U' R U' R'",
+      "source_algorithms": [
+        "y R U2 R' U' R U' R'",
+        "R' U' R U' R' U2 R",
+        "y2 L' U' L U' L' U2 L",
+        "y' L U2 L' U' L U' L'"
+      ],
+      "alternatives": [
+        "R' U' R U' R' U2 R",
+        "y2 L' U' L U' L' U2 L",
+        "y' L U2 L' U' L U' L'"
+      ],
+      "source_setup": "R' U2' R U R' U R",
+      "source": "https://speedcubedb.com/a/3x3/COLL",
+      "facelets": "UULUUURUBURFRRRRRRULLFFFFFFDDDDDDDDDRBBLLLLLLUFFBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ffff00",
+          "highlight": false
+        }
+      },
+      "image": "/cases/coll/as-1.svg"
+    },
+    {
+      "name": "AS 2",
+      "alg_set": "COLL",
+      "category": "Anti Sune",
+      "algorithm": "y2 R2 D R' U R D' R' U R' U' R U' R'",
+      "source_algorithms": [
+        "y2 R2 D R' U R D' R' U R' U' R U' R'",
+        "y R' U' R U' R' U R' D' R U R' D R2",
+        "U2 R2 D R' U R D' R' U R' U' R U' R'",
+        "R U R' f' U' R U2 R' U' R U' R' f R U' R'"
+      ],
+      "alternatives": [
+        "y R' U' R U' R' U R' D' R U R' D R2",
+        "U2 R2 D R' U R D' R' U R' U' R U' R'",
+        "R U R' f' U' R U2 R' U' R U' R' f R U' R'"
+      ],
+      "source_setup": "R2' D' R U' R' D R U' R U R' U R y'",
+      "source": "https://speedcubedb.com/a/3x3/COLL",
+      "facelets": "UULUUUFURUFFRRRRRRULBFFFFFFDDDDDDDDDLRRLLLLLLUBBBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ffff00",
+          "highlight": false
+        }
+      },
+      "image": "/cases/coll/as-2.svg"
+    },
+    {
+      "name": "AS 3",
+      "alg_set": "COLL",
+      "category": "Anti Sune",
+      "algorithm": "y2 R2 D R' U2 R D' R2 U' R U' R'",
+      "source_algorithms": [
+        "y2 R2 D R' U2 R D' R2 U' R U' R'",
+        "R' U' F' R U R' U' R' F R2 U' R' U R",
+        "y2 M F' r U R' U2 r' F2 r",
+        "U2 f' L F L' U2 L' U2 L U2 S"
+      ],
+      "alternatives": [
+        "R' U' F' R U R' U' R' F R2 U' R' U R",
+        "y2 M F' r U R' U2 r' F2 r",
+        "U2 f' L F L' U2 L' U2 L U2 S"
+      ],
+      "source_setup": "R' U2' R U2' L U' R' U R L'",
+      "source": "https://speedcubedb.com/a/3x3/COLL",
+      "facelets": "UURUUUFUBUFBRRRRRRULLFFFFFFDDDDDDDDDFRRLLLLLLUBLBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ffff00",
+          "highlight": false
+        }
+      },
+      "image": "/cases/coll/as-3.svg"
+    },
+    {
+      "name": "AS 4",
+      "alg_set": "COLL",
+      "category": "Anti Sune",
+      "algorithm": "y2 R' U' R U' R2 D' R U2 R' D R2",
+      "source_algorithms": [
+        "y2 R' U' R U' R2 D' R U2 R' D R2",
+        "y2 R U2 R' U2 r' F R F' M'",
+        "R' U' R U R' F R U R' U' R' F' R2",
+        "y2 R U2 R' U2 L' U R U' R' L"
+      ],
+      "alternatives": [
+        "y2 R U2 R' U2 r' F R F' M'",
+        "R' U' R U R' F R U R' U' R' F' R2",
+        "y2 R U2 R' U2 L' U R U' R' L"
+      ],
+      "source_setup": "R2' F R U R U' R' F' R U' R' U R",
+      "source": "https://speedcubedb.com/a/3x3/COLL",
+      "facelets": "UUBUUURUFULLRRRRRRUFRFFFFFFDDDDDDDDDFBBLLLLLLURLBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ffff00",
+          "highlight": false
+        }
+      },
+      "image": "/cases/coll/as-4.svg"
+    },
+    {
+      "name": "AS 5",
+      "alg_set": "COLL",
+      "category": "Anti Sune",
+      "algorithm": "y2 r' F R F' r U R'",
+      "source_algorithms": [
+        "y2 r' F R F' r U R'",
+        "R' U L U' R U L'",
+        "y2 L' U R U' L U R'",
+        "U2 R' F R F' r U R' U' M"
+      ],
+      "alternatives": [
+        "R' U L U' R U L'",
+        "y2 L' U R U' L U R'",
+        "U2 R' F R F' r U R' U' M"
+      ],
+      "source_setup": "L U' R' U L' U' R",
+      "source": "https://speedcubedb.com/a/3x3/COLL",
+      "facelets": "UULUUUFUBUFFRRRRRRULLFFFFFFDDDDDDDDDBBRLLLLLLURRBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ffff00",
+          "highlight": false
+        }
+      },
+      "image": "/cases/coll/as-5.svg"
+    },
+    {
+      "name": "AS 6",
+      "alg_set": "COLL",
+      "category": "Anti Sune",
+      "algorithm": "R U' R' U2 R U' R' U2 R' D' R U R' D R",
+      "source_algorithms": [
+        "R U' R' U2 R U' R' U2 R' D' R U R' D R",
+        "R U2 r' F R' F' r U' R U' R'",
+        "R U R' F' R U2 R' U' R U' R' F R U' R'",
+        "y2 L U2 R' U L' U' R U' L U' L'"
+      ],
+      "alternatives": [
+        "R U2 r' F R' F' r U' R U' R'",
+        "R U R' F' R U2 R' U' R U' R' F R U' R'",
+        "y2 L U2 R' U L' U' R U' L U' L'"
+      ],
+      "source_setup": "R' D' R U' R' D R U2' R U R' U2' R U R'",
+      "source": "https://speedcubedb.com/a/3x3/COLL",
+      "facelets": "UULUUURUFURFRRRRRRULRFFFFFFDDDDDDDDDLFBLLLLLLUBBBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ffff00",
+          "highlight": false
+        }
+      },
+      "image": "/cases/coll/as-6.svg"
+    },
+    {
+      "name": "S 1",
+      "alg_set": "COLL",
+      "category": "Sune",
+      "algorithm": "R U R' U R U2 R'",
+      "source_algorithms": [
+        "R U R' U R U2 R'",
+        "y' R' U2 R U R' U R",
+        "y L' U2 L U L' U L",
+        "y2 L U L' U L U2 L'"
+      ],
+      "alternatives": [
+        "y' R' U2 R U R' U R",
+        "y L' U2 L U L' U L",
+        "y2 L U L' U L U2 L'"
+      ],
+      "source_setup": "R U2' R' U' R U' R'",
+      "source": "https://speedcubedb.com/a/3x3/COLL",
+      "facelets": "RUFUUUUULBBURRRRRRBFUFFFFFFDDDDDDDDDFRRLLLLLLLLUBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#0000ff",
+          "highlight": false
+        }
+      },
+      "image": "/cases/coll/s-1.svg"
+    },
+    {
+      "name": "S 2",
+      "alg_set": "COLL",
+      "category": "Sune",
+      "algorithm": "y2 R U R' U R2 D R' U2 R D' R2",
+      "source_algorithms": [
+        "y2 R U R' U R2 D R' U2 R D' R2",
+        "r' F2 r U2 R U' r' F M'",
+        "L' U2 L U2 R U' L' U L R'",
+        "L' U2 L U2 l F' L' F M'"
+      ],
+      "alternatives": [
+        "r' F2 r U2 R U' r' F M'",
+        "L' U2 L U2 R U' L' U L R'",
+        "L' U2 L U2 l F' L' F M'"
+      ],
+      "source_setup": "R L' U' L U R' U2' L' U2' L",
+      "source": "https://speedcubedb.com/a/3x3/COLL",
+      "facelets": "RUBUUUUUFLLURRRRRRLRUFFFFFFDDDDDDDDDFFBLLLLLLRBUBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ff0000",
+          "highlight": false
+        }
+      },
+      "image": "/cases/coll/s-2.svg"
+    },
+    {
+      "name": "S 3",
+      "alg_set": "COLL",
+      "category": "Sune",
+      "algorithm": "L' R U R' U' L U2 R U2 R'",
+      "source_algorithms": [
+        "L' R U R' U' L U2 R U2 R'",
+        "M F R' F' r U2 R U2 R'",
+        "y2 R2 D' R U2 R' D R2 U R' U R",
+        "f R' F' R U2 R U2 R' U2 S'"
+      ],
+      "alternatives": [
+        "M F R' F' r U2 R U2 R'",
+        "y2 R2 D' R U2 R' D R2 U R' U R",
+        "f R' F' R U2 R U2 R' U2 S'"
+      ],
+      "source_setup": "R U2' R' U2' L' U R U' R' L",
+      "source": "https://speedcubedb.com/a/3x3/COLL",
+      "facelets": "FUBUUUUULBBURRRRRRRFUFFFFFFDDDDDDDDDLRFLLLLLLRLUBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#0000ff",
+          "highlight": false
+        }
+      },
+      "image": "/cases/coll/s-3.svg"
+    },
+    {
+      "name": "S 4",
+      "alg_set": "COLL",
+      "category": "Sune",
+      "algorithm": "y' R U R' U R U' R D R' U' R D' R2",
+      "source_algorithms": [
+        "y' R U R' U R U' R D R' U' R D' R2",
+        "R U R' U' R' F R F' r U R' U R U2 r'",
+        "y' F R' U2 R F' R' F U2 F' R",
+        "L F' U2 F L' F' L U2 L' F"
+      ],
+      "alternatives": [
+        "R U R' U' R' F R F' r U R' U R U2 r'",
+        "y' F R' U2 R F' R' F U2 F' R",
+        "L F' U2 F L' F' L U2 L' F"
+      ],
+      "source_setup": "R2' D R' U R D' R' U R' U' R U' R' y",
+      "source": "https://speedcubedb.com/a/3x3/COLL",
+      "facelets": "BURUUUUULBBURRRRRRFRUFFFFFFDDDDDDDDDRLLLLLLLLFFUBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#0000ff",
+          "highlight": false
+        }
+      },
+      "image": "/cases/coll/s-4.svg"
+    },
+    {
+      "name": "S 5",
+      "alg_set": "COLL",
+      "category": "Sune",
+      "algorithm": "R U' L' U R' U' L",
+      "source_algorithms": [
+        "R U' L' U R' U' L",
+        "R U' r' F R' F' r",
+        "l F' L' F l' U' L",
+        "r U' r' F R' F' r U M"
+      ],
+      "alternatives": [
+        "R U' r' F R' F' r",
+        "l F' L' F l' U' L",
+        "r U' r' F R' F' r U M"
+      ],
+      "source_setup": "L' U R U' L U R'",
+      "source": "https://speedcubedb.com/a/3x3/COLL",
+      "facelets": "BUFUUUUULBBURRRRRRRRUFFFFFFDDDDDDDDDRFFLLLLLLLLUBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#0000ff",
+          "highlight": false
+        }
+      },
+      "image": "/cases/coll/s-5.svg"
+    },
+    {
+      "name": "S 6",
+      "alg_set": "COLL",
+      "category": "Sune",
+      "algorithm": "y2 R U R' F' R U R' U R U2 R' F R U' R'",
+      "source_algorithms": [
+        "y2 R U R' F' R U R' U R U2 R' F R U' R'",
+        "y2 R U R' U r' F R F' r U2 R'",
+        "y2 R U R' U L' U R U' L U2 R'",
+        "F' R U2 R' U2 R' F2 R U R U' R' F'"
+      ],
+      "alternatives": [
+        "y2 R U R' U r' F R F' r U2 R'",
+        "y2 R U R' U L' U R U' L U2 R'",
+        "F' R U2 R' U2 R' F2 R U R U' R' F'"
+      ],
+      "source_setup": "F R U R' U' R' F2' R U2' R U2' R' F",
+      "source": "https://speedcubedb.com/a/3x3/COLL",
+      "facelets": "BULUUUUUFLBURRRRRRRFUFFFFFFDDDDDDDDDRRFLLLLLLBLUBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ff0000",
+          "highlight": false
+        }
+      },
+      "image": "/cases/coll/s-6.svg"
+    },
+    {
+      "name": "L 1",
+      "alg_set": "COLL",
+      "category": "L",
+      "algorithm": "y' R U R' U R U' R' U R U' R' U R U2 R'",
+      "source_algorithms": [
+        "y' R U R' U R U' R' U R U' R' U R U2 R'",
+        "y' R U2 R' U' R U R' U' R U R' U' R U' R'",
+        "y2 R' U2 R U R' U' R U R' U' R U R' U R",
+        "R' U' R U' R' U2 R U' R U R' U R U2 R'"
+      ],
+      "alternatives": [
+        "y' R U2 R' U' R U R' U' R U R' U' R U' R'",
+        "y2 R' U2 R U R' U' R U R' U' R U R' U R",
+        "R' U' R U' R' U2 R U' R U R' U R U2 R'"
+      ],
+      "source_setup": "R U R' U R U' R' U R U' R' U R U2' R' y",
+      "source": "https://speedcubedb.com/a/3x3/COLL",
+      "facelets": "RUUUUUUUBURLRRRRRRBFLFFFFFFDDDDDDDDDFLRLLLLLLFBUBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ffff00",
+          "highlight": false
+        }
+      },
+      "image": "/cases/coll/l-1.svg"
+    },
+    {
+      "name": "L 2",
+      "alg_set": "COLL",
+      "category": "L",
+      "algorithm": "R' U2 R' D' R U2 R' D R2",
+      "source_algorithms": [
+        "R' U2 R' D' R U2 R' D R2",
+        "R U R' U2 L U' R U L' U R'",
+        "y2 L' U2 L' D' L U2 L' D L2",
+        "y' R' U2 R U R2 D' R U R' D R2"
+      ],
+      "alternatives": [
+        "R U R' U2 L U' R U L' U R'",
+        "y2 L' U2 L' D' L U2 L' D L2",
+        "y' R' U2 R U R2 D' R U R' D R2"
+      ],
+      "source_setup": "R2' D' R U2' R' D R U2' R",
+      "source": "https://speedcubedb.com/a/3x3/COLL",
+      "facelets": "BUUUUUUUBURFRRRRRRFFLFFFFFFDDDDDDDDDRLLLLLLLLRBUBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ffff00",
+          "highlight": false
+        }
+      },
+      "image": "/cases/coll/l-2.svg"
+    },
+    {
+      "name": "L 3",
+      "alg_set": "COLL",
+      "category": "L",
+      "algorithm": "y R U2 R D R' U2 R D' R2",
+      "source_algorithms": [
+        "y R U2 R D R' U2 R D' R2",
+        "U2 R U2 R2 D' R U' R' D R2 U' R'",
+        "R' F' R U R' U' R' F R2 U' R' U2 R",
+        "y R' U' R U2 L' U R' U' L U' R"
+      ],
+      "alternatives": [
+        "U2 R U2 R2 D' R U' R' D R2 U' R'",
+        "R' F' R U R' U' R' F R2 U' R' U2 R",
+        "y R' U' R U2 L' U R' U' L U' R"
+      ],
+      "source_setup": "R2' D R' U2' R D' R' U2' R' y'",
+      "source": "https://speedcubedb.com/a/3x3/COLL",
+      "facelets": "RUUUUUUURURBRRRRRRFFBFFFFFFDDDDDDDDDFLLLLLLLLLBUBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ffff00",
+          "highlight": false
+        }
+      },
+      "image": "/cases/coll/l-3.svg"
+    },
+    {
+      "name": "L 4",
+      "alg_set": "COLL",
+      "category": "L",
+      "algorithm": "y F R' F' r U R U' r'",
+      "source_algorithms": [
+        "y F R' F' r U R U' r'",
+        "y2 R2 D R' U R D' R' U' R'",
+        "R U R' U' R' F R U R U' R' F'",
+        "y F l' U' L U R U' r'"
+      ],
+      "alternatives": [
+        "y2 R2 D R' U R D' R' U' R'",
+        "R U R' U' R' F R U R U' R' F'",
+        "y F l' U' L U R U' r'"
+      ],
+      "source_setup": "R U R D R' U' R D' R2' y2'",
+      "source": "https://speedcubedb.com/a/3x3/COLL",
+      "facelets": "RUUUUUUULURRRRRRRRLFFFFFFFFDDDDDDDDDFLBLLLLLLBBUBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ffff00",
+          "highlight": false
+        }
+      },
+      "image": "/cases/coll/l-4.svg"
+    },
+    {
+      "name": "L 5",
+      "alg_set": "COLL",
+      "category": "L",
+      "algorithm": "y2 F' r U R' U' r' F R",
+      "source_algorithms": [
+        "y2 F' r U R' U' r' F R",
+        "y x R' U R D' R' U' R D x'",
+        "r U R U' r' F R' F'",
+        "y' R2 D' R U' R' D R U R"
+      ],
+      "alternatives": [
+        "y x R' U R D' R' U' R D x'",
+        "r U R U' r' F R' F'",
+        "y' R2 D' R U' R' D R U R"
+      ],
+      "source_setup": "R' F' r U R U' r' F y2'",
+      "source": "https://speedcubedb.com/a/3x3/COLL",
+      "facelets": "FUUUUUUUBURRRRRRRRRFLFFFFFFDDDDDDDDDLLFLLLLLLBBUBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ffff00",
+          "highlight": false
+        }
+      },
+      "image": "/cases/coll/l-5.svg"
+    },
+    {
+      "name": "L 6",
+      "alg_set": "COLL",
+      "category": "L",
+      "algorithm": "y r U2 R2 F R F' R U2 r'",
+      "source_algorithms": [
+        "y r U2 R2 F R F' R U2 r'",
+        "y' R' U' R U R' F' R U R' U' R' F R2",
+        "U' R' U' R U R' F' R U R' U' R' F R2",
+        "y F R U R2 F R F' R U' R' F'"
+      ],
+      "alternatives": [
+        "y' R' U' R U R' F' R U R' U' R' F R2",
+        "U' R' U' R U R' F' R U R' U' R' F R2",
+        "y F R U R2 F R F' R U' R' F'"
+      ],
+      "source_setup": "R2' F' R U R U' R' F R U' R' U R y",
+      "source": "https://speedcubedb.com/a/3x3/COLL",
+      "facelets": "BUUUUUUULUBBRRRRRRRRFFFFFFFDDDDDDDDDRLFLLLLLLLFUBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ffff00",
+          "highlight": false
+        }
+      },
+      "image": "/cases/coll/l-6.svg"
+    },
+    {
+      "name": "U 1",
+      "alg_set": "COLL",
+      "category": "U",
+      "algorithm": "R' U' R U' R' U2 R2 U R' U R U2 R'",
+      "source_algorithms": [
+        "R' U' R U' R' U2 R2 U R' U R U2 R'",
+        "y2 R U R' U R U2 R2 U' R U' R' U2 R",
+        "y R U2 R' U' R U' R' U' R U R' U R U2 R'",
+        "y' R U R' U' R U' R' U2 R U' R' U2 R U R'"
+      ],
+      "alternatives": [
+        "y2 R U R' U R U2 R2 U' R U' R' U2 R",
+        "y R U2 R' U' R U' R' U' R U R' U R U2 R'",
+        "y' R U R' U' R U' R' U2 R U' R' U2 R U R'"
+      ],
+      "source_setup": "R U2' R' U' R U' R2' U2' R U R' U R",
+      "source": "https://speedcubedb.com/a/3x3/COLL",
+      "facelets": "LURUUUUUURFBRRRRRRFRFFFFFFFDDDDDDDDDBBLLLLLLLULUBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ff9900",
+          "highlight": false
+        }
+      },
+      "image": "/cases/coll/u-1.svg"
+    },
+    {
+      "name": "U 2",
+      "alg_set": "COLL",
+      "category": "U",
+      "algorithm": "R' F R U' R' U' R U R' F' R U R' U' R' F R F' R",
+      "source_algorithms": [
+        "R' F R U' R' U' R U R' F' R U R' U' R' F R F' R",
+        "y' r U R' U' r' F R2 U' R' U' R U2 R' U' F'",
+        "y' R' U' R F R2 D' R U R' D R2 U' F'",
+        "y F U R U2 R' U R U R2 F' r U R U' r'"
+      ],
+      "alternatives": [
+        "y' r U R' U' r' F R2 U' R' U' R U2 R' U' F'",
+        "y' R' U' R F R2 D' R U R' D R2 U' F'",
+        "y F U R U2 R' U R U R2 F' r U R U' r'"
+      ],
+      "source_setup": "R' F R' F' R U R U' R' F R U' R' U R U R' F' R",
+      "source": "https://speedcubedb.com/a/3x3/COLL",
+      "facelets": "BUBUUUUUURRLRRRRRRFFFFFFFFFDDDDDDDDDRBLLLLLLLULUBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ff9900",
+          "highlight": false
+        }
+      },
+      "image": "/cases/coll/u-2.svg"
+    },
+    {
+      "name": "U 3",
+      "alg_set": "COLL",
+      "category": "U",
+      "algorithm": "y2 R2 D R' U2 R D' R' U2 R'",
+      "source_algorithms": [
+        "y2 R2 D R' U2 R D' R' U2 R'",
+        "L2 D L' U2 L D' L' U2 L'",
+        "R U' R' U' R U2 R' U' R' D' R U2 R' D R",
+        "R' U R U R' F' R U R' U' R' F R2 U' R' U' R"
+      ],
+      "alternatives": [
+        "L2 D L' U2 L D' L' U2 L'",
+        "R U' R' U' R U2 R' U' R' D' R U2 R' D R",
+        "R' U R U R' F' R U R' U' R' F R2 U' R' U' R"
+      ],
+      "source_setup": "R U2' R D R' U2' R D' R2' y2'",
+      "source": "https://speedcubedb.com/a/3x3/COLL",
+      "facelets": "BULUUUUUURRFRRRRRRLFFFFFFFFDDDDDDDDDRLBLLLLLLUBUBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ff9900",
+          "highlight": false
+        }
+      },
+      "image": "/cases/coll/u-3.svg"
+    },
+    {
+      "name": "U 4",
+      "alg_set": "COLL",
+      "category": "U",
+      "algorithm": "F R U' R' U R U R' U R U' R' F'",
+      "source_algorithms": [
+        "F R U' R' U R U R' U R U' R' F'",
+        "y2 R' F2 R U2 R U2 R' F2 R U2 R'",
+        "y' F U2 R' D' R U2 R' D R F'",
+        "y2 R U2 R' U2 L' U2 R U2 R' U2 L"
+      ],
+      "alternatives": [
+        "y2 R' F2 R U2 R U2 R' F2 R U2 R'",
+        "y' F U2 R' D' R U2 R' D R F'",
+        "y2 R U2 R' U2 L' U2 R U2 R' U2 L"
+      ],
+      "source_setup": "F R U R' U' R U' R' U' R U R' F'",
+      "source": "https://speedcubedb.com/a/3x3/COLL",
+      "facelets": "RULUUUUUUBLFRRRRRRLFRFFFFFFDDDDDDDDDFRBLLLLLLUBUBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#0000ff",
+          "highlight": false
+        }
+      },
+      "image": "/cases/coll/u-4.svg"
+    },
+    {
+      "name": "U 5",
+      "alg_set": "COLL",
+      "category": "U",
+      "algorithm": "R2 D' R U2 R' D R U2 R",
+      "source_algorithms": [
+        "R2 D' R U2 R' D R U2 R",
+        "y2 L2 D' L U2 L' D L U2 L",
+        "L U' R U' L' U R' U2 L U' L'",
+        "y2 x R' U R D' R' U2 R D R' U R x'"
+      ],
+      "alternatives": [
+        "y2 L2 D' L U2 L' D L U2 L",
+        "L U' R U' L' U R' U2 L U' L'",
+        "y2 x R' U R D' R' U2 R D R' U R x'"
+      ],
+      "source_setup": "R' U2' R' D' R U2' R' D R2'",
+      "source": "https://speedcubedb.com/a/3x3/COLL",
+      "facelets": "RUBUUUUUUBRLRRRRRRFFRFFFFFFDDDDDDDDDFLLLLLLLLUBUBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#0000ff",
+          "highlight": false
+        }
+      },
+      "image": "/cases/coll/u-5.svg"
+    },
+    {
+      "name": "U 6",
+      "alg_set": "COLL",
+      "category": "U",
+      "algorithm": "R2 D' R U R' D R U R U' R' U' R",
+      "source_algorithms": [
+        "R2 D' R U R' D R U R U' R' U' R",
+        "R' U2 R F U' R' U' R U F'",
+        "R U' R' U' R U R D R' U R D' R2",
+        "R' U2 R U2 R' F' R U R' U' R' F R2"
+      ],
+      "alternatives": [
+        "R' U2 R F U' R' U' R U F'",
+        "R U' R' U' R U R D R' U R D' R2",
+        "R' U2 R U2 R' F' R U R' U' R' F R2"
+      ],
+      "source_setup": "F U' R' U R U F' R' U2' R",
+      "source": "https://speedcubedb.com/a/3x3/COLL",
+      "facelets": "FUFUUUUUUBLRRRRRRRLFRFFFFFFDDDDDDDDDLBBLLLLLLURUBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#0000ff",
+          "highlight": false
+        }
+      },
+      "image": "/cases/coll/u-6.svg"
+    },
+    {
+      "name": "T 1",
+      "alg_set": "COLL",
+      "category": "T",
+      "algorithm": "R U2 R' U' R U' R2 U2 R U R' U R",
+      "source_algorithms": [
+        "R U2 R' U' R U' R2 U2 R U R' U R",
+        "y' R U R2 U' R2 U' R2 U2 R U' R U' R'",
+        "R U2 R' r' F2 r U' R U' R' U' r' F r",
+        "y' R U R' U R U2 R' L' U' L U' L' U2 L"
+      ],
+      "alternatives": [
+        "y' R U R2 U' R2 U' R2 U2 R U' R U' R'",
+        "R U2 R' r' F2 r U' R U' R' U' r' F r",
+        "y' R U R' U R U2 R' L' U' L U' L' U2 L"
+      ],
+      "source_setup": "R' U' R U' R' U2' R2' U R' U R U2' R'",
+      "source": "https://speedcubedb.com/a/3x3/COLL",
+      "facelets": "BUBUUUUUURFURRRRRRFRFFFFFFFDDDDDDDDDUBLLLLLLLRLLBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ff9900",
+          "highlight": false
+        }
+      },
+      "image": "/cases/coll/t-1.svg"
+    },
+    {
+      "name": "T 2",
+      "alg_set": "COLL",
+      "category": "T",
+      "algorithm": "R' U R U2 R' L' U R U' L",
+      "source_algorithms": [
+        "R' U R U2 R' L' U R U' L",
+        "R' U R U2 r' R' F R F' r",
+        "y2 R' F R U R' U' R' F' R2 U' R' U2 R",
+        "y2 R U' R' U2 L R U' R' U L'"
+      ],
+      "alternatives": [
+        "R' U R U2 r' R' F R F' r",
+        "y2 R' F R U R' U' R' F' R2 U' R' U2 R",
+        "y2 R U' R' U2 L R U' R' U L'"
+      ],
+      "source_setup": "L' U R' U' L R U2' R' U' R",
+      "source": "https://speedcubedb.com/a/3x3/COLL",
+      "facelets": "LURUUUUUULLURRRRRRBBBFFFFFFDDDDDDDDDUFRLLLLLLFRFBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ff0000",
+          "highlight": false
+        }
+      },
+      "image": "/cases/coll/t-2.svg"
+    },
+    {
+      "name": "T 3",
+      "alg_set": "COLL",
+      "category": "T",
+      "algorithm": "y R' F' r U R U' r' F",
+      "source_algorithms": [
+        "y R' F' r U R U' r' F",
+        "y l' U' L U R U' r' F",
+        "y2 R' U' R' D' R U R' D R2",
+        "y l' U' L U l F' L' F"
+      ],
+      "alternatives": [
+        "y l' U' L U R U' r' F",
+        "y2 R' U' R' D' R U R' D R2",
+        "y l' U' L U l F' L' F"
+      ],
+      "source_setup": "F' r U R' U' L' U l y'",
+      "source": "https://speedcubedb.com/a/3x3/COLL",
+      "facelets": "RUFUUUUUURRURRRRRRLFFFFFFFFDDDDDDDDDULBLLLLLLLBBBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ff9900",
+          "highlight": false
+        }
+      },
+      "image": "/cases/coll/t-3.svg"
+    },
+    {
+      "name": "T 4",
+      "alg_set": "COLL",
+      "category": "T",
+      "algorithm": "y2 F R U R' U' R U' R' U' R U R' F'",
+      "source_algorithms": [
+        "y2 F R U R' U' R U' R' U' R U R' F'",
+        "y2 F R' D' R U2 R' D R U2 F'",
+        "y2 R F R' U R U2 R' U R U F' R'",
+        "y R U2 R' F2 R U2 R' U2 R' F2 R"
+      ],
+      "alternatives": [
+        "y2 F R' D' R U2 R' D R U2 F'",
+        "y2 R F R' U R U2 R' U R U F' R'",
+        "y R U2 R' F2 R U2 R' U2 R' F2 R"
+      ],
+      "source_setup": "F R U' R' U R U R' U R U' R' F' y2'",
+      "source": "https://speedcubedb.com/a/3x3/COLL",
+      "facelets": "FUFUUUUUUBLURRRRRRLFRFFFFFFDDDDDDDDDURBLLLLLLLBRBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#0000ff",
+          "highlight": false
+        }
+      },
+      "image": "/cases/coll/t-4.svg"
+    },
+    {
+      "name": "T 5",
+      "alg_set": "COLL",
+      "category": "T",
+      "algorithm": "y' r U R' U' r' F R F'",
+      "source_algorithms": [
+        "y' r U R' U' r' F R F'",
+        "R U R D R' U' R D' R2",
+        "y2 x' D R U' R' D' R U R' x",
+        "R U R' U R' D' R U' R' D R2 U' R'"
+      ],
+      "alternatives": [
+        "R U R D R' U' R D' R2",
+        "y2 x' D R U' R' D' R U R' x",
+        "R U R' U R' D' R U' R' D R2 U' R'"
+      ],
+      "source_setup": "F R' F' r U R U' r' y",
+      "source": "https://speedcubedb.com/a/3x3/COLL",
+      "facelets": "FULUUUUUUBRURRRRRRFFRFFFFFFDDDDDDDDDULLLLLLLLBBRBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#0000ff",
+          "highlight": false
+        }
+      },
+      "image": "/cases/coll/t-5.svg"
+    },
+    {
+      "name": "T 6",
+      "alg_set": "COLL",
+      "category": "T",
+      "algorithm": "R' U R2 D r' U2 r D' R2 U' R",
+      "source_algorithms": [
+        "R' U R2 D r' U2 r D' R2 U' R",
+        "y2 R U' R2 D' r U2 r' D R2 U R'",
+        "y R' U' R U R2 D' R U2 R' D R2 U' R' U R",
+        "y R U R' U' R2 D R' U2 R D' R2 U R U' R'"
+      ],
+      "alternatives": [
+        "y2 R U' R2 D' r U2 r' D R2 U R'",
+        "y R' U' R U R2 D' R U2 R' D R2 U' R' U R",
+        "y R U R' U' R2 D R' U2 R D' R2 U R U' R'"
+      ],
+      "source_setup": "R' U R2' D r' U2' r D' R2' U' R",
+      "source": "https://speedcubedb.com/a/3x3/COLL",
+      "facelets": "RULUUUUUUFFURRRRRRRRLFFFFFFDDDDDDDDDUBFLLLLLLBLBBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#00ff00",
+          "highlight": false
+        }
+      },
+      "image": "/cases/coll/t-6.svg"
+    },
+    {
+      "name": "Pi 1",
+      "alg_set": "COLL",
+      "category": "Pi",
+      "algorithm": "R U2 R2 U' R2 U' R2 U2 R",
+      "source_algorithms": [
+        "R U2 R2 U' R2 U' R2 U2 R",
+        "R' U2 R2 U R2 U R2 U2 R'",
+        "y2 L' U2 L2 U L2 U L2 U2 L'",
+        "R U R' U R U2 R' U' R U R' U R U2 R'"
+      ],
+      "alternatives": [
+        "R' U2 R2 U R2 U R2 U2 R'",
+        "y2 L' U2 L2 U L2 U L2 U2 L'",
+        "R U R' U R U2 R' U' R U R' U R U2 R'"
+      ],
+      "source_setup": "R' U2' R2' U R2' U R2' U2' R'",
+      "source": "https://speedcubedb.com/a/3x3/COLL",
+      "facelets": "FULUUUBULBRFRRRRRRRBUFFFFFFDDDDDDDDDUFULLLLLLULRBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#0000ff",
+          "highlight": false
+        }
+      },
+      "image": "/cases/coll/pi-1.svg"
+    },
+    {
+      "name": "Pi 2",
+      "alg_set": "COLL",
+      "category": "Pi",
+      "algorithm": "y F U R U' R' U R U' R2 F' R U R U' R'",
+      "source_algorithms": [
+        "y F U R U' R' U R U' R2 F' R U R U' R'",
+        "R' F2 R U2 R U2 R' F2 U' R U' R'",
+        "y2 L' U' L U L F' L2 U' L U L' U' L U F",
+        "R U R' U R' F R2 U' R' U' R U R' F' U R U' R'"
+      ],
+      "alternatives": [
+        "R' F2 R U2 R U2 R' F2 U' R U' R'",
+        "y2 L' U' L U L F' L2 U' L U L' U' L U F",
+        "R U R' U R' F R2 U' R' U' R U R' F' U R U' R'"
+      ],
+      "source_setup": "R U R' U F2' R U2' R' U2' R' F2' R",
+      "source": "https://speedcubedb.com/a/3x3/COLL",
+      "facelets": "FURUUULUFLRBRRRRRRBFUFFFFFFDDDDDDDDDULULLLLLLUBRBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ff0000",
+          "highlight": false
+        }
+      },
+      "image": "/cases/coll/pi-2.svg"
+    },
+    {
+      "name": "Pi 3",
+      "alg_set": "COLL",
+      "category": "Pi",
+      "algorithm": "R' U' F' R U R' U' R' F R2 U2 R' U2 R",
+      "source_algorithms": [
+        "R' U' F' R U R' U' R' F R2 U2 R' U2 R",
+        "y F U R U' R' U R U2 R' U' R U R' F'",
+        "y F R2 U' R2 U R2 U S R2 f'",
+        "y' R U R' U R U2 R2 F' r U R U' r' F"
+      ],
+      "alternatives": [
+        "y F U R U' R' U R U2 R' U' R U R' F'",
+        "y F R2 U' R2 U R2 U S R2 f'",
+        "y' R U R' U R U2 R2 F' r U R U' r' F"
+      ],
+      "source_setup": "R' U2' R U2' R2' F' R U R U' R' F U R",
+      "source": "https://speedcubedb.com/a/3x3/COLL",
+      "facelets": "BUFUUUFUBRLRRRRRRRLBUFFFFFFDDDDDDDDDUFULLLLLLURLBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ff9900",
+          "highlight": false
+        }
+      },
+      "image": "/cases/coll/pi-3.svg"
+    },
+    {
+      "name": "Pi 4",
+      "alg_set": "COLL",
+      "category": "Pi",
+      "algorithm": "R U R' U' R' F R2 U R' U' R U R' U' F'",
+      "source_algorithms": [
+        "R U R' U' R' F R2 U R' U' R U R' U' F'",
+        "R U2 R' U' R U R' U2 r' F R F' M'",
+        "y F' R U R' U R U' R' U' R' F R U' R U' R' U R U R'",
+        "y' R' U2 R U R' U R2 U' L' U R' U' L"
+      ],
+      "alternatives": [
+        "R U2 R' U' R U R' U2 r' F R F' M'",
+        "y F' R U R' U R U' R' U' R' F R U' R U' R' U R U R'",
+        "y' R' U2 R U R' U R2 U' L' U R' U' L"
+      ],
+      "source_setup": "F U R U' R' U R U' R2' F' R U R U' R'",
+      "source": "https://speedcubedb.com/a/3x3/COLL",
+      "facelets": "LUBUUUBURFRLRRRRRRRFUFFFFFFDDDDDDDDDULULLLLLLUBFBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#00ff00",
+          "highlight": false
+        }
+      },
+      "image": "/cases/coll/pi-4.svg"
+    },
+    {
+      "name": "Pi 5",
+      "alg_set": "COLL",
+      "category": "Pi",
+      "algorithm": "R U' L' U R' U L U L' U L",
+      "source_algorithms": [
+        "R U' L' U R' U L U L' U L",
+        "y' R U2 R' U R' D' R U2 R' D R2 U' R'",
+        "y' R U R' U F' R U2 R' U2 R' F R",
+        "y2 L' U R U' L U' R' U' R U' R'"
+      ],
+      "alternatives": [
+        "y' R U2 R' U R' D' R U2 R' D R2 U' R'",
+        "y' R U R' U F' R U2 R' U2 R' F R",
+        "y2 L' U R U' L U' R' U' R U' R'"
+      ],
+      "source_setup": "L' U' L U' L' U' R U' L U R'",
+      "source": "https://speedcubedb.com/a/3x3/COLL",
+      "facelets": "LURUUULURFLBRRRRRRBBUFFFFFFDDDDDDDDDUFULLLLLLURFBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#00ff00",
+          "highlight": false
+        }
+      },
+      "image": "/cases/coll/pi-5.svg"
+    },
+    {
+      "name": "Pi 6",
+      "alg_set": "COLL",
+      "category": "Pi",
+      "algorithm": "R' F' U' F U' R U S' R' U R S",
+      "source_algorithms": [
+        "R' F' U' F U' R U S' R' U R S",
+        "y' r U R' U R' F R F' R U' R' U R U2 r'",
+        "R U D' R U R' D R2 U' R' U' R2 U2 R",
+        "R2 D' R U R' D R U R U' R' U R U R' U R"
+      ],
+      "alternatives": [
+        "y' r U R' U R' F R F' R U' R' U R U2 r'",
+        "R U D' R U R' D R2 U' R' U' R2 U2 R",
+        "R2 D' R U R' D R U R U' R' U R U R' U R"
+      ],
+      "source_setup": "R' U2' R2' U R U R2' D' R U' R' D U' R'",
+      "source": "https://speedcubedb.com/a/3x3/COLL",
+      "facelets": "RUBUUURUFLBLRRRRRRFFUFFFFFFDDDDDDDDDURULLLLLLULBBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ff0000",
+          "highlight": false
+        }
+      },
+      "image": "/cases/coll/pi-6.svg"
+    },
+    {
+      "name": "H 1",
+      "alg_set": "COLL",
+      "category": "H",
+      "algorithm": "R U R' U R U' R' U R U2 R'",
+      "source_algorithms": [
+        "R U R' U R U' R' U R U2 R'",
+        "y' R U2 R' U' R U R' U' R U' R'",
+        "y R U2 R' U' R U R' U' R U' R'",
+        "y' R' U2 R U R' U' R U R' U R"
+      ],
+      "alternatives": [
+        "y' R U2 R' U' R U R' U' R U' R'",
+        "y R U2 R' U' R U R' U' R U' R'",
+        "y' R' U2 R U R' U' R U R' U R"
+      ],
+      "source_setup": "R U2' R' U' R U R' U' R U' R'",
+      "source": "https://speedcubedb.com/a/3x3/COLL",
+      "facelets": "BUBUUUFUFULURRRRRRLFRFFFFFFDDDDDDDDDUBULLLLLLRRLBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ffff00",
+          "highlight": false
+        }
+      },
+      "image": "/cases/coll/h-1.svg"
+    },
+    {
+      "name": "H 2",
+      "alg_set": "COLL",
+      "category": "H",
+      "algorithm": "F R U' R' U R U2 R' U' R U R' U' F'",
+      "source_algorithms": [
+        "F R U' R' U R U2 R' U' R U R' U' F'",
+        "f R2 S' U' R2 U' R2 U R2 F'",
+        "y2 f R U R' U' R F' R U R' U' R' S'",
+        "f R U R' U' f' R U R' U' R' F R F'"
+      ],
+      "alternatives": [
+        "f R2 S' U' R2 U' R2 U R2 F'",
+        "y2 f R U R' U' R F' R U R' U' R' S'",
+        "f R U R' U' f' R U R' U' R' F R F'"
+      ],
+      "source_setup": "F U R U' R' U R U2' R' U' R U R' F'",
+      "source": "https://speedcubedb.com/a/3x3/COLL",
+      "facelets": "LURUUUBUBULURRRRRRRFLFFFFFFDDDDDDDDDURULLLLLLFBFBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ffff00",
+          "highlight": false
+        }
+      },
+      "image": "/cases/coll/h-2.svg"
+    },
+    {
+      "name": "H 3",
+      "alg_set": "COLL",
+      "category": "H",
+      "algorithm": "R U R' U R U L' U R' U' L",
+      "source_algorithms": [
+        "R U R' U R U L' U R' U' L",
+        "R U R' U R U r' F R' F' r",
+        "R' F' R U2 R U2 R' F U' R U' R'",
+        "R U R2 D' R U2 R' D R U' R U2 R'"
+      ],
+      "alternatives": [
+        "R U R' U R U r' F R' F' r",
+        "R' F' R U2 R U2 R' F U' R U' R'",
+        "R U R2 D' R U2 R' D R U' R U2 R'"
+      ],
+      "source_setup": "L' U R U' L U' R' U' R U' R'",
+      "source": "https://speedcubedb.com/a/3x3/COLL",
+      "facelets": "BURUUUFURULURRRRRRLRBFFFFFFDDDDDDDDDUBULLLLLLFFLBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ffff00",
+          "highlight": false
+        }
+      },
+      "image": "/cases/coll/h-3.svg"
+    },
+    {
+      "name": "H 4",
+      "alg_set": "COLL",
+      "category": "H",
+      "algorithm": "y F R U R' U' R U R' U' R U R' U' F'",
+      "source_algorithms": [
+        "y F R U R' U' R U R' U' R U R' U' F'",
+        "y F U R U' R' U R U' R' U R U' R' F'",
+        "U F R U R' U' R U R' U' R U R' U' F'",
+        "y' F R U R' U' R U R' U' R U R' U' F'"
+      ],
+      "alternatives": [
+        "y F U R U' R' U R U' R' U R U' R' F'",
+        "U F R U R' U' R U R' U' R U R' U' F'",
+        "y' F R U R' U' R U R' U' R U R' U' F'"
+      ],
+      "source_setup": "F U R U' R' U R U' R' U R U' R' F' y'",
+      "source": "https://speedcubedb.com/a/3x3/COLL",
+      "facelets": "LURUUULURURURRRRRRBFBFFFFFFDDDDDDDDDULULLLLLLFBFBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ffff00",
+          "highlight": false
+        }
+      },
+      "image": "/cases/coll/h-4.svg"
+    }
+  ]
+}

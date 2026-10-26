@@ -1,0 +1,2156 @@
+{
+  "source": "https://speedcubedb.com/a/3x3/EO4A",
+  "cases": [
+    {
+      "name": "All 6",
+      "alg_set": "LSE",
+      "category": "EO4A",
+      "algorithm": "R U' r' U' M' U r U r'",
+      "source_algorithms": [
+        "R U' r' U' M' U r U r'",
+        "M' U M U2 M U M' U M U' M'",
+        "M' U' M' U2 M' U' M U' M' U' M'",
+        "M' U M U2 M U M' U M U M'"
+      ],
+      "alternatives": [
+        "M' U M U2 M U M' U M U' M'",
+        "M' U' M' U2 M' U' M U' M' U' M'",
+        "M' U M U2 M U M' U M U M'"
+      ],
+      "source_setup": "r U' r' U' M U r U R'",
+      "source": "https://speedcubedb.com/a/3x3/EO4A",
+      "facelets": "URUFUBUFURDRRRRRRRFDFFFFFUFDLDDDDDBDLULLLLLLLBUBBBBBUB",
+      "stickers": {
+        "U0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R3": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R4": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R5": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R6": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R7": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R8": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "F3": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "F4": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "F5": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "F6": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "F7": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "F8": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "D0": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "D1": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "D2": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "D3": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "D4": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "D5": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "D6": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "D7": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "D8": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "L3": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "L4": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "L5": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "L6": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "L7": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "L8": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "B3": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "B4": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "B5": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "B6": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "B7": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B8": {
+          "color": "#0000ff",
+          "highlight": false
+        }
+      },
+      "image": "/cases/lse/all-6.svg"
+    },
+    {
+      "name": "2 Top 2 Bot",
+      "alg_set": "LSE",
+      "category": "EO4A",
+      "algorithm": "M' U2 M' U2 M U M'",
+      "source_algorithms": [
+        "M' U2 M' U2 M U M'",
+        "M U2 M' U2 M' U' M'",
+        "M U2 M' U2 M' U M'",
+        "M' U2 M U2 M U M'"
+      ],
+      "alternatives": [
+        "M U2 M' U2 M' U' M'",
+        "M U2 M' U2 M' U M'",
+        "M' U2 M U2 M U M'"
+      ],
+      "source_setup": "M U M' U2' M U2' M",
+      "source": "https://speedcubedb.com/a/3x3/EO4A",
+      "facelets": "DUDFUFDDDBDBRRRRRRLBLBFBBDBURUUDUULUFUFLLLLLLRBRFBFFDF",
+      "stickers": {
+        "U0": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "R3": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R4": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R5": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R6": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R7": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R8": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "F3": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "F4": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "F5": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "F6": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "F7": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "F8": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "D0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "D1": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "D2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "D3": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "D4": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "D5": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "D6": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "D7": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "D8": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "L3": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "L4": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "L5": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "L6": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "L7": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "L8": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B3": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "B4": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "B5": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "B6": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "B7": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "B8": {
+          "color": "#00ff00",
+          "highlight": false
+        }
+      },
+      "image": "/cases/lse/2-top-2-bot.svg"
+    },
+    {
+      "name": "Bottom 2",
+      "alg_set": "LSE",
+      "category": "EO4A",
+      "algorithm": "M' U' M' U M U' M'",
+      "source_algorithms": [
+        "M' U' M' U M U' M'",
+        "M2 R U R' U' M' U R U' r'",
+        "M' U' M' U M U M'",
+        "M' U M' U' M U M'"
+      ],
+      "alternatives": [
+        "M2 R U R' U' M' U R U' r'",
+        "M' U' M' U M U M'",
+        "M' U M' U' M U M'"
+      ],
+      "source_setup": "M U M' U M U' M",
+      "source": "https://speedcubedb.com/a/3x3/EO4A",
+      "facelets": "DUDUUDDDDFLFRRRRRRRRRBFBBDBUBUUDUUFUBFBLLLLLLLBLFBFFDF",
+      "stickers": {
+        "U0": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "R3": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R4": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R5": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R6": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R7": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R8": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "F3": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "F4": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "F5": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "F6": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "F7": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "F8": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "D0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "D1": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "D2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "D3": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "D4": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "D5": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "D6": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "D7": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "D8": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "L3": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "L4": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "L5": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "L6": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "L7": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "L8": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "B3": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "B4": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "B5": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "B6": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "B7": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "B8": {
+          "color": "#00ff00",
+          "highlight": false
+        }
+      },
+      "image": "/cases/lse/bottom-2.svg"
+    },
+    {
+      "name": "Top 2 Front 2",
+      "alg_set": "LSE",
+      "category": "EO4A",
+      "algorithm": "M' U' M'",
+      "source_algorithms": [
+        "M' U' M'",
+        "y2 M U M'",
+        "M' U M'",
+        "y2 M U' M'"
+      ],
+      "alternatives": [
+        "y2 M U M'",
+        "M' U M'",
+        "y2 M U' M'"
+      ],
+      "source_setup": "M U M",
+      "source": "https://speedcubedb.com/a/3x3/EO4A",
+      "facelets": "DUDFUFDLDFUFRRRRRRRDRBFBBDBURUUDUUDUBDBLLLLLLLBLFBFFBF",
+      "stickers": {
+        "U0": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "R3": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R4": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R5": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R6": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R7": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R8": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "F3": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "F4": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "F5": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "F6": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "F7": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "F8": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "D0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "D1": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "D2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "D3": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "D4": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "D5": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "D6": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "D7": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "D8": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "L3": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "L4": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "L5": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "L6": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "L7": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "L8": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "B3": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "B4": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "B5": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "B6": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "B7": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "B8": {
+          "color": "#00ff00",
+          "highlight": false
+        }
+      },
+      "image": "/cases/lse/top-2-front-2.svg"
+    },
+    {
+      "name": "4 Top",
+      "alg_set": "LSE",
+      "category": "EO4A",
+      "algorithm": "M' U2 M' U2 M' U' M'",
+      "source_algorithms": [
+        "M' U2 M' U2 M' U' M'",
+        "r U R' U' M2 U R U' R' U' M'",
+        "M' U2 M U2 M' U M'",
+        "M' U2 M' U2 M' U M'"
+      ],
+      "alternatives": [
+        "r U R' U' M2 U R U' R' U' M'",
+        "M' U2 M U2 M' U M'",
+        "M' U2 M' U2 M' U M'"
+      ],
+      "source_setup": "M U M U2' M U2' M",
+      "source": "https://speedcubedb.com/a/3x3/EO4A",
+      "facelets": "URUBUBULUBDBRRRRRRRURFFFFFFDUDDDDDDDFUFLLLLLLLULBBBBFB",
+      "stickers": {
+        "U0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "R3": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R4": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R5": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R6": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R7": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R8": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "F3": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "F4": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "F5": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "F6": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "F7": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "F8": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "D0": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "D1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "D2": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "D3": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "D4": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "D5": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "D6": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "D7": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "D8": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "L3": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "L4": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "L5": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "L6": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "L7": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "L8": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "B3": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "B4": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "B5": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "B6": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "B7": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "B8": {
+          "color": "#0000ff",
+          "highlight": false
+        }
+      },
+      "image": "/cases/lse/4-top.svg"
+    },
+    {
+      "name": "2 Top Opp",
+      "alg_set": "LSE",
+      "category": "EO4A",
+      "algorithm": "M' U' M U M' U' M'",
+      "source_algorithms": [
+        "M' U' M U M' U' M'",
+        "R U R' U' M' U R U' r'",
+        "M' U' M U M' U M'",
+        "R U r' U r' U' r2 U' r' U r' U R"
+      ],
+      "alternatives": [
+        "R U R' U' M' U R U' r'",
+        "M' U' M U M' U M'",
+        "R U r' U r' U' r2 U' r' U r' U R"
+      ],
+      "source_setup": "M U M U M' U' M",
+      "source": "https://speedcubedb.com/a/3x3/EO4A",
+      "facelets": "DFDDUDDBDFFFRRRRRRRURBFBBLBUDUUDUUDUBRBLLLLLLLULFBFFBF",
+      "stickers": {
+        "U0": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "R3": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R4": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R5": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R6": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R7": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R8": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "F3": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "F4": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "F5": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "F6": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "F7": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "F8": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "D0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "D1": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "D2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "D3": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "D4": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "D5": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "D6": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "D7": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "D8": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "L3": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "L4": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "L5": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "L6": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "L7": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "L8": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "B3": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "B4": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "B5": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "B6": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "B7": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "B8": {
+          "color": "#00ff00",
+          "highlight": false
+        }
+      },
+      "image": "/cases/lse/2-top-opp.svg"
+    },
+    {
+      "name": "2 Top Adj",
+      "alg_set": "LSE",
+      "category": "EO4A",
+      "algorithm": "M' U M' U2 M' U' M'",
+      "source_algorithms": [
+        "M' U M' U2 M' U' M'",
+        "U M' U' M U2 M' U' M'",
+        "M' U M' U2 M' U M'",
+        "U M' U' M' U2 M' U' M'"
+      ],
+      "alternatives": [
+        "U M' U' M U2 M' U' M'",
+        "M' U M' U2 M' U M'",
+        "U M' U' M' U2 M' U' M'"
+      ],
+      "source_setup": "M U M U2' M U' M",
+      "source": "https://speedcubedb.com/a/3x3/EO4A",
+      "facelets": "URUFUUUUULLLRRRRRRBBBFFFFBFDDDDDDDDDRURLLLLLLFUFBBBBFB",
+      "stickers": {
+        "U0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "R3": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R4": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R5": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R6": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R7": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R8": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "F3": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "F4": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "F5": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "F6": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "F7": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "F8": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "D0": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "D1": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "D2": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "D3": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "D4": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "D5": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "D6": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "D7": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "D8": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "L3": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "L4": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "L5": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "L6": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "L7": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "L8": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "B3": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "B4": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "B5": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "B6": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "B7": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "B8": {
+          "color": "#0000ff",
+          "highlight": false
+        }
+      },
+      "image": "/cases/lse/2-top-adj.svg"
+    },
+    {
+      "name": "1 Top 1 Bot",
+      "alg_set": "LSE",
+      "category": "EO4A",
+      "algorithm": "M' U' M' U' M U' M'",
+      "source_algorithms": [
+        "M' U' M' U' M U' M'",
+        "U M2 U2 M' U' M U2 M' U' M'",
+        "U' M' U M' U2 M U M'",
+        "M U M' U M U M'"
+      ],
+      "alternatives": [
+        "U M2 U2 M' U' M U2 M' U' M'",
+        "U' M' U M' U2 M U M'",
+        "M U M' U M U M'"
+      ],
+      "source_setup": "M U M' U M U M",
+      "source": "https://speedcubedb.com/a/3x3/EO4A",
+      "facelets": "DUDDUDDBDBLBRRRRRRLDLBFBBRBUDUUDUUFUFFFLLLLLLRBRFBFFUF",
+      "stickers": {
+        "U0": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "R3": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R4": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R5": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R6": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R7": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R8": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "F3": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "F4": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "F5": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "F6": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "F7": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "F8": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "D0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "D1": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "D2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "D3": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "D4": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "D5": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "D6": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "D7": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "D8": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "L3": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "L4": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "L5": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "L6": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "L7": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "L8": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B3": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "B4": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "B5": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "B6": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "B7": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B8": {
+          "color": "#00ff00",
+          "highlight": false
+        }
+      },
+      "image": "/cases/lse/1-top-1-bot.svg"
+    },
+    {
+      "name": "2 Top Adj 2 Bot",
+      "alg_set": "LSE",
+      "category": "EO4A",
+      "algorithm": "M2 U' M' U' M'",
+      "source_algorithms": [
+        "M2 U' M' U' M'",
+        "U M2 U M' U M'",
+        "M' U' M U M U' M'",
+        "U M' U' M' U' M' U' M' U'"
+      ],
+      "alternatives": [
+        "U M2 U M' U M'",
+        "M' U' M U M U' M'",
+        "U M' U' M' U' M' U' M' U'"
+      ],
+      "source_setup": "M U M U M2'",
+      "source": "https://speedcubedb.com/a/3x3/EO4A",
+      "facelets": "URULUDUUULFLRRRRRRBFBFFFFUFDBDDDDDBDRURLLLLLLFUFBBBBDB",
+      "stickers": {
+        "U0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "R3": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R4": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R5": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R6": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R7": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R8": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#aab2a7",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "F3": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "F4": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "F5": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "F6": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "F7": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "F8": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "D0": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "D1": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "D2": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "D3": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "D4": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "D5": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "D6": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "D7": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "D8": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "L3": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "L4": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "L5": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "L6": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "L7": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "L8": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "B3": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "B4": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "B5": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "B6": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "B7": {
+          "color": "#ffffff",
+          "highlight": false
+        },
+        "B8": {
+          "color": "#0000ff",
+          "highlight": false
+        }
+      },
+      "image": "/cases/lse/2-top-adj-2-bot.svg"
+    }
+  ]
+}

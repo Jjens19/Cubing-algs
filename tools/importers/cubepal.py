@@ -1,6 +1,6 @@
 """Build the bundled CLL data from downloaded CubePal HTML and diagram SVG.
 
-Usage: python scripts/import_cubepal_cll.py --page page.html --sprite c3cll.svg
+Usage: python -m tools.importers.cubepal --page page.html --sprite c3cll.svg
 """
 import argparse
 import copy
@@ -10,7 +10,7 @@ from pathlib import Path
 import re
 import xml.etree.ElementTree as ET
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 SOURCE = 'https://www.cubepal.app/cubes/3x3x3/stages/cll'
 SVG = 'http://www.w3.org/2000/svg'
 # CubePal's default diagram colors; unimportant edges remain gray.
@@ -68,7 +68,7 @@ def build(page, sprite):
                       'corner_facelets': {key: source_colors[id].removeprefix('var(--color-').removesuffix(')').upper()
                                           for id, key in CORNER_IDS.items()}})
     assert len(cases) == 42
-    (ROOT / 'src/cll_algorithms.json').write_text(json.dumps({'source': SOURCE, 'cases': cases}, indent=2) + '\n')
+    (ROOT / 'src/data/cll_algorithms.json').write_text(json.dumps({'source': SOURCE, 'cases': cases}, indent=2) + '\n')
     print(f'Imported {len(cases)} CLL cases with {sum(1 + len(c["alternatives"]) for c in cases)} algorithms.')
 
 

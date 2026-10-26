@@ -46,7 +46,7 @@ async function nextPracticeCase(){
   $('practice-scramble').textContent='Generating a new scramble…';
   $('practice-instruction').textContent='Preparing the next case…';
   try{
-    const {setup}=await api('practice-scramble',{algorithm:chosen.algorithm});
+    const {setup}=await api('practice-scramble',{id:chosen.id,algorithm:chosen.algorithm});
     if(session!==practiceSession)return;
     practiceCase=chosen;$('practice-hint-button').disabled=false;
     $('practice-scramble').textContent=setup;
@@ -89,7 +89,7 @@ $('start-practice').onclick=async()=>{
   $('practice-instruction').textContent='Preparing your selected cases…';
   $('practice').showModal();
   const results=await Promise.all(selected.map(async c=>{
-    try{const {setup}=await api('inverse',{algorithm:c.algorithm});return setup?{id:c.id,name:c.name,algorithm:c.algorithm}:null;}
+    try{const {setup}=await api('inverse',{id:c.id,algorithm:c.algorithm});return setup?{id:c.id,name:c.name,algorithm:c.algorithm}:null;}
     catch{return null;}
   }));
   if(session!==practiceSession)return;

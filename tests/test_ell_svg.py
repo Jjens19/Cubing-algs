@@ -9,12 +9,12 @@ from src import server
 
 class ELLVectorTests(unittest.TestCase):
     def test_vector_images_match_original_sticker_samples(self):
-        cases = json.loads((server.ROOT / 'src/ell_stickers.json').read_text())
+        cases = json.loads((server.ROOT / 'src/data/ell_stickers.json').read_text())
         self.assertEqual(len(cases), 30)
-        self.assertFalse(list((server.ROOT / 'ELL').glob('*.png')))
+        self.assertFalse(list((server.ROOT / 'src/static/cases/ell').glob('*.png')))
         for filename, stickers in cases.items():
             with self.subTest(case=filename):
-                svg = ET.parse(server.ROOT / 'ELL' / filename).getroot()
+                svg = ET.parse(server.ROOT / 'src/static/cases/ell' / filename).getroot()
                 self.assertEqual(svg.get('viewBox'), '0 0 100 100')
                 self.assertEqual(len(svg), 21)
                 self.assertEqual({r.get('data-key'): r.get('fill') for r in svg},
@@ -27,7 +27,7 @@ class ELLVectorTests(unittest.TestCase):
             try:
                 server.initialize()
                 with server.connect() as db:
-                    db.execute("UPDATE cases SET image='/ELL/ell-A1.png', name='My case', recognition='My notes', learned=1, drawing=? WHERE image='/ELL/ell-A1.svg'",
+                    db.execute("UPDATE cases SET image='/ELL/ell-A1.png', name='My case', recognition='My notes', learned=1, drawing=? WHERE image='/cases/ell/ell-A1.svg'",
                                (json.dumps({'useDrawing': True, 'stickers': {'U0': {'color': '#123456', 'highlight': True}}}),))
                     before = dict(db.execute("SELECT * FROM cases WHERE image='/ELL/ell-A1.png'").fetchone())
                     db.execute("DELETE FROM migrations WHERE name='ell-vector-images-v1'")
@@ -35,6 +35,24 @@ class ELLVectorTests(unittest.TestCase):
                 server.initialize()
                 with server.connect() as db:
                     after = dict(db.execute('SELECT * FROM cases WHERE id=?', (before['id'],)).fetchone())
-                self.assertEqual(after, {**before, 'image': '/ELL/ell-A1.svg'})
+                self.assertEqual(after, {**before, 'image': '/cases/ell/ell-A1.svg'})
+            finally:
+                server.DB = previous
+
+    def test_directory_migration_preserves_custom_case_fields(self):
+        previous = server.DB
+        with tempfile.TemporaryDirectory() as directory:
+            server.DB = Path(directory) / 'library.sqlite3'
+            try:
+                server.initialize()
+                with server.connect() as db:
+                    db.execute("UPDATE cases SET image='/ELL/ell-A1.svg', name='Renamed', alg_set='Custom', category='Custom group', learned=1, recognition='My notes' WHERE image='/cases/ell/ell-A1.svg'")
+                    before = dict(db.execute("SELECT * FROM cases WHERE image='/ELL/ell-A1.svg'").fetchone())
+                    db.execute("DELETE FROM migrations WHERE name='ell-static-directory-v1'")
+                server.initialize()
+                server.initialize()
+                with server.connect() as db:
+                    after = dict(db.execute('SELECT * FROM cases WHERE id=?', (before['id'],)).fetchone())
+                self.assertEqual(after, {**before, 'image': '/cases/ell/ell-A1.svg'})
             finally:
                 server.DB = previous

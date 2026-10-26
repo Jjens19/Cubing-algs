@@ -1,48 +1,12 @@
-"""Match downloaded SpeedCubeDB WV/OLL/PLL pages to existing J Perm cases.
-
-python -m scripts.cross_reference_speedcubedb --input /tmp/scdb
-"""
+"""Cross-reference bundled J Perm cases with downloaded SpeedCubeDB pages."""
 import argparse
-import html
 import json
 from pathlib import Path
-import re
-
-from scripts.import_jperm import ROOT, diagram, normalize
-from src.scrambler import Cube, FACES, SOLVED
-
-
-def stage_solved(state, subset):
-    if subset == 'PLL':
-        return any(Cube(state).apply(auf).normalized() == SOLVED for auf in ['', 'U', "U'", 'U2'])
-    return state[:9] == 'U'*9 and all(
-        state[i*9+(0 if face == 'D' else 3):(i+1)*9] == face*(9-(0 if face == 'D' else 3))
-        for i, face in enumerate(FACES) if face != 'U')
-
-
-def parse(page):
-    parts = re.split(r'<div class="row singlealgorithm[^>]*data-alg="([^"]+)"[^>]*>', page)
-    cases = []
-    for name, body in zip(parts[1::2], parts[2::2]):
-        algorithms = [html.unescape(re.sub('<[^>]*>', '', text)).strip()
-                      for text in re.findall(r'<div class="formatted-alg">(.*?)</div>', body, re.S)]
-        setup = html.unescape(re.search(r'<div class="setup-case[^>]*><div>setup:</div>(.*?)</div>', body, re.S).group(1)).strip()
-        cases.append({'source_name': name, 'source_algorithms': algorithms, 'source_setup': setup,
-                      'algorithm': normalize(algorithms[0])})
-    return cases
-
-
-def match_pose(facelets, algorithm, subset):
-    for rotation in ['', 'y', "y'", 'y2']:
-        for auf in ['', 'U', "U'", 'U2']:
-            state = Cube(Cube(facelets).apply(rotation).normalized()).apply(auf).apply(algorithm).normalized()
-            if stage_solved(state, subset):
-                return {'rotation': rotation, 'auf': auf}
-    return None
-
+from tools.importers.common import ROOT, diagram, normalize, parse, match_pose, stage_solved
+from src.scrambler import Cube
 
 def build(directory):
-    original = json.loads((ROOT / 'src/jperm_algorithms.json').read_text())['cases']
+    original = json.loads((ROOT / 'src/data/jperm_algorithms.json').read_text())['cases']
     records = []
     for subset, count in [('WV', 27), ('OLL', 57), ('PLL', 21)]:
         source = parse((directory / (subset+'.html')).read_text())
@@ -65,7 +29,7 @@ def build(directory):
                 'match': pose, 'source': 'https://speedcubedb.com/a/3x3/'+subset,
                 'facelets': target, 'stickers': stickers})
         assert len(used) == count
-    (ROOT / 'src/speedcubedb_overrides.json').write_text(json.dumps({'cases': records}, indent=2)+'\n')
+    (ROOT / 'src/data/speedcubedb_overrides.json').write_text(json.dumps({'cases': records}, indent=2)+'\n')
     print('Cross-referenced', len(records), 'cases.')
     for subset in ['WV', 'OLL', 'PLL']:
         changed = sum(c['alg_set'] == subset and c['algorithm'] != c['previous_algorithm'] for c in records)

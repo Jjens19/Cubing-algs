@@ -7,18 +7,18 @@ import unittest
 
 from src import server
 from src.scrambler import Cube, FACES, SOLVED, generate, invert
-from scripts.import_jperm import normalize
+from tools.importers.common import normalize
 
 
 class JPermTests(unittest.TestCase):
     def test_normalization_preserves_ergonomic_triple_turns(self):
         self.assertEqual(normalize("(R3 U3') Rw3"), "R3 U3' Rw3")
-        cases = json.loads((server.ROOT / 'src/jperm_algorithms.json').read_text())['cases']
+        cases = json.loads((server.ROOT / 'src/data/jperm_algorithms.json').read_text())['cases']
         ub = next(c for c in cases if c['alg_set']=='PLL' and c['name']=='Ub')
         self.assertTrue(any('R3' in alternative for alternative in ub['alternatives']))
 
     def test_all_cases_and_stage_solutions(self):
-        cases = json.loads((server.ROOT / 'src/jperm_algorithms.json').read_text())['cases']
+        cases = json.loads((server.ROOT / 'src/data/jperm_algorithms.json').read_text())['cases']
         self.assertEqual(Counter(c['alg_set'] for c in cases), {'WV': 27, 'OLL': 57, 'PLL': 21})
         self.assertEqual(len({(c['alg_set'], c['name']) for c in cases}), 105)
         for case in cases:
@@ -59,7 +59,7 @@ class JPermTests(unittest.TestCase):
                 server.DB = previous
 
     def test_practice_scrambles_reach_the_imported_cases(self):
-        cases = json.loads((server.ROOT / 'src/jperm_algorithms.json').read_text())['cases']
+        cases = json.loads((server.ROOT / 'src/data/jperm_algorithms.json').read_text())['cases']
         for case in cases:
             with self.subTest(subset=case['alg_set'], case=case['name']):
                 expected = {Cube(case['facelets']).apply(auf).normalized() for auf in ['', 'U', "U'", 'U2']}

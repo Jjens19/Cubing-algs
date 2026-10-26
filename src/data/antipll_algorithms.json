@@ -1,0 +1,2348 @@
+{
+  "source": "https://speedcubedb.com/a/3x3/AntiPLL",
+  "cases": [
+    {
+      "name": "Aa",
+      "alg_set": "Anti PLL",
+      "category": "A",
+      "algorithm": "r R2 U r' F2 R F' r' F2 r2 U' M",
+      "source_algorithms": [
+        "r R2 U r' F2 R F' r' F2 r2 U' M",
+        "y2 R U' R2 D' r U r' D R2 U' R' U' R U R' U' R U' R'",
+        "L' U' L U' L' U L U' L' U' L2 D l' U l D' L2 U' L",
+        "M' R' U L' U2 R U' r' U2 r L U' M"
+      ],
+      "alternatives": [
+        "y2 R U' R2 D' r U r' D R2 U' R' U' R U R' U' R U' R'",
+        "L' U' L U' L' U L U' L' U' L2 D l' U l D' L2 U' L",
+        "M' R' U L' U2 R U' r' U2 r L U' M"
+      ],
+      "source_setup": "M' U L' r' U2' r U R' U2' L U' R M",
+      "source": "https://speedcubedb.com/a/3x3/AntiPLL",
+      "facelets": "ULUFUBURURUBRRRRRRFUFFFFFFFDDDDDDDDDBULLLLLLLLURBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ff9900",
+          "highlight": false
+        }
+      },
+      "image": "/cases/antipll/aa.svg"
+    },
+    {
+      "name": "Ab",
+      "alg_set": "Anti PLL",
+      "category": "A",
+      "algorithm": "R U R' U R U' R' U R U R2 D' r U' r' D R2 U R'",
+      "source_algorithms": [
+        "R U R' U R U' R' U R U R2 D' r U' r' D R2 U R'",
+        "y2 M R U' L U2 R' U r U2 r' L' U M'",
+        "R' L2 F' R F2 L' F R U2 R2 F R L'",
+        "M' U L' r' U2 r U R' U2 L U' r' R2"
+      ],
+      "alternatives": [
+        "y2 M R U' L U2 R' U r U2 r' L' U M'",
+        "R' L2 F' R F2 L' F R U2 R2 F R L'",
+        "M' U L' r' U2 r U R' U2 L U' r' R2"
+      ],
+      "source_setup": "L R' F' R2' U2' R' F' L F2' R' F L2' R",
+      "source": "https://speedcubedb.com/a/3x3/AntiPLL",
+      "facelets": "ULUFUBURULUFRRRRRRBUBFFFFFFDDDDDDDDDFURLLLLLLRULBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ff0000",
+          "highlight": false
+        }
+      },
+      "image": "/cases/antipll/ab.svg"
+    },
+    {
+      "name": "E",
+      "alg_set": "Anti PLL",
+      "category": "E",
+      "algorithm": "R2 U2 R2 U' R2 U' R' U2 R' F R' F' R2 U R' U R' F R F'",
+      "source_algorithms": [
+        "R2 U2 R2 U' R2 U' R' U2 R' F R' F' R2 U R' U R' F R F'",
+        "r' U r S' U f r' F' R U R' U' R' F r F'",
+        "R' F R U2 r U' r' U2 F' U2 r U R' U' M",
+        "R2 D R' U R D' R2 B' U' R' F U R U' F' U f"
+      ],
+      "alternatives": [
+        "r' U r S' U f r' F' R U R' U' R' F r F'",
+        "R' F R U2 r U' r' U2 F' U2 r U R' U' M",
+        "R2 D R' U R D' R2 B' U' R' F U R U' F' U f"
+      ],
+      "source_setup": "M' U R U' r' U2' F U2' r U r' U2' R' F' R",
+      "source": "https://speedcubedb.com/a/3x3/AntiPLL",
+      "facelets": "UBULURUFUFUBRRRRRRRULFFFFFFDDDDDDDDDBUFLLLLLLLURBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#00ff00",
+          "highlight": false
+        }
+      },
+      "image": "/cases/antipll/e.svg"
+    },
+    {
+      "name": "F",
+      "alg_set": "Anti PLL",
+      "category": "F",
+      "algorithm": "r U R' U' M r' F R2 U' R' U' R U R' F' U M'",
+      "source_algorithms": [
+        "r U R' U' M r' F R2 U' R' U' R U R' F' U M'",
+        "r U R' U' M2 R' F R2 U' R' U' R U R' F' U M'",
+        "M' U R l U2 R2 F r U' R U2 L' U r'",
+        "S' R U R' S U' M' R' F R2 U' R' U' R U R' F' M"
+      ],
+      "alternatives": [
+        "r U R' U' M2 R' F R2 U' R' U' R U R' F' U M'",
+        "M' U R l U2 R2 F r U' R U2 L' U r'",
+        "S' R U R' S U' M' R' F R2 U' R' U' R U R' F' M"
+      ],
+      "source_setup": "M' U' r' L' U2' L r U' R' U r' F2' R F' R U'",
+      "source": "https://speedcubedb.com/a/3x3/AntiPLL",
+      "facelets": "ULUBUFURURULRRRRRRLUFFFFFFFDDDDDDDDDBUBLLLLLLFURBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ff9900",
+          "highlight": false
+        }
+      },
+      "image": "/cases/antipll/f.svg"
+    },
+    {
+      "name": "Ga",
+      "alg_set": "Anti PLL",
+      "category": "G",
+      "algorithm": "y R U2 R' F R' F' R2 U2 R' F R U' R' U' R U R' F'",
+      "source_algorithms": [
+        "y R U2 R' F R' F' R2 U2 R' F R U' R' U' R U R' F'",
+        "U' R' D' r U' r' D R2 U R' U' F' U2 F",
+        "L' U2 L F' L F L2 U2 L F' L F L' U' L' U L",
+        "y' R' D' r U' r' D R2 U R' U' F' U2 F"
+      ],
+      "alternatives": [
+        "U' R' D' r U' r' D R2 U R' U' F' U2 F",
+        "L' U2 L F' L F L2 U2 L F' L F L' U' L' U L",
+        "y' R' D' r U' r' D R2 U R' U' F' U2 F"
+      ],
+      "source_setup": "F' U2' F U R U' R2' D' r U r' D R U",
+      "source": "https://speedcubedb.com/a/3x3/AntiPLL",
+      "facelets": "UFUBULURUBUFRRRRRRFURFFFFFFDDDDDDDDDLULLLLLLLRUBBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#0000ff",
+          "highlight": false
+        }
+      },
+      "image": "/cases/antipll/ga.svg"
+    },
+    {
+      "name": "Gb",
+      "alg_set": "Anti PLL",
+      "category": "G",
+      "algorithm": "y F R U' R' U R U R' F' R U2 R2 F R F' R U2 R'",
+      "source_algorithms": [
+        "y F R U' R' U R U R' F' R U2 R2 F R F' R U2 R'",
+        "U F' U2 F U R U' R2 D' r U r' D R",
+        "y F' U2 F U R U' R2 D' r U r' D R"
+      ],
+      "alternatives": [
+        "U F' U2 F U R U' R2 D' r U r' D R",
+        "y F' U2 F U R U' R2 D' r U r' D R"
+      ],
+      "source_setup": "R' D' r U' r' D R2' U R' U' F' U2' F U'",
+      "source": "https://speedcubedb.com/a/3x3/AntiPLL",
+      "facelets": "ULURUFUBUBUFRRRRRRFURFFFFFFDDDDDDDDDLULLLLLLLRUBBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#0000ff",
+          "highlight": false
+        }
+      },
+      "image": "/cases/antipll/gb.svg"
+    },
+    {
+      "name": "Gc",
+      "alg_set": "Anti PLL",
+      "category": "G",
+      "algorithm": "y2 R U2 R' F R' F' R2 U2 R' F R' F' R U R U' R'",
+      "source_algorithms": [
+        "y2 R U2 R' F R' F' R2 U2 R' F R' F' R U R U' R'",
+        "M' F' U F R2 r' U' R' F' r U' r' F2",
+        "y' S' R' U R S y R U' R' F' r U' r' F2"
+      ],
+      "alternatives": [
+        "M' F' U F R2 r' U' R' F' r U' r' F2",
+        "y' S' R' U R S y R U' R' F' r U' r' F2"
+      ],
+      "source_setup": "F2' r U r' F R U r R2' F' U' F M",
+      "source": "https://speedcubedb.com/a/3x3/AntiPLL",
+      "facelets": "UFULUBURURULRRRRRRLUFFFFFFFDDDDDDDDDBUBLLLLLLFURBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ff9900",
+          "highlight": false
+        }
+      },
+      "image": "/cases/antipll/gc.svg"
+    },
+    {
+      "name": "Gd",
+      "alg_set": "Anti PLL",
+      "category": "G",
+      "algorithm": "y' R U R' U' R' F R F' R U2 R2 F R F' R U2 R'",
+      "source_algorithms": [
+        "y' R U R' U' R' F R F' R U2 R2 F R F' R U2 R'",
+        "U F R U' R2 D' r U' r' D R F R' F' R F'",
+        "y F' L' U L U' L' U' L F L' U2 L2 F' L' F L' U2 L",
+        "y F R U' R2 D' r U' r' D R F R' F' R F'"
+      ],
+      "alternatives": [
+        "U F R U' R2 D' r U' r' D R F R' F' R F'",
+        "y F' L' U L U' L' U' L F L' U2 L2 F' L' F L' U2 L",
+        "y F R U' R2 D' r U' r' D R F R' F' R F'"
+      ],
+      "source_setup": "F R' F R F' R' D' r U r' D R2' U R' F' U'",
+      "source": "https://speedcubedb.com/a/3x3/AntiPLL",
+      "facelets": "URUBULUFULURRRRRRRRUBFFFFFFDDDDDDDDDFUFLLLLLLBULBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ff0000",
+          "highlight": false
+        }
+      },
+      "image": "/cases/antipll/gd.svg"
+    },
+    {
+      "name": "H",
+      "alg_set": "Anti PLL",
+      "category": "H",
+      "algorithm": "r U R' U' M2 U R U' R' U' M'",
+      "source_algorithms": [
+        "r U R' U' M2 U R U' R' U' M'",
+        "S R' U' R U R U R U' R' S'",
+        "M U R U R' U' M2 U R U' r'",
+        "S' R U R' S U' M' U R U' r'"
+      ],
+      "alternatives": [
+        "S R' U' R U R U R U' R' S'",
+        "M U R U R' U' M2 U R U' r'",
+        "S' R U R' S U' M' U R U' r'"
+      ],
+      "source_setup": "r U R' U' M2' U R U' R' U' M'",
+      "source": "https://speedcubedb.com/a/3x3/AntiPLL",
+      "facelets": "URUBUFULUBUBRRRRRRRURFFFFFFDDDDDDDDDFUFLLLLLLLULBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#0000ff",
+          "highlight": false
+        }
+      },
+      "image": "/cases/antipll/h.svg"
+    },
+    {
+      "name": "Ja",
+      "alg_set": "Anti PLL",
+      "category": "J",
+      "algorithm": "y' R' U R2 F2 D r' U r D' F2 R2 U' R",
+      "source_algorithms": [
+        "y' R' U R2 F2 D r' U r D' F2 R2 U' R",
+        "y R' U R2 F2 D r' U' r D' F2 R2 U' R",
+        "y2 R' F2 R2 U2 R' F R U2 R2 F2 R2 U2 R' U' R U' R'",
+        "U2 F U R' U2 R2 U R2 U R U R' U' F' U F R F'"
+      ],
+      "alternatives": [
+        "y R' U R2 F2 D r' U' r D' F2 R2 U' R",
+        "y2 R' F2 R2 U2 R' F R U2 R2 F2 R2 U2 R' U' R U' R'",
+        "U2 F U R' U2 R2 U R2 U R U R' U' F' U F R F'"
+      ],
+      "source_setup": "F R' F' U' F U R U' R' U' R2' U' R2' U2' R U' F' U2'",
+      "source": "https://speedcubedb.com/a/3x3/AntiPLL",
+      "facelets": "ULURUFUBUFUBRRRRRRBULFFFFFFDDDDDDDDDRURLLLLLLLUFBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#00ff00",
+          "highlight": false
+        }
+      },
+      "image": "/cases/antipll/ja.svg"
+    },
+    {
+      "name": "Jb",
+      "alg_set": "Anti PLL",
+      "category": "J",
+      "algorithm": "y' R U' R2 B2 D' r U r' D B2 R2 U R'",
+      "source_algorithms": [
+        "y' R U' R2 B2 D' r U r' D B2 R2 U R'",
+        "U' R D' F2 R2 U' r U r' U R2 F2 D R'",
+        "F R' F' R U S' R' U' R S R U' R2 U2 R U' R U' R'",
+        "y' R D' F2 R2 U' r U r' U R2 F2 D R'"
+      ],
+      "alternatives": [
+        "U' R D' F2 R2 U' r U r' U R2 F2 D R'",
+        "F R' F' R U S' R' U' R S R U' R2 U2 R U' R U' R'",
+        "y' R D' F2 R2 U' r U r' U R2 F2 D R'"
+      ],
+      "source_setup": "R D' F2' R2' U' r U' r' U R2' F2' D R' U",
+      "source": "https://speedcubedb.com/a/3x3/AntiPLL",
+      "facelets": "UFURUBULUFUBRRRRRRBULFFFFFFDDDDDDDDDRURLLLLLLLUFBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#00ff00",
+          "highlight": false
+        }
+      },
+      "image": "/cases/antipll/jb.svg"
+    },
+    {
+      "name": "Na",
+      "alg_set": "Anti PLL",
+      "category": "N",
+      "algorithm": "R2 U2 R' U2 F' U2 F f R2 f' U2 R U2 R2",
+      "source_algorithms": [
+        "R2 U2 R' U2 F' U2 F f R2 f' U2 R U2 R2",
+        "L' F U2 L2 F L' F2 L F' L2 U2 F' L",
+        "F R U' R' U' R U R' F' U' F R U R' U' R' F' r U R U' r'",
+        "L' B L2 D2 B l' U2 l B' D2 L2 B' L"
+      ],
+      "alternatives": [
+        "L' F U2 L2 F L' F2 L F' L2 U2 F' L",
+        "F R U' R' U' R U R' F' U' F R U R' U' R' F' r U R U' r'",
+        "L' B L2 D2 B l' U2 l B' D2 L2 B' L"
+      ],
+      "source_setup": "L' F U2' L2' F L' F2' L F' L2' U2' F' L",
+      "source": "https://speedcubedb.com/a/3x3/AntiPLL",
+      "facelets": "ULUBUFURUBUFRRRRRRLURFFFFFFDDDDDDDDDFUBLLLLLLRULBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#0000ff",
+          "highlight": false
+        }
+      },
+      "image": "/cases/antipll/na.svg"
+    },
+    {
+      "name": "Nb",
+      "alg_set": "Anti PLL",
+      "category": "N",
+      "algorithm": "U' R' F2 L F L2 U2 L U2 L' U2 L2 F' L' F2 R",
+      "source_algorithms": [
+        "U' R' F2 L F L2 U2 L U2 L' U2 L2 F' L' F2 R",
+        "R2 U2 R U2 F' U2 F f R2 f' U2 R' U2 R2",
+        "R F' U2 R2 F' R F2 R' F R2 U2 F R'",
+        "R B' R2 D2 B' r U2 r' B D2 R2 B R'"
+      ],
+      "alternatives": [
+        "R2 U2 R U2 F' U2 F f R2 f' U2 R' U2 R2",
+        "R F' U2 R2 F' R F2 R' F R2 U2 F R'",
+        "R B' R2 D2 B' r U2 r' B D2 R2 B R'"
+      ],
+      "source_setup": "R' F2' L F L2' U2' L U2' L' U2' L2' F' L' F2' R U",
+      "source": "https://speedcubedb.com/a/3x3/AntiPLL",
+      "facelets": "UBURULUFULURRRRRRRFUBFFFFFFDDDDDDDDDRULLLLLLLBUFBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ff0000",
+          "highlight": false
+        }
+      },
+      "image": "/cases/antipll/nb.svg"
+    },
+    {
+      "name": "Pure",
+      "alg_set": "Anti PLL",
+      "category": "Pure",
+      "algorithm": "M' U2 M U2 M' U' M U2 M' U2 M U",
+      "source_algorithms": [
+        "M' U2 M U2 M' U' M U2 M' U2 M U",
+        "M' U2 M U2 M' U' M U2 M' U2 M",
+        "M' U' M' U' M' U' M' U' M U' M U' M U' M U'",
+        "M' U' M' U' M' U' M' U M' U' M' U' M' U' M' U"
+      ],
+      "alternatives": [
+        "M' U2 M U2 M' U' M U2 M' U2 M",
+        "M' U' M' U' M' U' M' U' M U' M U' M U' M U'",
+        "M' U' M' U' M' U' M' U M' U' M' U' M' U' M' U"
+      ],
+      "source_setup": "U' M' U2' M U2' M' U M U2' M' U2' M",
+      "source": "https://speedcubedb.com/a/3x3/AntiPLL",
+      "facelets": "UBULURUFURURRRRRRRFUFFFFFFFDDDDDDDDDLULLLLLLLBUBBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ff9900",
+          "highlight": false
+        }
+      },
+      "image": "/cases/antipll/pure.svg"
+    },
+    {
+      "name": "Ra",
+      "alg_set": "Anti PLL",
+      "category": "R",
+      "algorithm": "x' R' F R2 U2 F R' U R F' U2 R2 F' R x",
+      "source_algorithms": [
+        "x' R' F R2 U2 F R' U R F' U2 R2 F' R x",
+        "F R' F' R U' R U R' S R' F R U R U' R' f' R U R'",
+        "U' F' U F2 R2 U F' R' F U' R2 F2 U' F U",
+        "y' R U R2 F R F' R U2 R2 U' R f U R U' R' F' R S'"
+      ],
+      "alternatives": [
+        "F R' F' R U' R U R' S R' F R U R U' R' f' R U R'",
+        "U' F' U F2 R2 U F' R' F U' R2 F2 U' F U",
+        "y' R U R2 F R F' R U2 R2 U' R f U R U' R' F' R S'"
+      ],
+      "source_setup": "U' F' U F2' R2' U F' R F U' R2' F2' U' F U",
+      "source": "https://speedcubedb.com/a/3x3/AntiPLL",
+      "facelets": "UFUBULURULUFRRRRRRBUBFFFFFFDDDDDDDDDFURLLLLLLRULBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ff0000",
+          "highlight": false
+        }
+      },
+      "image": "/cases/antipll/ra.svg"
+    },
+    {
+      "name": "Rb",
+      "alg_set": "Anti PLL",
+      "category": "R",
+      "algorithm": "y2 R U' R2 F2 U' R F' R' U F2 R2 U R'",
+      "source_algorithms": [
+        "y2 R U' R2 F2 U' R F' R' U F2 R2 U R'",
+        "U2 R U' R2 F2 U' R F' R' U F2 R2 U R'",
+        "F' L F L' U L' U' L S' L F' L' U' L' U L f L' U' L",
+        "R U' R2 F2 U' R F R' U F2 R2 U R'"
+      ],
+      "alternatives": [
+        "U2 R U' R2 F2 U' R F' R' U F2 R2 U R'",
+        "F' L F L' U L' U' L S' L F' L' U' L' U L f L' U' L",
+        "R U' R2 F2 U' R F R' U F2 R2 U R'"
+      ],
+      "source_setup": "R U' R2' F2' U' R F R' U F2' R2' U R' U2'",
+      "source": "https://speedcubedb.com/a/3x3/AntiPLL",
+      "facelets": "UFURUBULULUFRRRRRRBUBFFFFFFDDDDDDDDDFURLLLLLLRULBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ff0000",
+          "highlight": false
+        }
+      },
+      "image": "/cases/antipll/rb.svg"
+    },
+    {
+      "name": "T",
+      "alg_set": "Anti PLL",
+      "category": "T",
+      "algorithm": "F R' F R2 U R' U' F2 U' r U' r' F",
+      "source_algorithms": [
+        "F R' F R2 U R' U' F2 U' r U' r' F"
+      ],
+      "alternatives": [],
+      "source_setup": "F' r U r' U F2' U R U' R2' F' R F'",
+      "source": "https://speedcubedb.com/a/3x3/AntiPLL",
+      "facelets": "UFULURUBUFUBRRRRRRBULFFFFFFDDDDDDDDDRURLLLLLLLUFBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#00ff00",
+          "highlight": false
+        }
+      },
+      "image": "/cases/antipll/t.svg"
+    },
+    {
+      "name": "Ua",
+      "alg_set": "Anti PLL",
+      "category": "U",
+      "algorithm": "R' U' R U' M U R' U r U2 M U M'",
+      "source_algorithms": [
+        "R' U' R U' M U R' U r U2 M U M'",
+        "y S U2 R' U' R U R U S' R U' R'",
+        "y2 L' U' L U' M' U L' U l U2 M' U M",
+        "y R U R' U' M' U R U' R' U M U2 M' U M"
+      ],
+      "alternatives": [
+        "y S U2 R' U' R U R U S' R U' R'",
+        "y2 L' U' L U' M' U L' U l U2 M' U M",
+        "y R U R' U' M' U R U' R' U M U2 M' U M"
+      ],
+      "source_setup": "R U R' U M' U' R U' r' U2' M' U' M U",
+      "source": "https://speedcubedb.com/a/3x3/AntiPLL",
+      "facelets": "ULUBURUFUBUBRRRRRRRURFFFFFFDDDDDDDDDFUFLLLLLLLULBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#0000ff",
+          "highlight": false
+        }
+      },
+      "image": "/cases/antipll/ua.svg"
+    },
+    {
+      "name": "Ub",
+      "alg_set": "Anti PLL",
+      "category": "U",
+      "algorithm": "y2 R U R' U M' U' R U' r' U2 M' U' M",
+      "source_algorithms": [
+        "y2 R U R' U M' U' R U' r' U2 M' U' M",
+        "y S U2 R U R' U' R' U' S' R' U R",
+        "y2 f' L' U' L U f L U L F' L' F U' L'",
+        "U' M U' M' U2 r' U' R U' M' U R' U R"
+      ],
+      "alternatives": [
+        "y S U2 R U R' U' R' U' S' R' U R",
+        "y2 f' L' U' L U f L U L F' L' F U' L'",
+        "U' M U' M' U2 r' U' R U' M' U R' U R"
+      ],
+      "source_setup": "R' U' R U' M U R' U r U2' M U M' U",
+      "source": "https://speedcubedb.com/a/3x3/AntiPLL",
+      "facelets": "URULUBUFUFUFRRRRRRLULFFFFFFDDDDDDDDDBUBLLLLLLRURBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#00ff00",
+          "highlight": false
+        }
+      },
+      "image": "/cases/antipll/ub.svg"
+    },
+    {
+      "name": "V",
+      "alg_set": "Anti PLL",
+      "category": "V",
+      "algorithm": "U' F R' F' R U R U' R' f R f' U' r' U' R U M'",
+      "source_algorithms": [
+        "U' F R' F' R U R U' R' f R f' U' r' U' R U M'",
+        "y2 R U' R' U' R2 y R' F' R U' R U R' U' R U' R' F'",
+        "U2 x' z' D R2 U F U2 F D F' U F R D' F2 R2 D'",
+        "F R U R' U R U' R' U2 F2 r U r' F U F'"
+      ],
+      "alternatives": [
+        "y2 R U' R' U' R2 y R' F' R U' R U R' U' R U' R' F'",
+        "U2 x' z' D R2 U F U2 F D F' U F R D' F2 R2 D'",
+        "F R U R' U R U' R' U2 F2 r U r' F U F'"
+      ],
+      "source_setup": "x' z' D R2' F2' D R' F' U' F D' F' U2' F' U' R2' D' z x U2'",
+      "source": "https://speedcubedb.com/a/3x3/AntiPLL",
+      "facelets": "URULUBUFULURRRRRRRFUBFFFFFFDDDDDDDDDRULLLLLLLBUFBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ff0000",
+          "highlight": false
+        }
+      },
+      "image": "/cases/antipll/v.svg"
+    },
+    {
+      "name": "Y",
+      "alg_set": "Anti PLL",
+      "category": "Y",
+      "algorithm": "y2 F R U' R' S U' R U R' f' r U R' U' M r' F R F' M'",
+      "source_algorithms": [
+        "y2 F R U' R' S U' R U R' f' r U R' U' M r' F R F' M'",
+        "R U' R' S R' F R f' R U' B U2 B' R'",
+        "y2 R U2 r' U2 F' R U' R' F R' F' R F U2 M'",
+        "S' R U' R' S R' F R F' R U' B U2 B' R'"
+      ],
+      "alternatives": [
+        "R U' R' S R' F R f' R U' B U2 B' R'",
+        "y2 R U2 r' U2 F' R U' R' F R' F' R F U2 M'",
+        "S' R U' R' S R' F R F' R U' B U2 B' R'"
+      ],
+      "source_setup": "L R' F2' U' L' U L U' L F L' U F2' R U2' L'",
+      "source": "https://speedcubedb.com/a/3x3/AntiPLL",
+      "facelets": "ULUBURUFULURRRRRRRFUBFFFFFFDDDDDDDDDRULLLLLLLBUFBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ff0000",
+          "highlight": false
+        }
+      },
+      "image": "/cases/antipll/y.svg"
+    },
+    {
+      "name": "Z",
+      "alg_set": "Anti PLL",
+      "category": "Z",
+      "algorithm": "y r U' M2 U r' U2 r U' M2 U r'",
+      "source_algorithms": [
+        "y r U' M2 U r' U2 r U' M2 U r'",
+        "R2 S' R2 U' S2 U' R2 S' R2",
+        "r' U M2 U' r U2 r' U M2 U' r",
+        "y' l U' M2 U R' F2 R U' M2 U l'"
+      ],
+      "alternatives": [
+        "R2 S' R2 U' S2 U' R2 S' R2",
+        "r' U M2 U' r U2 r' U M2 U' r",
+        "y' l U' M2 U R' F2 R U' M2 U l'"
+      ],
+      "source_setup": "r' U M2' U' r U2' r' U M2' U' r",
+      "source": "https://speedcubedb.com/a/3x3/AntiPLL",
+      "facelets": "ULUBUFURULULRRRRRRBUBFFFFFFDDDDDDDDDRURLLLLLLFUFBBBBBB",
+      "stickers": {
+        "U0": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U1": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "U2": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U3": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "U4": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U5": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "U6": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "U7": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "U8": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B2": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "B1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "B0": {
+          "color": "#00ff00",
+          "highlight": false
+        },
+        "F0": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "F1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "F2": {
+          "color": "#0000ff",
+          "highlight": false
+        },
+        "L0": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "L1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "L2": {
+          "color": "#ff9900",
+          "highlight": false
+        },
+        "R2": {
+          "color": "#ff0000",
+          "highlight": false
+        },
+        "R1": {
+          "color": "#ffff00",
+          "highlight": false
+        },
+        "R0": {
+          "color": "#ff0000",
+          "highlight": false
+        }
+      },
+      "image": "/cases/antipll/z.svg"
+    }
+  ]
+}

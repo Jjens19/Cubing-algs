@@ -11,7 +11,7 @@ from src.scrambler import Cube, FACES, invert
 
 class CLLTests(unittest.TestCase):
     def test_case_algorithms_match_source_diagram_corners(self):
-        cases = json.loads((server.ROOT / 'src/cll_algorithms.json').read_text())['cases']
+        cases = json.loads((server.ROOT / 'src/data/cll_algorithms.json').read_text())['cases']
         self.assertEqual(len(cases), 42)
         self.assertEqual(Counter(c['category'] for c in cases),
                          {'PLL': 2, 'U': 6, 'T': 6, 'L': 6, 'S': 6, 'AS': 6, 'P': 6, 'H': 4})
@@ -45,7 +45,7 @@ class CLLTests(unittest.TestCase):
                     db.execute("UPDATE cases SET algorithm='R U', learned=1 WHERE alg_set='CLL' AND name='U1'")
                 server.initialize()
                 with server.connect() as db:
-                    self.assertEqual(db.execute('SELECT count(*) FROM cases').fetchone()[0], 204)
+                    self.assertEqual(db.execute('SELECT count(*) FROM cases').fetchone()[0], 363)
                     self.assertEqual(tuple(db.execute("SELECT algorithm, learned FROM cases WHERE alg_set='CLL' AND name='U1'").fetchone()), ('R U', 1))
             finally:
                 server.DB = previous

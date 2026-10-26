@@ -15,8 +15,8 @@ class LibraryTests(unittest.TestCase):
         self.assertEqual(server.y_to_u("Rw x z M2"), "Rw x z M2")
 
     def test_ell_import_and_preserve_edits(self):
-        bundled = json.loads((server.ROOT / 'src' / 'ell_algorithms.json').read_text())['cases']
-        self.assertEqual(set(bundled), {p.name for p in (server.ROOT / 'ELL').glob('*.svg')})
+        bundled = json.loads((server.ROOT / 'src' / 'data' / 'ell_algorithms.json').read_text())['cases']
+        self.assertEqual(set(bundled), {p.name for p in (server.ROOT / 'src/static/cases/ell').glob('*.svg')})
         self.assertEqual(len(bundled), 30)
         self.assertEqual(bundled['ell-A3.svg']['algorithm'], "U M' U' M U2 M' U' M")
         self.assertEqual(bundled['ell-epll0.svg']['algorithm'], '')
@@ -33,16 +33,16 @@ class LibraryTests(unittest.TestCase):
                         self.assertEqual(row['algorithm'], bundled[row['image'].split('/')[-1]]['algorithm'])
                     # Simulate an existing library before this migration.
                     db.execute('DELETE FROM migrations')
-                    db.execute("UPDATE cases SET algorithm='' WHERE image='/ELL/ell-A1.svg'")
-                    db.execute("UPDATE cases SET algorithm='R U' WHERE image='/ELL/ell-A2.svg'")
+                    db.execute("UPDATE cases SET algorithm='' WHERE image='/cases/ell/ell-A1.svg'")
+                    db.execute("UPDATE cases SET algorithm='R U' WHERE image='/cases/ell/ell-A2.svg'")
                 server.initialize()
                 with server.connect() as db:
-                    self.assertEqual(db.execute("SELECT algorithm FROM cases WHERE image='/ELL/ell-A1.svg'").fetchone()[0], bundled['ell-A1.svg']['algorithm'])
-                    self.assertEqual(db.execute("SELECT algorithm FROM cases WHERE image='/ELL/ell-A2.svg'").fetchone()[0], 'R U')
-                    db.execute("UPDATE cases SET algorithm='' WHERE image='/ELL/ell-A1.svg'")
+                    self.assertEqual(db.execute("SELECT algorithm FROM cases WHERE image='/cases/ell/ell-A1.svg'").fetchone()[0], bundled['ell-A1.svg']['algorithm'])
+                    self.assertEqual(db.execute("SELECT algorithm FROM cases WHERE image='/cases/ell/ell-A2.svg'").fetchone()[0], 'R U')
+                    db.execute("UPDATE cases SET algorithm='' WHERE image='/cases/ell/ell-A1.svg'")
                 server.initialize()
                 with server.connect() as db:
-                    self.assertEqual(db.execute("SELECT algorithm FROM cases WHERE image='/ELL/ell-A1.svg'").fetchone()[0], '')
+                    self.assertEqual(db.execute("SELECT algorithm FROM cases WHERE image='/cases/ell/ell-A1.svg'").fetchone()[0], '')
             finally:
                 server.DB = original
 
@@ -132,7 +132,7 @@ class LibraryTests(unittest.TestCase):
                     self.assertFalse(post('practice-result', {'id': case['id'], 'elapsed_ms': 1000})['promoted'])
                     self.assertIn('PLL', library['sets'])
                     self.assertEqual(post('inverse', {'algorithm': case['algorithm']})['setup'], "R U' R'")
-                    for path in ['/', '/app.js', '/style.css', '/ELL/ell-A1.svg', '/api/export']:
+                    for path in ['/', '/app.js', '/style.css', '/cases/ell/ell-A1.svg', '/ELL/ell-A1.svg', '/api/export']:
                         with urlopen(base + path) as response:
                             self.assertEqual(response.status, 200)
                 finally:
