@@ -16,6 +16,8 @@ class LibraryTests(unittest.TestCase):
 
     def test_ell_import_and_preserve_edits(self):
         bundled = json.loads((server.ROOT / 'src' / 'data' / 'ell_algorithms.json').read_text())['cases']
+        defaults = {case['image'].split('/')[-1]: case['alternatives'][0] for case in
+                    json.loads((server.ROOT / 'src/data/ell_alternatives.json').read_text())['cases']}
         self.assertEqual(set(bundled), {p.name for p in (server.ROOT / 'src/static/cases/ell').glob('*.svg')})
         self.assertEqual(len(bundled), 30)
         self.assertEqual(bundled['ell-A3.svg']['algorithm'], "U M' U' M U2 M' U' M")
@@ -30,14 +32,15 @@ class LibraryTests(unittest.TestCase):
                 with server.connect() as db:
                     rows = db.execute('SELECT image, algorithm FROM cases WHERE alg_set="ELL"').fetchall()
                     for row in rows:
-                        self.assertEqual(row['algorithm'], bundled[row['image'].split('/')[-1]]['algorithm'])
+                        filename = row['image'].split('/')[-1]
+                        self.assertEqual(row['algorithm'], defaults.get(filename, bundled[filename]['algorithm']))
                     # Simulate an existing library before this migration.
                     db.execute('DELETE FROM migrations')
                     db.execute("UPDATE cases SET algorithm='' WHERE image='/cases/ell/ell-A1.svg'")
                     db.execute("UPDATE cases SET algorithm='R U' WHERE image='/cases/ell/ell-A2.svg'")
                 server.initialize()
                 with server.connect() as db:
-                    self.assertEqual(db.execute("SELECT algorithm FROM cases WHERE image='/cases/ell/ell-A1.svg'").fetchone()[0], bundled['ell-A1.svg']['algorithm'])
+                    self.assertEqual(db.execute("SELECT algorithm FROM cases WHERE image='/cases/ell/ell-A1.svg'").fetchone()[0], defaults['ell-A1.svg'])
                     self.assertEqual(db.execute("SELECT algorithm FROM cases WHERE image='/cases/ell/ell-A2.svg'").fetchone()[0], 'R U')
                     db.execute("UPDATE cases SET algorithm='' WHERE image='/cases/ell/ell-A1.svg'")
                 server.initialize()

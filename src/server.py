@@ -8,6 +8,7 @@ from http.server import BaseHTTPRequestHandler, HTTPServer
 from pathlib import Path
 from urllib.parse import urlparse, unquote
 from src.scrambler import generate as generate_practice_scramble
+from src.tnoodle import generate as generate_timer_scramble
 
 ROOT = Path(__file__).resolve().parent.parent
 DB = ROOT / 'data' / 'library.sqlite3'
@@ -166,6 +167,18 @@ def initialize():
                     db.execute('UPDATE cases SET description=? WHERE id=?', (row['description'] + note, row['id']))
             db.execute('INSERT INTO migrations VALUES (?)', (migration,))
 
+        migration = 'speedcubedb-ell-defaults-v1'
+        if not db.execute('SELECT 1 FROM migrations WHERE name=?', (migration,)).fetchone():
+            bundled = json.loads((ROOT / 'src/data/ell_alternatives.json').read_text())
+            previous = json.loads((ROOT / 'src/data/ell_algorithms.json').read_text())['cases']
+            for case in bundled['cases']:
+                old_algorithm = previous[Path(case['image']).name]['algorithm']
+                note = f"\n\nDefault algorithm: SpeedCubeDB {case['source_name']}\n{case['source']}"
+                db.execute('UPDATE cases SET algorithm=?, description=description || ? '
+                           'WHERE image=? AND algorithm=?',
+                           (case['alternatives'][0], note, case['image'], old_algorithm))
+            db.execute('INSERT INTO migrations VALUES (?)', (migration,))
+
         migration = 'cubingapp-lse-eolr-v1'
         if not db.execute('SELECT 1 FROM migrations WHERE name=?', (migration,)).fetchone():
             bundled = json.loads((ROOT / 'src/data/eolr_algorithms.json').read_text())
@@ -284,6 +297,11 @@ class Handler(BaseHTTPRequestHandler):
 
     def do_GET(self):
         path = unquote(urlparse(self.path).path)
+        if path == '/api/timer-scramble':
+            try:
+                return self.send(200, {'scramble': generate_timer_scramble()})
+            except ValueError as exc:
+                return self.send(503, {'error': str(exc)})
         if path == '/api/library':
             with connect() as db:
                 return self.send(200, {'progress_states': ['not-learned', 'learning', 'learned'], 'sets': [r[0] for r in db.execute('SELECT name FROM sets ORDER BY name')], 'cases': [dict(r) for r in db.execute('SELECT * FROM cases ORDER BY id')]})
@@ -309,6 +327,16 @@ class Handler(BaseHTTPRequestHandler):
                 raise ValueError('Invalid request size')
             data = json.loads(self.rfile.read(size))
             path = urlparse(self.path).path
+            if path.startswith('/api/bluetooth/'):
+                # Local hardware access must come from this app, not cross-origin forms.
+                if (origin != 'http://' + self.headers.get('Host', '')
+                        or urlparse('http://' + self.headers.get('Host', '')).hostname not in ('localhost', '127.0.0.1', '::1')):
+                    return self.send(403, {'error': 'Bluetooth requires a same-origin localhost request'})
+                from src.bluetooth_bridge import bridge
+                try:
+                    return self.send(200, bridge.call(path.rsplit('/', 1)[-1], data))
+                except Exception as exc:
+                    return self.send(400, {'error': str(exc) or 'Local Bluetooth operation failed'})
             if path == '/api/inverse':
                 reference = eolr_reference(data)
                 return self.send(200, {'setup': reference['setup'] if reference else inverse(data['algorithm'])})
@@ -317,6 +345,20 @@ class Handler(BaseHTTPRequestHandler):
                 inverse(data['algorithm'])
                 reference = eolr_reference(data)
                 return self.send(200, {'setup': generate_practice_scramble(data['algorithm'], facelets=reference['facelets'] if reference else None)})
+            if path == '/api/reset-progress':
+                scope = data.get('scope')
+                if scope not in ('all', 'subset') or data.get('confirmed') is not True:
+                    raise ValueError('Choose a reset scope and confirm the reset')
+                with connect() as db:
+                    if scope == 'subset':
+                        subset = data.get('alg_set')
+                        if not isinstance(subset, str) or not db.execute('SELECT 1 FROM sets WHERE name=?', (subset,)).fetchone():
+                            raise ValueError('Choose an existing algorithm set')
+                        result = db.execute('UPDATE cases SET learned=0, learning=0 WHERE alg_set=? AND (learned=1 OR learning=1)', (subset,))
+                    else:
+                        result = db.execute('UPDATE cases SET learned=0, learning=0 WHERE learned=1 OR learning=1')
+                    reset = result.rowcount
+                return self.send(200, {'reset': reset})
             if path == '/api/progress':
                 state = data.get('state')
                 if state is not None and state not in ('not-learned', 'learning', 'learned'):
@@ -399,4 +441,6 @@ def main():
     except KeyboardInterrupt:
         pass
     finally:
+        from src.bluetooth_bridge import bridge
+        bridge.close()
         server.server_close()

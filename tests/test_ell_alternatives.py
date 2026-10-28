@@ -10,6 +10,37 @@ from tools.importers.ell import align
 
 
 class ELLAlternativeTests(unittest.TestCase):
+    def test_defaults_upgrade_once_and_preserve_custom_algorithms(self):
+        previous = server.DB
+        bundled = json.loads((server.ROOT / 'src/data/ell_alternatives.json').read_text())['cases']
+        original = json.loads((server.ROOT / 'src/data/ell_algorithms.json').read_text())['cases']
+        with tempfile.TemporaryDirectory() as directory:
+            server.DB = Path(directory) / 'library.sqlite3'
+            try:
+                server.initialize()
+                with server.connect() as db:
+                    db.execute("DELETE FROM migrations WHERE name='speedcubedb-ell-defaults-v1'")
+                    for case in bundled:
+                        db.execute('UPDATE cases SET algorithm=? WHERE image=?',
+                                   (original[Path(case['image']).name]['algorithm'], case['image']))
+                    db.execute("UPDATE cases SET algorithm='R U', description='My notes' WHERE image='/cases/ell/ell-A2.svg'")
+                server.initialize()
+                with server.connect() as db:
+                    for case in bundled:
+                        row = db.execute('SELECT algorithm, description FROM cases WHERE image=?', (case['image'],)).fetchone()
+                        if case['name'] == 'A2':
+                            self.assertEqual(tuple(row), ('R U', 'My notes'))
+                        else:
+                            self.assertEqual(row['algorithm'], align(case['facelets'], normalize(case['source_algorithms'][0])))
+                            self.assertIn('Default algorithm: SpeedCubeDB', row['description'])
+                    db.execute("UPDATE cases SET algorithm='' WHERE image='/cases/ell/ell-A1.svg'")
+                    before = [dict(row) for row in db.execute('SELECT * FROM cases')]
+                server.initialize()
+                with server.connect() as db:
+                    self.assertEqual([dict(row) for row in db.execute('SELECT * FROM cases')], before)
+            finally:
+                server.DB = previous
+
     def test_every_alternative_solves_the_matched_case(self):
         bundled = json.loads((server.ROOT / 'src/data/ell_alternatives.json').read_text())['cases']
         original = json.loads((server.ROOT / 'src/data/ell_algorithms.json').read_text())['cases']

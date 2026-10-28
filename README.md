@@ -86,7 +86,7 @@ ELL diagrams retain their original filename identities as SVGs in
 `src/static/cases/ell/`. The solved `ell-epll0.svg` case needs no moves. The 25
 non-EPLL cases also have 99 bundled SpeedCubeDB alternatives, adjusted with U
 moves where needed for the original diagram orientation. Main ELL algorithms
-are preserved.
+now use the first SpeedCubeDB alternative; the migration preserves manually edited algorithms.
 
 EO4A covers **edge orientation**, rather than all of LSE. EOLR combines edge
 orientation with moving UL and UR to the bottom, after which M2 inserts them.
@@ -161,7 +161,8 @@ single/double turns without `3` notation.
 Open **Practice these cases** to train Learning and Learned cases from the current
 selection and filters. Not learned cases, blank algorithms, solved skips, and
 unsupported notation are excluded. Cases are selected randomly, avoiding an
-immediate repeat when possible.
+immediate repeat when possible. Learning cases have twice the selection weight
+of Learned cases.
 
 1. Apply the displayed setup to a solved cube.
 2. Press and release **Space** to start the timer.
@@ -191,7 +192,8 @@ center orientation. Recognition drawings do not affect scramble generation.
 ## Cubing wiki and notation guide
 
 Open **ⓘ Info** to browse and search method and subset articles, recognition tips,
-related topics, and source links. **About this method** and the subset **Info**
+related topics, and source links. The **Resources / Credits** tab collects
+reference links and attribution. **About this method** and the subset **Info**
 link jump to the relevant article. Wiki articles also link back to case libraries.
 
 The **Notation guide** demonstrates U/D/L/R/F/B, M/E/S, and x/y/z with interactive
@@ -200,6 +202,16 @@ switch views. Animations start only when requested. The wiki is bundled locally
 and does not modify saved cases.
 
 ![Cubing wiki with method and subset navigation and the interactive notation guide](docs/screenshots/wiki.png)
+
+## Settings and progress reset
+
+Open **⚙ Settings** in the sidebar to reset progress for one algorithm subset or
+for the entire library. The dialog shows how many Learning and Learned cases
+will return to Not learned and asks for confirmation before applying the reset.
+This affects the whole selected subset, regardless of the current search or
+category filters. Algorithms, notes, categories, and drawings are preserved.
+Anti PLL is shared, so resetting it affects both CFCE and CFOP. Progress resets
+are saved immediately and cannot be undone through the app.
 
 ## Storage and backups
 
@@ -268,3 +280,87 @@ pull requests do not bump the version until their code reaches `main`.
 The workflow needs permission to push commits and tags to `main`. Its own release
 commits do not cause another release. Do not manually edit
 `.github/release-state.json`; it tracks processed code changes.
+
+## Solve timer
+
+Open **Timer** from the sidebar for a standalone 3×3 timer with named sessions.
+Create, rename, and switch sessions; each keeps its own solve history and
+statistics. The sidebar shows solve count, best single, mean, and current and
+best ao5, ao12, and ao100. Solves support +2 and DNF penalties and JSON export.
+Sessions and recordings are saved in this browser’s local storage, independently
+of the SQLite algorithm library; export them before clearing browser data.
+
+Use the timer’s **Settings** button to choose **Click timer** or **Type timer**.
+Typed values with a decimal point or comma are seconds; digits alone represent
+hundredths of a second: `100` becomes `1.00`, and `1234` becomes `12.34`.
+Times display two decimal places. **New scramble** generates another scramble;
+**Last scramble** returns to the previous one.
+
+### Timer scrambles (TNoodle)
+
+The 3×3 timer uses [TNoodle CLI](https://github.com/SpeedcuberOSS/tnoodle-cli),
+which wraps the [TNoodle scrambling library](https://github.com/thewca/tnoodle-lib).
+Install the pinned Linux x64 distribution (including its Java runtime) locally:
+
+```sh
+python3 scripts/install_tnoodle.py
+```
+
+It lives in `data/tnoodle/` and generates scrambles offline. On other platforms,
+install the corresponding TNoodle CLI distribution and set `TNOODLE_BIN` to its
+launcher executable before starting the app. Restart the Python app after updating
+its code. The timer shows an error and offers a retry if generation fails.
+
+### GAN Bluetooth cubes
+
+The timer's **Connect Bluetooth Cube** button uses the locally bundled
+[gan-web-bluetooth](https://github.com/afedotov/gan-web-bluetooth) library for
+GAN Gen2/Gen3/Gen4 cubes. Use the local-app chooser in Firefox/Brave, or the native Web Bluetooth chooser
+in Chrome/Edge, on localhost or HTTPS. Wake the cube
+and close other cube applications first. OS pairing alone does not authorize
+the browser connection. If automatic MAC detection is unavailable, enter the
+cube's Bluetooth address when asked; it is remembered per device in this browser.
+The sidebar displays live moves, cube state, and battery information. The timer
+switches automatically to Bluetooth timer when connected. The displayed scramble must
+match the cube state before READY appears; the first move starts timing, and solving
+stops it. Another turn within 300 ms adds +2. Move timestamps from the cube are
+used when available. Use **Reset Bluetooth Cube** to declare the cube’s current physical state solved.
+During scrambling, completed moves turn green. An incorrect move replaces the
+scramble with red undo instructions until the deviation has been undone.
+
+#### Firefox and Brave
+
+The **Local app** Bluetooth transport connects via Python/Bleak, so Firefox and
+Brave do not need native Web Bluetooth. Install the updated `requirements.txt`
+and restart the app using that Python environment. Click Connect, then select
+a discovered GAN cube. On Linux, its Bluetooth address supplies the encryption
+MAC automatically. The local bridge restricts GATT access to GAN services and
+releases the connection when the tab disconnects or stops polling.
+
+Automatic mode uses the local transport in Brave or when Web Bluetooth is absent. If Brave
+exposes Web Bluetooth but blocks it, select **Local app (Firefox / Brave)** in
+Connection help. Alternatively, Brave's native API can be enabled at
+`brave://flags/#brave-web-bluetooth-api`, followed by a browser restart.
+
+#### Bluetooth solve analytics
+
+New Bluetooth solves retain timestamped moves in the browser session and exports.
+The reconstruction widget shows the solution, TPS, and inferred CFOP, CFCE, or
+Roux stages. CFOP/CFCE include each F2L pair and the combined F2L time. Detection
+uses cube-state checkpoints in all six cross orientations; ambiguous finishes
+are labeled rather than assigned a method. Stage durations exclude penalties. Use the method dropdown to choose CFOP,
+CFCE, or Roux manually, or return to automatic detection; the selection is saved
+with that solve. Consecutive identical moves are combined when each gap is at
+most 200 ms (`U U` → `U2`, `U U U` → `U3`); inverse moves remain separate.
+The widget appears after solving, hides on the next cube move, and can be reopened
+with a solve's **Analytics** button. Earlier solves without move recordings show
+a notice because their step timings cannot be recovered.
+
+Analytics also displays each solve's saved scramble. On gyro-equipped GAN cubes,
+new recordings include estimated `x`, `y`, and `z` rotations in both the full
+solution and each step’s move sequence, including individual F2L pairs and the
+combined F2L row. Rotations at time zero describe the cube’s starting orientation
+in the gyro’s reference frame; later rotations appear where they occurred. Face-turn names in the displayed solution follow those
+rotations, while reconstruction and TPS retain the original sensor face turns.
+The detector snaps to the cube's 24 orientations with a stability threshold to
+reduce gyro jitter. Older solves without gyro recordings cannot recover rotations.

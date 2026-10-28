@@ -19,7 +19,7 @@ const WIKI_SUBSET_NOTES={
 };
 const WIKI_SOURCES={
   CLL:['CubePal CLL','https://www.cubepal.app/cubes/3x3x3/stages/cll'],
-  ELL:['Sarah’s ELL reference','https://sarah.cubing.net/3x3x3/ell'],
+  ELL:['SpeedCubeDB ELL','https://speedcubedb.com/a/3x3/ELL'],
   OLL:['SpeedCubeDB OLL','https://speedcubedb.com/a/3x3/OLL'],
   PLL:['SpeedCubeDB PLL','https://speedcubedb.com/a/3x3/PLL'],
   WV:['SpeedCubeDB WV','https://speedcubedb.com/a/3x3/WV'],
@@ -30,12 +30,33 @@ const WIKI_SOURCES={
   EOLR:['CubingApp EOLR','https://cubingapp.com/algorithms/LSE-EOLR'],
   'Anti PLL':['SpeedCubeDB Anti PLL','https://speedcubedb.com/a/3x3/AntiPLL'],
 };
+const WIKI_RESOURCE_GROUPS=[
+  ['SpeedCubeDB', 'Default algorithms, alternative solutions, and case references.',
+    Object.values(WIKI_SOURCES).filter(([,url])=>url.startsWith('https://speedcubedb.com/'))],
+  ['Sarah’s Cubing Site', 'Original ELL case diagrams and algorithms, including EPLL and the solved case.',
+    [['ELL reference','https://sarah.cubing.net/3x3x3/ell']]],
+  ['J Perm', 'Original OLL, PLL, and Winter Variation algorithm references.',
+    [['OLL','https://jperm.net/algs/oll'],['PLL','https://jperm.net/algs/pll'],['Winter Variation','https://jperm.net/algs/wv']]],
+  ['CubePal', 'CLL algorithms and case reference.', [WIKI_SOURCES.CLL]],
+  ['CubingApp', 'EOLR algorithms and case setups.', [WIKI_SOURCES.EOLR]],
+];
 function wikiLink(label,path){const a=document.createElement('a');a.textContent=label;a.href=path;return a;}
+function wikiExternalLink(label,url){const a=wikiLink(label+' ↗',url);a.target='_blank';a.rel='noreferrer';return a;}
+function renderWikiResources(article){
+  wikiParagraph(article,'Credits and reference links for the algorithms and case diagrams in Cube Library. Thank you to the authors and communities who maintain these resources.');
+  for(const [name,description,links] of WIKI_RESOURCE_GROUPS){
+    const heading=document.createElement('h3');heading.textContent=name;article.append(heading);
+    wikiParagraph(article,description);
+    const list=document.createElement('ul');
+    for(const [label,url] of links){const item=document.createElement('li');item.append(wikiExternalLink(label,url));list.append(item);}
+    article.append(list);
+  }
+}
 function wikiParagraph(container,text){const p=document.createElement('p');p.textContent=text;container.append(p);}
 function renderWiki(route){
   const topics=document.getElementById('wiki-topics'), article=document.getElementById('wiki-article');
   const query=document.getElementById('wiki-search').value.trim().toLowerCase();
-  topics.replaceChildren(wikiLink('Wiki home','#/info'),wikiLink('Notation guide','#/info/notation'));
+  topics.replaceChildren(wikiLink('Wiki home','#/info'),wikiLink('Notation guide','#/info/notation'),wikiLink('Resources / Credits','#/info/resources'));
   let count=0;
   for(const [key,method] of Object.entries(METHODS)){
     const group=document.createElement('section');
@@ -57,8 +78,10 @@ function renderWiki(route){
   const kind=parts[2], key=parts[3];
   const method=kind==='method'&&Object.hasOwn(METHODS,key)?METHODS[key]:null;
   const subset=kind==='subset'&&Object.hasOwn(SUBSET_NAMES,key)?key:null;
-  const title=document.createElement('h2');title.textContent=route==='/info/notation'?'Cube notation':method?method.name:subset?subset:'Welcome to the cubing wiki';article.append(title);
-  if(route==='/info/notation'){
+  const title=document.createElement('h2');title.textContent=route==='/info/resources'?'Resources / Credits':route==='/info/notation'?'Cube notation':method?method.name:subset?subset:'Welcome to the cubing wiki';article.append(title);
+  if(route==='/info/resources'){
+    renderWikiResources(article);
+  }else if(route==='/info/notation'){
     renderNotationGuide(article);
   }else if(method){
     wikiParagraph(article,method.description);
@@ -75,7 +98,7 @@ function renderWiki(route){
     const h=document.createElement('h3');h.textContent='Related methods';article.append(h);
     for(const [id,value] of Object.entries(METHODS))if([...value.sets,...value.advanced].includes(subset))article.append(wikiLink(value.name,'#/info/method/'+id));
     const browse=wikiLink('Browse '+subset+' cases','#/sets/'+encodeURIComponent(subset));browse.className='info-link';article.append(browse);
-    const source=WIKI_SOURCES[subset];if(source){const a=wikiLink(source[0]+' ↗',source[1]);a.target='_blank';a.rel='noreferrer';article.append(a);}
+    const source=WIKI_SOURCES[subset];if(source)article.append(wikiExternalLink(...source));
   }else{
     if(route!=='/info')wikiParagraph(article,'This topic was not found. Choose a method or subset from the navigation.');
     wikiParagraph(article,'Choose a method to follow its solving stages, or open a subset to learn when it applies, what to recognize, and what remains afterward.');

@@ -36,11 +36,20 @@ $('practice-hint-button').onclick=async()=>{
   }
 };
 
+function choosePracticeCase(pool,previousId,random=Math.random){
+  const alternatives=pool.filter(item=>item.id!==previousId);
+  const choices=alternatives.length?alternatives:pool;
+  // Read current progress so promotions and DNF changes affect later draws.
+  const weighted=choices.flatMap(item=>{
+    const current=library.cases.find(c=>c.id===item.id);
+    return current?.learning&&!current.learned?[item,item]:[item];
+  });
+  return weighted[Math.floor(random()*weighted.length)];
+}
+
 async function nextPracticeCase(){
   resetPracticeHint();
-  const alternatives=practicePool.filter(item=>item.id!==practiceCase?.id);
-  const choices=alternatives.length?alternatives:practicePool;
-  const chosen=choices[Math.floor(Math.random()*choices.length)];
+  const chosen=choosePracticeCase(practicePool,practiceCase?.id);
   const session=practiceSession;
   practiceState='loading';
   $('practice-scramble').textContent='Generating a new scramble…';

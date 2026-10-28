@@ -200,7 +200,7 @@ function renderNavigation(){
   $('custom-set-cards').replaceChildren(...custom.map(name=>navigationCard(name,'Your custom algorithm set',[name],()=>navigateSet(name))));
   document.title=isWiki?'Cubing Wiki · Cube Library':isLibrary?set+' · Cube Library':isMethod?method.name+' · Cube Library':'Cube Library';
 }
-window.addEventListener('hashchange',()=>{category='';$('search').value='';$('progress-filter').value='all';render();});
+window.addEventListener('hashchange',()=>{category='';$('search').value='';resetProgressFilter();$('progress-filter').open=false;render();});
 async function load(){library=await api('library');$('server-notice').hidden=!!library.progress_states?.includes('learning');$('server-notice').textContent=restartNotice;if(!library.sets.includes(set))set=library.sets[0];options($('sets'),library.sets,set);render();}
 function net(container,state,mini=false){
   if(state.D4)return fullCubeNet(container,state,mini);
@@ -245,7 +245,16 @@ function net(container,state,mini=false){
   container.replaceChildren(svg);
 }
 
-function render(){renderNavigation();const all=library.cases.filter(c=>c.alg_set===set);$('title').textContent=set;$('subtitle').textContent=subsetDescription(set);const categories=['',...categoryPaths(set)];if(!categories.includes(category))category='';renderCategories(all,categories);const query=$('search').value.toLowerCase();const cases=all.filter(c=>withinCategory(c.category,category)&&($('progress-filter').value==='all'||progressState(c)===$('progress-filter').value)&&[c.name,c.category,c.algorithm,c.recognition,c.description].some(v=>v.toLowerCase().includes(query)));const compare=(a,b)=>a.localeCompare(b,undefined,{numeric:true,sensitivity:'base'});
+function selectedProgressStates(){return [...$('progress-filter').querySelectorAll('input:checked')].map(input=>input.value);}
+function updateProgressFilterLabel(){
+  const states=selectedProgressStates();
+  const labels={'not-learned':'Not learned',learning:'Learning',learned:'Learned'};
+  $('progress-filter-label').textContent='Filter: '+(states.length===3?'All learning states':states.length?states.map(state=>labels[state]).join(', '):'No learning states');
+}
+function resetProgressFilter(){for(const input of $('progress-filter').querySelectorAll('input'))input.checked=true;updateProgressFilterLabel();}
+document.addEventListener('click',event=>{if(!$('progress-filter').contains(event.target))$('progress-filter').open=false;});
+$('progress-filter').addEventListener('keydown',event=>{if(event.key==='Escape'){$('progress-filter').open=false;$('progress-filter-label').focus();}});
+function render(){renderNavigation();const all=library.cases.filter(c=>c.alg_set===set);$('title').textContent=set;$('subtitle').textContent=subsetDescription(set);const categories=['',...categoryPaths(set)];if(!categories.includes(category))category='';renderCategories(all,categories);const query=$('search').value.toLowerCase();const cases=all.filter(c=>withinCategory(c.category,category)&&selectedProgressStates().includes(progressState(c))&&[c.name,c.category,c.algorithm,c.recognition,c.description].some(v=>v.toLowerCase().includes(query)));const compare=(a,b)=>a.localeCompare(b,undefined,{numeric:true,sensitivity:'base'});
 cases.sort((a,b)=>compare(a.category||'\uffff',b.category||'\uffff')||compare(a.name,b.name)||a.id-b.id);
 $('count').textContent=`${cases.length} shown`;
 visibleCases=cases;
@@ -253,7 +262,7 @@ const learnedCount=cases.filter(c=>c.learned).length;
 $('learned-count').textContent=`${learnedCount} / ${cases.length} algs learned`;
 $('learned-progress').max=cases.length||1;
 $('learned-progress').value=learnedCount;
-$('progress-scope').textContent=[set,category].filter(Boolean).join(' / ')+(query||$('progress-filter').value!=='all'?' · Filtered cases':'');
+$('progress-scope').textContent=[set,category].filter(Boolean).join(' / ')+(query||selectedProgressStates().length!==3?' · Filtered cases':'');
 $('grid').replaceChildren();
 let previousParent=null;
 for(const c of cases){
@@ -272,7 +281,7 @@ $('algorithm').addEventListener('input',updateSetup);$('case-form').addEventList
 $('case-form').onsubmit=async e=>{e.preventDefault();const updated={...current};for(const key of ['name','algorithm','description','recognition'])updated[key]=$(key).value;const parts=$('category-path').value.split('/').map(part=>part.trim());if(parts.some(part=>!part)){$('status').textContent='Enter a set and category names separated by /, with no empty parts.';return;}const enteredSet=parts.shift();updated.alg_set=library.sets.find(name=>name.toLowerCase()===enteredSet.toLowerCase())||enteredSet;updated.category=parts.join(' / ');updated.learned=Number($('learned').value==='learned');updated.learning=Number($('learned').value==='learning');updated.drawing=JSON.stringify({useDrawing:$('use-drawing').checked,stickers:drawing});try{if(!library.sets.includes(updated.alg_set))await api('sets',{name:updated.alg_set});const result=await api('case',updated);current={...updated,id:result.id};dirty=false;set=updated.alg_set;navigateSet(set);category='';$('status').textContent='Saved to your library.';await load();$('detail').close();}catch(error){$('status').textContent=error.message;}};
 function closeCase(){if(!dirty||confirm('Discard unsaved changes?')){$('detail').close();dirty=false;}}
 $('close').onclick=closeCase;$('detail').addEventListener('cancel',e=>{e.preventDefault();closeCase()});window.addEventListener('beforeunload',e=>{if(dirty){e.preventDefault();e.returnValue='';}});
-$('sets').onchange=()=>navigateSet($('sets').value);$('search').oninput=render;$('progress-filter').onchange=render;$('recognition-only').onchange=render;$('new-case').onclick=()=>openCase(null);
+$('sets').onchange=()=>navigateSet($('sets').value);$('search').oninput=render;$('progress-filter').onchange=()=>{updateProgressFilterLabel();render();};$('all-progress-states').onclick=()=>{resetProgressFilter();render();};$('recognition-only').onchange=render;$('new-case').onclick=()=>openCase(null);
 $('add-set').onclick=async()=>{const name=prompt('Name your algorithm set (e.g. OLL, PLL, ZBLL)');if(!name?.trim())return;try{await api('sets',{name:name.trim()});set=name.trim();navigateSet(set);category='';await load();}catch(e){alert(e.message)}};
 for(const value of ['#ffff00','#ffffff','#ff0000','#ff9900','#00ff00','#0000ff','#aab2a7']){const b=document.createElement('button');b.type='button';b.className='swatch'+(value===color?' selected':'');b.style.backgroundColor=value;b.setAttribute('aria-label',({'#ffff00':'Yellow','#ffffff':'White','#ff0000':'Red','#ff9900':'Orange','#00ff00':'Green','#0000ff':'Blue','#aab2a7':'Gray'})[value]);b.onclick=()=>{color=value;document.querySelectorAll('.swatch').forEach(s=>s.classList.remove('selected'));b.classList.add('selected')};$('palette').append(b);}
 for(const tool of ['paint','highlight'])$(tool).onclick=()=>{mode=tool;for(const t of ['paint','highlight'])$(t).setAttribute('aria-pressed',String(t===tool))};
